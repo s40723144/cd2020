@@ -9,16 +9,43 @@
 <p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
 <p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
 <p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>紀錄</h1>
+<h1>簡介</h1>
+<p><span>Repository</span><span>：<a href="https://github.com/s40723144/cd2020">https://github.com/s40723144/cd2020</a></span></p>
+<p><span>Website：<a href="https://s40723150.github.io/cd2020ag2/" rel="nofollow">https://s40723144.github.io/cd2020</a></span></p>
+<p><span>Group Repository：</span><a href="https://github.com/s40723150/cd2020ag2">https://github.com/s40723150/cd2020ag2</a></p>
+<p><a href="https://github.com/mdecourse/cmsimde"></a><span>Group Presentation：</span><a href="https://s40723150.github.io/cd2020ag2/reveal">https://s40723150.github.io/cd2020ag2/reveal</a></p>
+<p><span>Group Website：</span><a href="https://s40723150.github.io/cd2020ag2/" rel="nofollow">https://s40723150.github.io/cd2020ag2</a></p><h1>紀錄</h1>
 <h3>w3</h3>
 <p>可攜系統更新python3.8.2</p>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/kORRlAtLRRI" width="560"></iframe></p>
 <h1>Assignment 1</h1>
-<h1>Assignment 2</h1>
+<p><big><big>Simulation(模擬)</big></big></p>
+<p><big><big>40723144廖豪樹</big></big></p>
+<p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
+<p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
+<p style="text-align: center;"><img alt="" height="83" src="/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
+<p><span><span style="color: #ff0000;">Internally(在內部)</span>, the <span style="color: #ff0000;">simulator(模擬器)</span> will use <span style="color: #ff0000;">additional(額外) intermediate(中間) </span>states in order to <span style="color: #ff0000;">correctly(正確地) </span>inform<span style="color: #ff0000;"> </span></span><span style="color: #ff0000;"><a href="https://www.coppeliarobotics.com/helpFiles/en/scripts.htm" style="color: #ff0000;">scripts</a>(告知腳本)</span><span> or programs about what will happen next. Following state <span style="color: #ff0000;">diagram(狀態圖) illustrates(說明)</span> the simulator's<span style="color: #ff0000;"> internal(內部)</span> states:</span></p>
+<p><span>在內部，<span style="background-color: #ffff00;">模擬器將使用其他中間狀態</span>，以正確告知腳本或程序接下來將發生的情況。<span> </span><span>以下<span style="background-color: #ffff00;">狀態圖說明了模擬器的內部狀態</span></span>：</span></p>
+<p style="text-align: center;"><span><img alt="" height="357" src="/images/ApplicationFrameHost_2020-04-08_11-35-37.png" width="488"/></span></p>
+<p style="text-align: left;"><span>.</span></p>
+<p>Scripts and programs should<span> <span style="color: #ff0000;">alwaysreact(總是反應)</span></span><span> </span>according to the current system call function and possibly the simulation state in order to<span> </span><span>behave <span style="color: #ff0000;">correctly(正確運行)</span></span>. It is good practice to<span> </span><span style="color: #ff0000;">divide each(劃分每個)</span><span> </span>control code into<span> </span><span style="color: #ff0000;">at least(至少) </span>4 system call functions (e.g. for<span> <span style="color: #ff0000;">non-threaded(非線性)</span> </span>child scripts):</p>
+<p><span style="background-color: #ffff00;">腳本和程序應始終根據當前系統調用功能以及可能的模擬狀態進行反應</span>，以便正確運行。 優良作法是<span>將每個控制代碼<span style="background-color: #ffff00;">至少分為4個系統調用函數</span></span>（例如，用於非線程子腳本）：</p>
+<ul>
+<li><strong><span style="color: #ff0000;">In</span><span><span style="color: #ff0000;">itialization(初始化)</span> function:</span></strong><span> </span>sysCall_init: the function is called only when the script is<span> <span style="color: #ff0000;">initialized(初始化)</span></span>.</li>
+</ul>
+<p><strong><span>初始化函數：</span></strong>sysCall_init：僅在腳本初始化時才調用該函數。</p>
+<ul>
+<li><strong><span><span><span style="color: #ff0000;">Actuation(激活</span>)</span><span> </span>function:<span> </span></span></strong>sysCall_actuation: the function is called when actuation should happen.</li>
+</ul>
+<p><strong><span>激活函數</span></strong>：sysCall_actuation：應在發生激活時調用該函數。</p>
+<ul>
+<li><strong><span><span style="color: #ff0000;">Sensing(感測) </span>function:</span><span> </span></strong>sysCall_sensing: this function is called when sensing should happen.</li>
+</ul>
+<p><strong><span>感測功能：</span></strong>sysCall_sensing：應在感測發生時調用此函數。</p>
+<ul>
+<li><strong><span><span style="color: #ff0000;">Clean-up(清理)</span><span> </span>function:</span></strong><span> </span>sysCall_cleanup: the function is called just before the script is<span><span> </span><span style="color: #ff0000;">de-initialized(未初始化)</span></span><span> </span>(e.g. at simulation end, or when the script is<span> </span><span style="color: #ff0000;">destroyed(銷毀)</span>).</li>
+</ul>
+<p><strong><span>清理函數：</span></strong>sysCall_cleanup：該函數在腳本未初始化之前被調用（例如在模擬結束時或腳本被銷毀時）。</p><h1>Assignment 2</h1>
 <p><big><big>PG4 Materials and Processes(材料與工藝)</big></big></p>
 <p><strong><span style="color: #ff0000;">4.1 Cost Versus Time Versus Specification(成本與時間與規格)</span></strong></p>
 <p>we’ll return to cost considerations of the design. With that reestablishment of this design “touchstone,” we’ll do with more “building blocks” that will be available to the designer to determine the best materials and processes for their enclosure parts.</p>
@@ -132,3 +159,24 @@
 <p>我對尺寸/公差的評論在單位制（英寸或毫米）中都非常有用。 在美國，我們可能開始設計時以3.000英寸為標稱尺寸或“起點”。 在歐洲，“相同”的起點可能是75毫米（等於2.953英寸）。 如果設計在美國以3000英寸開始，那麼如果要在歐洲製造產品，則將這些圖紙精確地轉換為3×25.4 = 76.2毫米。 我試圖在“轉換係數”（英寸到毫米）和“設計師出身的思維方式”之間進行區分。 因此，如果我是一位美國設計師（接受過美國教育），當時正在為一家歐洲公司設計零件，那麼我可能會創建一個以“甚至”毫米標稱尺寸開始的設計，因此 我將從75毫米開始（而不是選擇3.000英寸）。</p>
 <p><strong><span style="color: #000080;">4.8.4 Overall Size and the Design (總體尺寸和設計<br/>為了繼續進行尺寸標註)</span></strong></p>
 <p>To continue the general topic of dimensioning and how it relates to design, Some constraints will usually be the start of a design. Here are some examples:<br/>The general assumptions for the examples are:</p>
+<p>為了繼續進行尺寸標註及其與設計的一般性主題，通常會遇到一些約束。</p>
+<p>這裡有些例子：<br/>這些示例的一般假設為：</p>
+<p>The general assumptions for the examples are:<br/>Minimum size and weight, Cost (Chpt4), are required in the design.<br/>Minimum clearance between one object and another is 0.010 inch. This obviouslyvaries in a real design and depends on the objects and environment that the enclo-sure will be used.</p>
+<p>設計中需要最小尺寸和重量，成本（Chpt4）。<br/>一個物體與另一個物體之間的最小間隙為0.010英寸。 顯然，這在實際設計中會有所不同，並且取決於要使用外殼的對象和環境。</p>
+<p><strong><span style="color: #000080;">4.8.5 Theory of Tolerancing: The Need (4.8.5寬容理論：需要)</span></strong></p>
+<p>Tolerancing on part dimensions is needed as parts cannot be produced perfectly.<br/>Manufacturing techniques do not produce perfect parts. This is probably obvious.<br/>The actual amount of tolerance is based on a few (probably competing) factors:</p>
+<p><br/>由於零件無法完美生產，因此需要零件尺寸公差。<br/>製造技術不能生產出完美的零件。這可能是顯而易見的。<br/>實際的公差量基於幾個（可能是相互競爭的）因素：</p>
+<ol>
+<li><strong><span style="color: #ff6600;">成本</span></strong>（較大的公差製造成本較低）。</li>
+<li><strong><span style="color: #ff6600;">相似的零件</span></strong>（同一零件）需要互換-所有零件都是<br/>公差必須起作用。</li>
+<li>與其他零件配合的零件必須在所有零件都達到其公差極限的情況下執行此操作。因此，指定公差的“<strong><span style="color: #ff6600;">默認步驟</span></strong>”是：</li>
+</ol>
+<p style="text-align: center;">A.Choose the tolerance for the reasonable or most common manufacturing process.</p>
+<p style="text-align: center;">選擇合理或最常見的製造過程的公差。</p>
+<p style="text-align: center;">B. If the above is acceptable to the design, look to increase the tolerance even more,checking back to acceptability in the overall design. Increasing the tolerance will<br/>allow more parts to pass inspection, which should (could) result in overall cost reduction.</p>
+<p style="text-align: center;">如果上述設計可接受，請尋求更大的公差，並重新檢查總體設計的可接受性。增加容忍度允許更多零件通過檢查，這將（可能）導致總體成本降低。</p>
+<p style="text-align: center;">C. Tighten the tolerance even though the most common manufacturing process will not produce that tolerance if the design dictates that tighter tolerance. Check with the part manufacturer if that tighter tolerance will be achievable (reason-ably) or at what cost.Each dimension (location, hole size, angle, etc.) must have a tolerance, either explicitly stated on the drawing or as being a part of an overall notation on thedrawing.</p>
+<p style="text-align: center;">收緊公差，即使最常見的製造工藝在設計要求更嚴格的公差的情況下也不會產生該公差。請與零件製造商聯繫，以確保（合理地）可以達到更嚴格的公差，或者以何種成本實現。每個尺寸（位置，孔的大小，角度等）都必須具有公差，公差可以在圖紙上明確說明，也可以作為圖紙上整體符號的一部分。</p>
+<p style="text-align: left;"><strong><span style="color: #000080;">4.8.7 Inspection Dimensions (Critical Dimensions) (檢驗尺寸（關鍵尺寸）)</span></strong></p>
+<p>Parts can have hundreds of dimensions. To fully specify every feature on some parts takes a fair amount of time. Historically, every feature on a drawing was dimen-sioned to enable that feature to be inspected and found either in compliance with the specification (drawing) or non-compliant. With the advent of 3D CAD systems for<br/>designing and creating drawing documentation, it is completely possible to transfer all of the part information digitally, without any dimensions being specified actually on the drawing, and have that part manufactured at the “nominal specified dimen-sion.” That is, features that are 3.000 inches apart are “drawn” exactly 3.000 inches<br/>apart, and that number is an integral part of a file that the part manufacturer gets.Anyone who brings up that part file on their CAD system can query that file and see those features need to be 3.000 inches apart (with a stated tolerance as a part of the CAD file). In fact, inspection departments, if they had access to the CAD file, could inspect the part</p>
+<p>零件可以具有數百個尺寸。要完全指定某些零件上的每個功能需要花費大量時間。從歷史上看，對圖紙上的每個特徵都進行了尺寸標註，以便可以檢查和發現該特徵是否符合規範（圖紙）或不符合規範。隨著3D CAD系統的出現<br/>設計和創建工程圖文檔時，完全有可能以數字方式傳輸所有零件信息，而無需在工程圖上實際指定任何尺寸，而使零件以“標稱指定尺寸”進行製造。也就是說，相隔3.000英寸的要素將精確地“繪製” 3.000英寸<br/>零件號是零件製造商獲取的文件的組成部分。在其CAD系統上顯示該零件文件的任何人都可以查詢該文件，並看到這些特徵需要相距3.000英寸（以規定的公差作為單位）。 CAD文件的一部分）。實際上，檢查部門如果可以訪問CAD文件，則可以檢查零件</p>

@@ -9,16 +9,43 @@
 <p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
 <p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
 <p>git clone --recurse-submodules <a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<h1>Develop</h1>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<h1>紀錄</h1>
+<h1>簡介</h1>
+<p><span>Repository</span><span>：<a href="https://github.com/s40723144/cd2020">https://github.com/s40723144/cd2020</a></span></p>
+<p><span>Website：<a href="https://s40723144.github.io/cd2020/content/index.html">https://s40723144.github.io/cd2020/content/index.html</a></span></p>
+<p><span>Group Repository：</span><a href="https://github.com/s40723150/cd2020ag2">https://github.com/s40723150/cd2020ag2</a></p>
+<p><a href="https://github.com/mdecourse/cmsimde"></a><span>Group Presentation：</span><a href="https://s40723150.github.io/cd2020ag2/reveal">https://s40723150.github.io/cd2020ag2/reveal</a></p>
+<p><span>Group Website：</span><a href="https://s40723150.github.io/cd2020ag2/" rel="nofollow">https://s40723150.github.io/cd2020ag2</a></p><h1>紀錄</h1>
 <h3>w3</h3>
 <p>可攜系統更新python3.8.2</p>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/kORRlAtLRRI" width="560"></iframe></p>
 <h1>Assignment 1</h1>
-<h1>Assignment 2</h1>
+<p><big><big>Simulation(模擬)</big></big></p>
+<p><big><big>40723144廖豪樹</big></big></p>
+<p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
+<p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
+<p style="text-align: center;"><img alt="" height="83" src="/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
+<p><span><span style="color: #ff0000;">Internally(在內部)</span>, the <span style="color: #ff0000;">simulator(模擬器)</span> will use <span style="color: #ff0000;">additional(額外) intermediate(中間) </span>states in order to <span style="color: #ff0000;">correctly(正確地) </span>inform<span style="color: #ff0000;"> </span></span><span style="color: #ff0000;"><a href="https://www.coppeliarobotics.com/helpFiles/en/scripts.htm" style="color: #ff0000;">scripts</a>(告知腳本)</span><span> or programs about what will happen next. Following state <span style="color: #ff0000;">diagram(狀態圖) illustrates(說明)</span> the simulator's<span style="color: #ff0000;"> internal(內部)</span> states:</span></p>
+<p><span>在內部，<span style="background-color: #ffff00;">模擬器將使用其他中間狀態</span>，以正確告知腳本或程序接下來將發生的情況。<span> </span><span>以下<span style="background-color: #ffff00;">狀態圖說明了模擬器的內部狀態</span></span>：</span></p>
+<p style="text-align: center;"><span><img alt="" height="357" src="/images/ApplicationFrameHost_2020-04-08_11-35-37.png" width="488"/></span></p>
+<p style="text-align: left;"><span>.</span></p>
+<p>Scripts and programs should<span> <span style="color: #ff0000;">alwaysreact(總是反應)</span></span><span> </span>according to the current system call function and possibly the simulation state in order to<span> </span><span>behave <span style="color: #ff0000;">correctly(正確運行)</span></span>. It is good practice to<span> </span><span style="color: #ff0000;">divide each(劃分每個)</span><span> </span>control code into<span> </span><span style="color: #ff0000;">at least(至少) </span>4 system call functions (e.g. for<span> <span style="color: #ff0000;">non-threaded(非線性)</span> </span>child scripts):</p>
+<p><span style="background-color: #ffff00;">腳本和程序應始終根據當前系統調用功能以及可能的模擬狀態進行反應</span>，以便正確運行。 優良作法是<span>將每個控制代碼<span style="background-color: #ffff00;">至少分為4個系統調用函數</span></span>（例如，用於非線程子腳本）：</p>
+<ul>
+<li><strong><span style="color: #ff0000;">In</span><span><span style="color: #ff0000;">itialization(初始化)</span> function:</span></strong><span> </span>sysCall_init: the function is called only when the script is<span> <span style="color: #ff0000;">initialized(初始化)</span></span>.</li>
+</ul>
+<p><strong><span>初始化函數：</span></strong>sysCall_init：僅在腳本初始化時才調用該函數。</p>
+<ul>
+<li><strong><span><span><span style="color: #ff0000;">Actuation(激活</span>)</span><span> </span>function:<span> </span></span></strong>sysCall_actuation: the function is called when actuation should happen.</li>
+</ul>
+<p><strong><span>激活函數</span></strong>：sysCall_actuation：應在發生激活時調用該函數。</p>
+<ul>
+<li><strong><span><span style="color: #ff0000;">Sensing(感測) </span>function:</span><span> </span></strong>sysCall_sensing: this function is called when sensing should happen.</li>
+</ul>
+<p><strong><span>感測功能：</span></strong>sysCall_sensing：應在感測發生時調用此函數。</p>
+<ul>
+<li><strong><span><span style="color: #ff0000;">Clean-up(清理)</span><span> </span>function:</span></strong><span> </span>sysCall_cleanup: the function is called just before the script is<span><span> </span><span style="color: #ff0000;">de-initialized(未初始化)</span></span><span> </span>(e.g. at simulation end, or when the script is<span> </span><span style="color: #ff0000;">destroyed(銷毀)</span>).</li>
+</ul>
+<p><strong><span>清理函數：</span></strong>sysCall_cleanup：該函數在腳本未初始化之前被調用（例如在模擬結束時或腳本被銷毀時）。</p><h1>Assignment 2</h1>
 <p><big><big>PG4 Materials and Processes(材料與工藝)</big></big></p>
 <p><strong><span style="color: #ff0000;">4.1 Cost Versus Time Versus Specification(成本與時間與規格)</span></strong></p>
 <p>we’ll return to cost considerations of the design. With that reestablishment of this design “touchstone,” we’ll do with more “building blocks” that will be available to the designer to determine the best materials and processes for their enclosure parts.</p>
