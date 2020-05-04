@@ -1,6 +1,6 @@
 <!DOCTYPE html><html>
         <head>
-        <title>CMSiMDE</title>
+        <title>40723144 CD2020協同產品設計實習</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
@@ -143,7 +143,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='簡介.html'>簡介</a><li class='has-children'><a href='紀錄.html'>紀錄</a><ul class='dropdown'><li><a href='w3.html'>w3</a><li><a href='w7.html'>w7</a></li></ul><li><a href='Assignment 1.html'>Assignment 1</a><li><a href='Assignment 2.html'>Assignment 2</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='紀錄.html'>紀錄</a><ul class='dropdown'><li><a href='w3.html'>w3</a><li><a href='w7.html'>w7</a></li></ul><li class='has-children'><a href='Assignment 1.html'>Assignment 1</a><ul class='dropdown'><li class='has-children'><a href='CoppeliaSim User Manual.html'>CoppeliaSim User Manual</a><ul class='dropdown'><li><a href='User interface(用戶界面).html'>User interface(用戶界面)</a><li><a href='Simulation(模擬).html'>Simulation(模擬)</a></li></li></ul></ul><li><a href='Assignment 2.html'>Assignment 2</a></li>
                       </ul>
                 </nav>
               </div>
@@ -154,35 +154,8 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w7 << <a href='w7.html'>Previous</a> <a href='Assignment 2.html'>Next</a> >> Assignment 2<br /><h1>Assignment 1</h1>
-<p><big><big>Simulation(模擬)</big></big></p>
-<p><big><big>40723144廖豪樹</big></big></p>
-<p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
-<p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
-<p style="text-align: center;"><img alt="" height="83" src="./../images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
-<p><span><span style="color: #ff0000;">Internally(在內部)</span>, the <span style="color: #ff0000;">simulator(模擬器)</span> will use <span style="color: #ff0000;">additional(額外) intermediate(中間) </span>states in order to <span style="color: #ff0000;">correctly(正確地) </span>inform<span style="color: #ff0000;"> </span></span><span style="color: #ff0000;"><a href="https://www.coppeliarobotics.com/helpFiles/en/scripts.htm" style="color: #ff0000;">scripts</a>(告知腳本)</span><span> or programs about what will happen next. Following state <span style="color: #ff0000;">diagram(狀態圖) illustrates(說明)</span> the simulator's<span style="color: #ff0000;"> internal(內部)</span> states:</span></p>
-<p><span>在內部，<span style="background-color: #ffff00;">模擬器將使用其他中間狀態</span>，以正確告知腳本或程序接下來將發生的情況。<span> </span><span>以下<span style="background-color: #ffff00;">狀態圖說明了模擬器的內部狀態</span></span>：</span></p>
-<p style="text-align: center;"><span><img alt="" height="357" src="./../images/ApplicationFrameHost_2020-04-08_11-35-37.png" width="488"/></span></p>
-<p style="text-align: left;"><span>.</span></p>
-<p>Scripts and programs should<span> <span style="color: #ff0000;">alwaysreact(總是反應)</span></span><span> </span>according to the current system call function and possibly the simulation state in order to<span> </span><span>behave <span style="color: #ff0000;">correctly(正確運行)</span></span>. It is good practice to<span> </span><span style="color: #ff0000;">divide each(劃分每個)</span><span> </span>control code into<span> </span><span style="color: #ff0000;">at least(至少) </span>4 system call functions (e.g. for<span> <span style="color: #ff0000;">non-threaded(非線性)</span> </span>child scripts):</p>
-<p><span style="background-color: #ffff00;">腳本和程序應始終根據當前系統調用功能以及可能的模擬狀態進行反應</span>，以便正確運行。 優良作法是<span>將每個控制代碼<span style="background-color: #ffff00;">至少分為4個系統調用函數</span></span>（例如，用於非線程子腳本）：</p>
-<ul>
-<li><strong><span style="color: #ff0000;">In</span><span><span style="color: #ff0000;">itialization(初始化)</span> function:</span></strong><span> </span>sysCall_init: the function is called only when the script is<span> <span style="color: #ff0000;">initialized(初始化)</span></span>.</li>
-</ul>
-<p><strong><span>初始化函數：</span></strong>sysCall_init：僅在腳本初始化時才調用該函數。</p>
-<ul>
-<li><strong><span><span><span style="color: #ff0000;">Actuation(激活</span>)</span><span> </span>function:<span> </span></span></strong>sysCall_actuation: the function is called when actuation should happen.</li>
-</ul>
-<p><strong><span>激活函數</span></strong>：sysCall_actuation：應在發生激活時調用該函數。</p>
-<ul>
-<li><strong><span><span style="color: #ff0000;">Sensing(感測) </span>function:</span><span> </span></strong>sysCall_sensing: this function is called when sensing should happen.</li>
-</ul>
-<p><strong><span>感測功能：</span></strong>sysCall_sensing：應在感測發生時調用此函數。</p>
-<ul>
-<li><strong><span><span style="color: #ff0000;">Clean-up(清理)</span><span> </span>function:</span></strong><span> </span>sysCall_cleanup: the function is called just before the script is<span><span> </span><span style="color: #ff0000;">de-initialized(未初始化)</span></span><span> </span>(e.g. at simulation end, or when the script is<span> </span><span style="color: #ff0000;">destroyed(銷毀)</span>).</li>
-</ul>
-<p><strong><span>清理函數：</span></strong>sysCall_cleanup：該函數在腳本未初始化之前被調用（例如在模擬結束時或腳本被銷毀時)。</p>
-<br />w7 << <a href='w7.html'>Previous</a> <a href='Assignment 2.html'>Next</a> >> Assignment 2</div>
+    <div id="tipue_search_content">w7 << <a href='w7.html'>Previous</a> <a href='CoppeliaSim User Manual.html'>Next</a> >> CoppeliaSim User Manual<br /><h1>Assignment 1</h1>
+<br />w7 << <a href='w7.html'>Previous</a> <a href='CoppeliaSim User Manual.html'>Next</a> >> CoppeliaSim User Manual</div>
         
     <!-- footer -->
       <div class="container">
