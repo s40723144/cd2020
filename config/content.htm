@@ -21,14 +21,35 @@
 <p><strong>CoppeliaSim應用程序由幾個元素組成。 它的主要元素是：<br/></strong></p>
 <ul>
 <li><strong>a console window:</strong> under Windows, when the CoppeliaSim application starts, a console window is created but directly hidden again.</li>
+</ul>
+<p><strong>window控制台：</strong>在Windows下，當CoppeliaSim應用<strong><span style="color: #ff0000;">程式啟動時</span></strong>，會<strong><span style="color: #ff0000;">創建一個控制台窗口</span></strong>，但會直接將其隱藏。</p>
+<ul>
 <li> <strong>an application window:</strong> the application window is the application's main window. It is used to display, edit, simulate and interact with a scene.</li>
+</ul>
+<p><strong>window應用程式：</strong>應用程式窗口是應用程式的主窗口。它用於<span style="color: #ff0000;"><strong>顯示、編輯模擬</strong></span>並與場景交互。</p>
+<ul>
 <li><strong>several dialogs: </strong>next to the application window, the user can also edit and interact with a scene by adjusting dialog settings or parameters. </li>
 </ul>
+<p><strong>幾個對話框：</strong>在應用程序窗口旁邊，用戶還可以通過<span style="color: #ff0000;"><strong>調整對話框的設置或參數</strong></span>來編輯和與場景進行交互。</p>
+<p>Following illustrates a typical view of the CoppeliaSim application:</p>
+<p>以下是CoppeliaSim應用程序的典型視圖：</p>
+<p><img alt="" height="428" src="/images/chrome_2020-05-05_20-24-19(1).png" width="630"/></p>
+<p>When you launch the CoppeliaSim application, CoppeliaSim will initialized one default scene. The user is free to open several scenes in parallel. </p>
+<p>In following section, a brief description will be given of the application window's elements.</p>
+<p>當您啟動CoppeliaSim應用程序時，CoppeliaSim將初始化一個默認場景。 用戶可以自由地並行打開多個場景。</p>
+<p>在下一節中，將簡要介紹上圖應用程序窗口的元素。</p>
 <ul>
-<li><strong>控制台窗口：</strong>在Windows下，當CoppeliaSim應用<strong><span style="color: #ff0000;">程式啟動時</span></strong>，會創建一個<span style="color: #ff0000;"><strong>控制台窗口</strong></span>，但會直接將其隱藏。</li>
-<li><strong>應用程式窗口：</strong>應用程式窗口是應用程式的主窗口。它用於<strong><span style="color: #ff0000;">顯示、編輯模擬</span></strong>並與場景交互。</li>
-<li><strong>幾個對話框：</strong>在應用程序窗口旁邊，用戶還可以通過<strong><span style="color: #ff0000;">調整對話框的設置或參數</span></strong>來編輯和與場景進行交互。</li>
+<li><strong>application bar:</strong> the application bar indicates the type of license of your CoppeliaSim copy, the filename of the scene that is currently being displayed, the time used for one rendering pass (one display pass), and the simulator's current state (simulation state or type of the active edit mode). Supported files include "*.ttt"-files (CoppeliaSim scene files) and "*.ttm"-files (CoppeliaSim model files).</li>
 </ul>
+<p><strong>應用程序欄：</strong>應用程序欄指示您的<strong><span style="color: #ff0000;">CoppeliaSim副本的許可類型，當前正在顯示的場景的文件名</span></strong>，一次解釋過程（一次顯示過程）所用的時間以及模擬器的當前狀態（模擬狀態或活動活動類型的編輯模式）。支持的文件包括“ * <strong><span style="color: #ff0000;">.ttt”文件</span></strong>（CoppeliaSim<strong><span style="color: #ff0000;">場景文件</span></strong>）和“ * .ttm”文件（CoppeliaSim<strong><span style="color: #ff0000;">模型文件</span></strong>）。</p>
+<ul>
+<li><strong>menu bar:</strong> the menu bar allows accessing almost all functionalities of the simulator. Most of the time, the items in the menu bar activate a dialog. The menu bar content is context-sensitive (i.e. it will depend on the current state of the simulator). Most functions in the menu bar can also alternatively be accessed through a popup menu, a double-click on an icon in the scene hierarchy view, or through a click of a toolbar button.</li>
+</ul>
+<p><strong>菜單欄：</strong>菜單欄<strong><span style="color: #ff0000;">允許進入模擬器的幾乎所有功能</span></strong>。 大多數時候，菜單欄中的項目會激活一個對話框。 菜單欄的內容是上下文相關的（即，它將取決於模擬器的當前狀態）。 也可以通過<strong><span style="color: #ff0000;">彈出菜單</span></strong>，或者<strong><span style="color: #ff0000;">雙擊場景階層</span></strong>視圖中的圖標又或者<strong><span style="color: #ff0000;">單擊工具欄按鈕</span></strong>來進入菜單欄中的大多數功能。</p>
+<ul>
+<li><strong>toolbars:</strong> the toolbars present functions that are often accessed (e.g. changing the navigation mode, selecting another page, etc.). Some functions in toolbar 1, and all functions in toolbar 2 can also be accessed through the menu bar or popup menu. See further down for more details. Both toolbars can be docked and undocked, but docking works only with their respective initial positions. Following figure explains each toolbar button's function:</li>
+</ul>
+<p><strong>工具欄：<span style="color: #ff0000;">工具欄提供經常進入的功能</span></strong>（例如，更改導航模式，選擇其他頁面等）。 <strong><span style="color: #ff0000;">工具欄1</span></strong>中的某些功能以及<strong><span style="color: #ff0000;">工具欄2</span></strong>中的所有功能也可以通過菜單欄或彈出菜單進入。 進一步了解更多細節。 <strong><span style="color: #ff0000;">這兩個工具欄都可以停靠任務和取消停靠任務</span></strong>，但是停靠任務僅適用於它們各自的初始位置。 下圖說明了每個工具欄按鈕的功能：</p>
 <p></p><h3>Simulation(模擬)</h3>
 <p><big><big>40723144廖豪樹</big></big></p>
 <p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
