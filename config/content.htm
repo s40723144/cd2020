@@ -94,8 +94,63 @@
 <ul>
 <li><strong>popup menu:</strong> popup menus are the menus that appear after a right mouse button click. To activate a popup menu, make sure the mouse doesn't move during the click operation, otherwise the camera rotation mode may be activated (see the camera section for more details). Each surface within the application window (e.g. scene hierarchy view, page, view, etc.) may trigger a different popup menu (context-sensitive). The content of popup menus may also change depending on the current simulation state or edit mode. Most popup menu function can also be accessed through the menu bar, except for the view-menu item that only appears when the popup menu is activated on a view or page.</li>
 </ul>
-<p>彈出菜單：彈出菜單是單擊鼠標右鍵後出現的菜單。要激活彈出菜單，請確保在單擊操作期間鼠標沒有移動，否則可能會激活相機旋轉模式（有關更多詳細信息，請參見相機部分）。應用程序窗口內的每個表面（例如，場景層次視圖，頁面，視圖等）可能會觸發不同的彈出菜單（上下文相關）。<strong><span style="color: #ff0000;">彈出菜單的內容可能根據當前的模擬狀態或編輯模式而改變。除了僅在視圖或頁面上激活彈出菜單時才會顯示的視圖菜單項，大多數彈出菜單功能也可以通過菜單欄進入。</span></strong></p><h3>Simulation(模擬)</h3>
-<p><big><big>40723144廖豪樹</big></big></p>
+<p>彈出菜單：彈出菜單是單擊鼠標右鍵後出現的菜單。要激活彈出菜單，請確保在單擊操作期間鼠標沒有移動，否則可能會激活相機旋轉模式（有關更多詳細信息，請參見相機部分）。應用程序窗口內的每個表面（例如，場景層次視圖，頁面，視圖等）可能會觸發不同的彈出菜單（上下文相關）。<strong><span style="color: #ff0000;">彈出菜單的內容可能根據當前的模擬狀態或編輯模式而改變。除了僅在視圖或頁面上激活彈出菜單時才會顯示的視圖菜單項，大多數彈出菜單功能也可以通過菜單欄進入。</span></strong></p>
+<h3>Scenes and models(場景和模型)</h3>
+<p>Scenes and models are CoppeliaSim's main simulation elements. A model is a sub-element of a scene, clearly marked as model. A scene may contain any number of models. Following figure illustrates the scene-model relationship:</p>
+<p>場景和模型是CoppeliaSim的主要模擬元素。 <strong><span style="color: #ff0000;">模型是場景的子元素，明確標記為模型。 場景可以包含任何數量的模型。</span></strong> 下圖說明了場景模型關係：</p>
+<p><img alt="" height="512" src="/images/chrome_2020-05-06_10-27-11.png" width="581"/></p>
+<p><big><big><big>Scenes(場景)<big></big><big></big><big></big></big></big></big></p>
+<p>Compared to models, a scene can contain exactly the same type of elements, but additionally also includes following elements, specific to scenes:</p>
+<p>與模型相比，場景可以包含完全相同類型的元素，但另外還包括以下特定於場景的元素：</p>
+<p><br/><br/></p>
+<ul>
+<ul>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/environment.htm">The environment</a></li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/mainScript.htm">The main script</a></li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/pagesAndViews.htm">Pages and views</a></li>
+</ul>
+</ul>
+<p></p>
+<ul>
+<ul>
+<ul>
+<ol>
+<li><strong><span style="color: #ff0000;">環境</span></strong></li>
+<li><strong><span style="color: #ff0000;">主要腳本</span></strong></li>
+<li><strong><span style="color: #ff0000;">頁面和視圖</span></strong></li>
+</ol>
+</ul>
+</ul>
+</ul>
+<p><br/><br/></p>
+<p>A scene or scene image content can be seen through a viewable object associated with a view, itself contained in a page. When creating a new scene ([Menu bar --&gt; File --&gt; New Scene]), the default scene will contain following elements:</p>
+<p>可以通過與視圖相關聯的可視對象（本身包含在頁面中）來查看場景或場景圖像內容。創建新場景時（<strong><span style="color: #ff0000;">[菜單欄-&gt;文件-&gt;新場景]</span></strong>），默認場景將包含以下元素：</p>
+<p><br/><br/></p>
+<ul>
+<li><strong>Several camera objects:</strong> cameras allow to see the scene if they are associated with a view.</li>
+<li><strong>Several light objects:</strong> without a light the scene would be hardly visible. The light is used to illuminate the scene.</li>
+<li><strong>Several views:</strong> a view is associated with a camera and displays what the camera sees. Views are contained in pages.</li>
+<li><strong>Several pages:</strong> a page contains one or several views.</li>
+<li><strong>The environment:</strong> the environment is composed by properties as ambient light, fog, background color, etc.</li>
+<li><strong>The floor:</strong> the floor is made-up by objects grouped in a model.<br/>The default main script: the default main script should allow running minimal simulations, without the need of child scripts. A child script copied into the scene at a later stage will then also be automatically executed (called by the main script) if it is associated with a scene object.</li>
+</ul>
+<ol>
+<li><strong>幾個攝影機對象：</strong>如果攝影機與視圖關聯，則可以查看場景。</li>
+<li><strong>幾個燈光對象：</strong>沒有燈光，幾乎看不到場景。燈光用於照亮場景。</li>
+<li><strong>幾個視圖：</strong>一個視圖與相機關聯，並顯示相機看到的內容。視圖包含在頁面中。</li>
+<li><strong>多個頁面：</strong>一個頁麵包含一個或多個視圖。</li>
+<li><strong>環境：</strong>環境由環境光，霧，背景色等屬性組成。</li>
+<li><strong>地板：</strong>地板是由模型中分組的對象組成的。</li>
+<li><strong>默認主腳本：<span style="color: #ff0000;">默認主腳本應允許運行最少的模擬，而無需子腳本</span></strong>。如果子腳本與場景對象相關聯，則在稍後階段複製到場景中的子腳本也將自動執行（由主腳本調用）。</li>
+</ol>
+<p><br/><br/></p>
+<p>Scenes can be opened (loaded) with [Menu bar --&gt; File --&gt; Open Scene...] and saved with [Menu bar --&gt; File --&gt; Save Scene] or [Menu Bar --&gt; File --&gt; Save Scene as...]. Scene files ("*.ttt"-files) also support drag and drop operations between the explorer window and the application window. Scene files can also be double-clicked, in which case they will launch the CoppeliaSim application and be opened.</p>
+<p>可以使用<span style="color: #ff0000;"><strong>[菜單欄-&gt;文件-&gt;打開場景...]打開（加載）場景，並使用[菜單欄-&gt;文件-&gt;保存場景]或[菜單欄-&gt;文件- &gt;將場景另存為...]。 場景文件（“ * .ttt”文件）</strong></span>還支持資源管理器窗口和應用程序窗口之間的拖放操作。 也可以雙擊場景文件，在這種情況下，它們將啟動CoppeliaSim應用程序並打開。</p>
+<p>Switching between opened scene can be achieved with a single click in the upper part of the scene hierarchy (all opened scenes are grouped at the top of the scene hierarchy), or by using the scene selector via its related toolbar button:</p>
+<p>只需在場景階層結構的上部單擊即可<strong><span style="color: #ff0000;">切換打開的場景</span></strong>（所有打開的場景都在場景階層結構的頂部分組），或者通<strong><span style="color: #ff0000;">過與其相關的工具欄按鈕使用場景選擇器</span></strong>來實現：</p>
+<p><img alt="" height="526" src="/images/chrome_2020-05-06_11-28-33.png" width="667"/></p>
+<p><big><big><big>model(模型)<big></big><big></big><big></big></big></big></big></p>
+<p></p><h3>Simulation(模擬)</h3>
 <p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
 <p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
 <p style="text-align: center;"><img alt="" height="83" src="/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
