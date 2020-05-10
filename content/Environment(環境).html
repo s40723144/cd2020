@@ -1,0 +1,272 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>40723144 CD2020協同產品設計實習</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40723144 CD2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40723144 CD2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='紀錄.html'>紀錄</a><ul class='dropdown'><li><a href='w3.html'>w3</a><li><a href='w7.html'>w7</a></li></ul><li class='has-children'><a href='Assignment 1.html'>Assignment 1</a><ul class='dropdown'><li class='has-children'><a href='CoppeliaSim User Manual.html'>CoppeliaSim User Manual</a><ul class='dropdown'><li><a href='User interface(用戶界面).html'>User interface(用戶界面)</a><li><a href='Scenes and models(場景和模型).html'>Scenes and models(場景和模型)</a><li><a href='Environment(環境).html'>Environment(環境)</a><li><a href='Simulation(模擬).html'>Simulation(模擬)</a></li></li></ul></ul><li><a href='Assignment 2.html'>Assignment 2</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Scenes and models(場景和模型) << <a href='Scenes and models(場景和模型).html'>Previous</a> <a href='Simulation(模擬).html'>Next</a> >> Simulation(模擬)<br /><h1>Environment(環境)</h1>
+<p><span>The environment in CoppeliaSim defines properties and parameters that are part of a </span><a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a><span>, but that are not<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">scene objects</a><span>. Environment properties and parameters are not saved when a<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">model</a><span><span> </span>is saved, but only when a scene is saved.</span></p>
+<p><strong><span style="color: #ff0000;">CoppeliaSim中的環境定義了屬於場景但不屬於場景對象的屬性和參數</span><span style="color: #ff0000;">。</span> </strong>保存模型時，沒辦法保存環境屬性和參數，但只有在保存場景時可以保存。</p>
+<p>An environment defines following properties and parameters:</p>
+<p>環境定義以下屬性和參數：</p>
+<p><br/><br/></p>
+<ul>
+<li>Background colors.</li>
+<li>Fog parameters. Fog parameters are not directly interacting with scene objects, except with<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/cameras.htm">cameras</a><span> </span>or<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">vision sensors</a><span> </span>if the corresponding option was selected.</li>
+<li>Ambient light</li>
+<li>Scene creation information</li>
+<li>Additional settings</li>
+</ul>
+<ol>
+<li>背景顏色。</li>
+<li>霧參數。 除已選擇相應選項的攝像機或視覺傳感器外，霧參數不會直接與場景對象交互。</li>
+<li>環境光</li>
+<li>場景創建信息</li>
+<li>其他設置</li>
+</ol>
+<p><br/><br/></p>
+<p></p>
+<p><big><big><big><strong>Environment dialog(環境文字框)</strong><big></big><big></big><big></big></big></big></big></p>
+<p>The environment dialog can be accessed with [Menu bar --&gt; Tools --&gt; Environment] or by double-clicking following icon in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a>:</p>
+<p>可以使用<strong><span style="color: #ff0000;">[菜單欄-&gt;工具-&gt;環境]</span></strong>或通過雙擊場景階層結構中的以下圖標來打開環境對話框：</p>
+<p><strong><img alt="" height="629" src="./../images/chrome_2020-05-10_20-22-37(1).png" width="587"/></strong></p>
+<ul>
+<li><strong>Background (up / down)</strong><span>: allows adjusting the background color of a scene. The up component corresponds to the upper part of the screen (sky), the down component corresponds to the lower part of the screen. The background colors are only visible when the fog functionality is disabled.</span></li>
+</ul>
+<p><strong>背景（上/下）：<span style="color: #ff0000;">允許調整場景的背景色。</span></strong>向上部分對應於屏幕的上部（天空），向下部分對應於<strong><span style="color: #ff0000;">屏幕的下部。僅當禁用霧功能時，背景色才可見。</span></strong></p>
+<ul>
+<li><strong>Ambient light</strong><span>: allows adjusting the ambient light of a<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a><span>. The ambient light can be seen as the minimal light of a scene, it illuminates an object in the exact same way from all directions. See the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/lights.htm">section about lights</a><span><span> </span>for more details about illumination of a scene.</span></li>
+</ul>
+<p><strong>環境光：<span style="color: #ff0000;">可以調整場景的環境光。</span></strong>可以將環境光視為場景的最小光，它<strong><span style="color: #ff0000;">從各個方向以完全相同的方式照亮對象。</span></strong>有關場景照明的更多詳細信息，請參見關於燈光的部分。</p>
+<ul>
+<li><strong>Adjust fog parameters</strong><span>: allows to adjust various fog parameters.</span></li>
+</ul>
+<p><span>調整霧參數：允許調整各種霧參數。</span></p>
+<ul>
+<li><strong>Maximum triangle size (absolute)</strong><span>: this item will not affect the visual appearance of<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">shapes</a><span>. It will however affect the execution speed of most CoppeliaSim<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/calculationModules.htm">calculation modules</a><span>. When performing<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">minimum distance calculations</a><span><span> </span>for instance, between two<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/entities.htm">entities</a><span>, execution will generally be faster if both entities are composed by similar-sized triangles. The maximum triangle size value specifies how the internal representation of a<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">shape</a><span><span> </span>is handled (i.e. how elaborate the shape's calculation structure is). Small sizes will increase the preprocessing time, but generally the simulation execution speed will be increased at the same time. This value sets the overall maximum triangle size, as an absolute value. See also next item and the<span> </span></span><strong>reduce triangle size</strong><span>-item in the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/triangleEditMode.htm">triangle edit mode</a><span>.</span></li>
+</ul>
+<p><span><strong>最大三角形尺寸（絕對值）：</strong>此項不會影響形狀的外觀。但是，它將<strong><span style="color: #ff0000;">影響大多數CoppeliaSim計算模塊的執行速度。</span></strong>例如，<strong><span style="color: #ff0000;">在兩個實體之間執行最小距離計算時，如果兩個實體都由大小相似的三角形組成，則執行速度通常會更快。最大三角形尺寸值指定如何處理形狀的內部表示形式（即，形狀的計算結構的詳細程度）。小尺寸將增加預處理時間，但是通常仿真執行速度會同時提高。</span></strong>此值將整體最大三角形大小設置為絕對值。另請參見下一項和在三角形編輯模式下的縮小三角形尺寸項目。</span></p>
+<ul>
+<li><span><strong>Minimum triangle size (relative)</strong><span>: similar to previous item, but this item helps avoiding creating too large calculation structures that might potentially take very long. This value sets the minimum triangle size, as a relative value (relative to a given object's largest dimension).</span></span></li>
+</ul>
+<p><span><span><strong>最小三角形尺寸（相對）：<span style="color: #ff0000;">與上一個項目相似，但該項目有助於避免創建太大的計算結構</span><span>，而這可能會花費很長時間。</span><strong><span style="color: #ff0000;">此值將最小三角形尺寸設置為相對值（相對於給定對象的最大尺寸）。</span></strong></strong></span></span></p>
+<ul>
+<li><strong>Save operation also saves existing calculation structures</strong><span>: for<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">distance calculations</a><span>,<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/collisionDetection.htm">collision detections</a><span>, etc. a data structure is computed at the beginning of a simulation (preprocessing), or the first time a<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">shape</a><span><span> </span>is involves in such calculations, in order to speed-up calculations. Calculation of that data structure might be time consuming, so the user can chose to save it together with the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a><span><span> </span>or<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">model</a><span>. However one has to be aware that the additional information that will be saved is large and will result in larger files (sometimes twice as large or more).</span></li>
+</ul>
+<p><strong>保存操作還會保存現有的計算結構：</strong>用於距離計算，碰撞檢測等。<strong><span style="color: #ff0000;">在模擬（預處理）開始時或第一次涉及形狀以加快速度時，會計算數據結構計算。計算該數據結構可能很耗時，因此用戶可以選擇將其與場景或模型一起保存。</span></strong>但是，必須注意，將要保存的附加信息很大，並且會導致文件更大（有時是兩倍或更多）。</p>
+<ul>
+<li><strong>Shape textures disabled</strong><span>: if selected, then all<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/textureDialog.htm">textures</a><span><span> </span>applied to shapes will be disabled.</span></li>
+</ul>
+<p><span><strong>禁用形狀紋理：</strong>如果選中，則將禁用應用於形狀的所有紋理。</span></p>
+<ul>
+<li><span><strong>Lock scene after next scene save</strong><span>: select this item if you want to lock your scene from edition/modification, script content viewing and resource export. After next scene save operation, the scene will be locked. Make sure you have saved the same scene in an unlocked state if you want to be able to modify it at a later time.</span></span></li>
+</ul>
+<p><span><span><strong>下一個場景保存後鎖定場景：<span style="color: #ff0000;">如果要從版本/修改，腳本內容查看和資源導出中鎖定場景，請選擇此項目。下一個場景保存操作後，場景將被鎖定。</span></strong>如果希望以後可以修改同一場景，請確保已將其保存為未鎖定狀態。</span></span></p>
+<ul>
+<li><span><span><strong>Extension string</strong><span>: a string that describes additional environment properties, mainly used by extension plugins (see also the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simGetExtensionString.htm">sim.getExtensionString</a><span><span> </span>API function).</span></span></span></li>
+</ul>
+<p><span><span><span><strong>擴展字符串：<span style="color: #ff0000;">描述附加環境屬性的字符串，主要由擴展插件使用</span></strong>（另請參見sim.getExtensionString API函數）。</span></span></span></p>
+<ul>
+<li><span><span><span><strong>Clean-up object names</strong><span>: allows putting some order into object names with a hash tag. This is not necessary, but might be convenient to reduce the suffix numbers after the hash tags.</span></span></span></span></li>
+</ul>
+<p><span><span><span><span><strong>清理對象名稱：<span style="color: #ff0000;">允許使用主題標籤將一些順序放入對象名稱中</span>。</strong>這不是必需的，但是可以方便地減主題標記後的後綴數。</span></span></span></span></p>
+<ul>
+<li><span><span><span><span><strong>Clean-up ghosts</strong><span>: removes all ghost objects a scene might contain. Refer also to the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/apiFunctionListCategory.htm#ghosts">ghost recording functionality</a><span>.</span></span></span></span></span></li>
+</ul>
+<p><span><span><span><span><span><strong>清理重影：<span style="color: #ff0000;">刪除場景中可能包含的所有重影對象。</span></strong>另請參閱幻像錄製功能。</span></span></span></span></span></p>
+<ul>
+<li><strong>Scene content acknowledgements / Info</strong>: information related to a scene. It is always good practice to acknowledge the original author of a scene,<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">model</a>, or imported mesh. When a scene that contains acknowledgment information is opened, it will automatically display that information.</li>
+</ul>
+<p><strong>場景內容確認/信息：<span style="color: #ff0000;">與場景相關的信息。</span></strong>最好先確認場景，模型或導入的網格的原始作者。當一個包含確認信息的場景被打開時，它將自動顯示該信息。</p><br />Scenes and models(場景和模型) << <a href='Scenes and models(場景和模型).html'>Previous</a> <a href='Simulation(模擬).html'>Next</a> >> Simulation(模擬)</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
