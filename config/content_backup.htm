@@ -208,6 +208,23 @@
 <p>The properties of a model can be individually adjusted in the model dialog. It can be opened with a double-click on a model icon in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a>:</p>
 <p>可以在模型對話框中單獨調整模型的屬性。 可以雙擊場景層次中的模型圖標來打開它：</p>
 <p><strong><img alt="" height="549" src="/images/chrome_2020-05-07_21-36-53.(1)png.png" width="600"/></strong></p>
+<p>Some of above objects can have special properties allowing other objects or<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/calculationModules.htm">calculation modules</a><span> </span>to interact with them. Objects can be:</p>
+<p>以上某些對象可以具有特殊的屬性，從而允許其他對像或計算模塊與它們進行交互。對象可以是：</p>
+<ul>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/collidableObjects.htm">Collidable</a>: collidable objects can be tested for<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/collisionDetection.htm">collision</a><span> </span>against other collidable objects.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/measurableObjects.htm">Measurable</a>: measurable objects can have the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">minimum distance</a><span> </span>between them and other measurable objects calculated.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/detectableObjects.htm">Detectable</a>: detectable objects can be detected by<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">proximity sensors</a>.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/renderableObjects.htm">Renderable</a>: renderable objects can be<span> </span><em>seen</em><span> </span>or<span> </span><em>detected</em><span> </span>by<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">vision sensors</a>.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/viewableObjects.htm">Viewable</a>: viewable objects can be<span> </span><em>looked through</em>,<span> </span><em>looked at</em>, or their image content can be visualized in views. Refer to the<a href="https://www.coppeliarobotics.com/helpFiles/en/pagesAndViews.htm"><span> </span>pages and views-section</a><span> </span>for more information</li>
+</ul>
+<ol>
+<li><strong>可碰撞的：</strong>可以測試可碰撞的物體與其他可碰撞物體的碰撞。</li>
+<li><strong>可測量的：</strong>可測量的對象與所計算的其他可測量對象之間的距離最小。</li>
+<li><strong>可檢測的：</strong>可檢測的物體<strong><span style="color: #ff0000;">可以被接近傳感器檢測到。</span></strong></li>
+<li><strong>可渲染：<span style="color: #ff0000;">視覺傳感器可以看到或檢測可渲染對象</span></strong>。<span style="color: #000080;"><strong>(渲染的意思:在我們假象的三维空間中，但是我們要在二维的顯示器中看到他，我們就稱之為把三角形從三维空間渲染到二维空間中 。)</strong></span></li>
+<li><strong>可視對象：</strong>可以查看，查看可視對象，或者可以在視圖中可視化其圖像內容。請參閱頁面和視圖部分以獲取更多信息</li>
+</ol>
+<p><br/><br/></p>
 <ul>
 <li><strong>Select model thumbnail</strong><span>: when saving a model, a dialog pops open asking for a model thumbnail (that will be displayed in the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#ModelBrowser">model browser</a><span>). If however you wish to save a thumbnail of your model in a different configuration (e.g. you wish to save a model of a snake robot in straight configuration, but you want the thumbnail to visualize the snake robot in a bent configuration), then you can specify the thumbnail here.</span></li>
 </ul>
@@ -216,12 +233,10 @@
 <li><strong>Override properties</strong><span>: here you can disable (override) specific properties for the whole model (i.e. for all objects in the model hierarchy tree). This is convenient to quickly disable a model that takes too much calculation time for instance. See also the sections on<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/collidableObjects.htm">collidable objects</a><span>,<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/measurableObjects.htm">measurable objects</a><span>,<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/renderableObjects.htm">renderable objects</a><span><span> </span>and<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/detectableObjects.htm">detectable objects</a><span>, and the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simSetModelProperty.htm">sim.setModelProperty API function</a><span>.</span></li>
 </ul>
 <p><span><strong>覆蓋屬性：<span style="color: #ff0000;">您可以在此處為整個模型（即模型層次結構樹中的所有對象）禁用（覆蓋）特定屬性。例如，這可以方便地快速禁用需要太多計算模型的時間。</span></strong>另請參見有關可碰撞對象，可測量對象，可呈現對象和可檢測對象的部分，以及sim.setModelProperty API函數。</span></p>
-<p><span></span></p>
 <ul>
 <li><strong>Model content acknowledgments/Info</strong>: information related to a model. It is always good practice to acknowledge the original author of a model, or imported mesh. When a model that contains acknowledgment information is opened, it will automatically display that information.</li>
 </ul>
-<p><strong>模型內容確認/信息：<span style="color: #ff0000;">與模型有關的信息。</span></strong> 確認模型的原始作者或導入的網格物體始終是一種好習慣。 當包含確認信息的模型打開時，它將自動顯示該信息。</p>
-<h3>Environment(環境)</h3>
+<p><strong>模型內容確認/信息：<span style="color: #ff0000;">與模型有關的信息。</span></strong> 確認模型的原始作者或導入的網格物體始終是一種好習慣。 當包含確認信息的模型打開時，它將自動顯示該信息。</p><h3>Environment(環境)</h3>
 <p><span>The environment in CoppeliaSim defines properties and parameters that are part of a </span><a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a><span>, but that are not<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">scene objects</a><span>. Environment properties and parameters are not saved when a<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">model</a><span><span> </span>is saved, but only when a scene is saved.</span></p>
 <p><strong><span style="color: #ff0000;">CoppeliaSim中的環境定義了屬於場景但不屬於場景對象的屬性和參數</span><span style="color: #ff0000;">。</span> </strong>保存模型時，沒辦法保存環境屬性和參數，但只有在保存場景時可以保存。</p>
 <p>An environment defines following properties and parameters:</p>
@@ -247,7 +262,110 @@
 <p>The environment dialog can be accessed with [Menu bar --&gt; Tools --&gt; Environment] or by double-clicking following icon in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a>:</p>
 <p>可以使用<strong><span style="color: #ff0000;">[菜單欄-&gt;工具-&gt;環境]</span></strong>或通過雙擊場景階層結構中的以下圖標來打開環境對話框：</p>
 <p><strong><img alt="" height="629" src="/images/chrome_2020-05-10_20-22-37(1).png" width="587"/></strong></p>
-<p></p><h3>Simulation(模擬)</h3>
+<ul>
+<li><strong>Background (up / down)</strong><span>: allows adjusting the background color of a scene. The up component corresponds to the upper part of the screen (sky), the down component corresponds to the lower part of the screen. The background colors are only visible when the fog functionality is disabled.</span></li>
+</ul>
+<p><strong>背景（上/下）：<span style="color: #ff0000;">允許調整場景的背景色。</span></strong>向上部分對應於屏幕的上部（天空），向下部分對應於<strong><span style="color: #ff0000;">屏幕的下部。僅當禁用霧功能時，背景色才可見。</span></strong></p>
+<ul>
+<li><strong>Ambient light</strong><span>: allows adjusting the ambient light of a<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a><span>. The ambient light can be seen as the minimal light of a scene, it illuminates an object in the exact same way from all directions. See the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/lights.htm">section about lights</a><span><span> </span>for more details about illumination of a scene.</span></li>
+</ul>
+<p><strong>環境光：<span style="color: #ff0000;">可以調整場景的環境光。</span></strong>可以將環境光視為場景的最小光，它<strong><span style="color: #ff0000;">從各個方向以完全相同的方式照亮對象。</span></strong>有關場景照明的更多詳細信息，請參見關於燈光的部分。</p>
+<ul>
+<li><strong>Adjust fog parameters</strong><span>: allows to adjust various fog parameters.</span></li>
+</ul>
+<p><span>調整霧參數：允許調整各種霧參數。</span></p>
+<ul>
+<li><strong>Maximum triangle size (absolute)</strong><span>: this item will not affect the visual appearance of<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">shapes</a><span>. It will however affect the execution speed of most CoppeliaSim<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/calculationModules.htm">calculation modules</a><span>. When performing<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">minimum distance calculations</a><span><span> </span>for instance, between two<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/entities.htm">entities</a><span>, execution will generally be faster if both entities are composed by similar-sized triangles. The maximum triangle size value specifies how the internal representation of a<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">shape</a><span><span> </span>is handled (i.e. how elaborate the shape's calculation structure is). Small sizes will increase the preprocessing time, but generally the simulation execution speed will be increased at the same time. This value sets the overall maximum triangle size, as an absolute value. See also next item and the<span> </span></span><strong>reduce triangle size</strong><span>-item in the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/triangleEditMode.htm">triangle edit mode</a><span>.</span></li>
+</ul>
+<p><span><strong>最大三角形尺寸（絕對值）：</strong>此項不會影響形狀的外觀。但是，它將<strong><span style="color: #ff0000;">影響大多數CoppeliaSim計算模塊的執行速度。</span></strong>例如，<strong><span style="color: #ff0000;">在兩個實體之間執行最小距離計算時，如果兩個實體都由大小相似的三角形組成，則執行速度通常會更快。最大三角形尺寸值指定如何處理形狀的內部表示形式（即，形狀的計算結構的詳細程度）。小尺寸將增加預處理時間，但是通常仿真執行速度會同時提高。</span></strong>此值將整體最大三角形大小設置為絕對值。另請參見下一項和在三角形編輯模式下的縮小三角形尺寸項目。</span></p>
+<ul>
+<li><span><strong>Minimum triangle size (relative)</strong><span>: similar to previous item, but this item helps avoiding creating too large calculation structures that might potentially take very long. This value sets the minimum triangle size, as a relative value (relative to a given object's largest dimension).</span></span></li>
+</ul>
+<p><span><span><strong>最小三角形尺寸（相對）：<span style="color: #ff0000;">與上一個項目相似，但該項目有助於避免創建太大的計算結構</span><span>，而這可能會花費很長時間。</span><strong><span style="color: #ff0000;">此值將最小三角形尺寸設置為相對值（相對於給定對象的最大尺寸）。</span></strong></strong></span></span></p>
+<ul>
+<li><strong>Save operation also saves existing calculation structures</strong><span>: for<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">distance calculations</a><span>,<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/collisionDetection.htm">collision detections</a><span>, etc. a data structure is computed at the beginning of a simulation (preprocessing), or the first time a<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">shape</a><span><span> </span>is involves in such calculations, in order to speed-up calculations. Calculation of that data structure might be time consuming, so the user can chose to save it together with the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a><span><span> </span>or<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">model</a><span>. However one has to be aware that the additional information that will be saved is large and will result in larger files (sometimes twice as large or more).</span></li>
+</ul>
+<p><strong>保存操作還會保存現有的計算結構：</strong>用於距離計算，碰撞檢測等。<strong><span style="color: #ff0000;">在模擬（預處理）開始時或第一次涉及形狀以加快速度時，會計算數據結構計算。計算該數據結構可能很耗時，因此用戶可以選擇將其與場景或模型一起保存。</span></strong>但是，必須注意，將要保存的附加信息很大，並且會導致文件更大（有時是兩倍或更多）。</p>
+<ul>
+<li><strong>Shape textures disabled</strong><span>: if selected, then all<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/textureDialog.htm">textures</a><span><span> </span>applied to shapes will be disabled.</span></li>
+</ul>
+<p><span><strong>禁用形狀紋理：</strong>如果選中，則將禁用應用於形狀的所有紋理。</span></p>
+<ul>
+<li><span><strong>Lock scene after next scene save</strong><span>: select this item if you want to lock your scene from edition/modification, script content viewing and resource export. After next scene save operation, the scene will be locked. Make sure you have saved the same scene in an unlocked state if you want to be able to modify it at a later time.</span></span></li>
+</ul>
+<p><span><span><strong>下一個場景保存後鎖定場景：<span style="color: #ff0000;">如果要從版本/修改，腳本內容查看和資源導出中鎖定場景，請選擇此項目。下一個場景保存操作後，場景將被鎖定。</span></strong>如果希望以後可以修改同一場景，請確保已將其保存為未鎖定狀態。</span></span></p>
+<ul>
+<li><span><span><strong>Extension string</strong><span>: a string that describes additional environment properties, mainly used by extension plugins (see also the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simGetExtensionString.htm">sim.getExtensionString</a><span><span> </span>API function).</span></span></span></li>
+</ul>
+<p><span><span><span><strong>擴展字符串：<span style="color: #ff0000;">描述附加環境屬性的字符串，主要由擴展插件使用</span></strong>（另請參見sim.getExtensionString API函數）。</span></span></span></p>
+<ul>
+<li><span><span><span><strong>Clean-up object names</strong><span>: allows putting some order into object names with a hash tag. This is not necessary, but might be convenient to reduce the suffix numbers after the hash tags.</span></span></span></span></li>
+</ul>
+<p><span><span><span><span><strong>清理對象名稱：<span style="color: #ff0000;">允許使用主題標籤將一些順序放入對象名稱中</span>。</strong>這不是必需的，但是可以方便地減主題標記後的後綴數。</span></span></span></span></p>
+<ul>
+<li><span><span><span><span><strong>Clean-up ghosts</strong><span>: removes all ghost objects a scene might contain. Refer also to the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/apiFunctionListCategory.htm#ghosts">ghost recording functionality</a><span>.</span></span></span></span></span></li>
+</ul>
+<p><span><span><span><span><span><strong>清理重影：<span style="color: #ff0000;">刪除場景中可能包含的所有重影對象。</span></strong>另請參閱幻像錄製功能。</span></span></span></span></span></p>
+<ul>
+<li><strong>Scene content acknowledgements / Info</strong>: information related to a scene. It is always good practice to acknowledge the original author of a scene,<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">model</a>, or imported mesh. When a scene that contains acknowledgment information is opened, it will automatically display that information.</li>
+</ul>
+<p><strong>場景內容確認/信息：<span style="color: #ff0000;">與場景相關的信息。</span></strong>最好先確認場景，模型或導入的網格的原始作者。當一個包含確認信息的場景被打開時，它將自動顯示該信息。</p>
+<h3>Entities(實體)</h3>
+<p>An entity is a term that refers to a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">scene object</a><span> </span>or a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/collections.htm">collection</a>. Following figure illustrates the relationship between scene objects, collections and entities:</p>
+<p><strong><span style="color: #ff0000;">實體是指場景對像或集合的術語。 </span></strong>下圖說明了場景對象，集合和實體之間的關係：</p>
+<p><img alt="" height="432" src="/images/chrome_2020-05-11_20-30-55.(1)png.png" width="577"/></p>
+<p><big><big><big><strong>Scene objects(場景對象)</strong><big></big><big></big><big></big></big></big></big></p>
+<p><strong></strong>The main elements in CoppeliaSim that are used for building a simulation <a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a> are scene objects (objects in short). Objects are visible in the <a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a> and in the scene<a href="https://www.coppeliarobotics.com/helpFiles/en/pagesAndViews.htm"> view</a>. In the scene view, objects have a three dimensional representation as illustrated in following figure:</p>
+<p><strong><span style="color: #ff0000;">CoppeliaSim中用於構建模擬場景的主要元素是場景對象（簡稱對象）。 對像在場景階層結構和場景視圖中可見。</span></strong> 在場景視圖中，對象具有三維表示，如下圖所示：</p>
+<p><img alt="" height="502" src="/images/chrome_2020-05-11_20-47-56(1).png" width="583"/></p>
+<p>Following list gives a brief functional description of each object type:</p>
+<p></p>
+<ul>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">Shapes</a>: a shape is a rigid mesh that is composed of triangular faces.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/joints.htm">Joints</a>: a joint object is a joint or actuator. Four types are supported: revolute joints, prismatic joints, screws and spherical joints.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/graphs.htm">Graphs</a>: a graph is used to record and visualize simulation data.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/dummies.htm">Dummies</a>: a dummy is a point with orientation. Dummies are multipurpose objects that can have many different applications.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">Proximity sensors</a>: a proximity sensor detects objects in a geometrically exact fashion within its detection volume. CoppeliaSim supports pyramid-, cylinder-, disk-, cone- and ray-type proximity sensors.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">Vision sensors</a>: a vision sensor is a camera-type sensor, reacting to light, colors and images.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/forceSensors.htm">Force sensors</a>: a force sensor is an object able to measure forces and torques that are applied to it. It also has the ability to<span> </span><em>break</em><span> </span>if a given threashold is overshot.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/cameras.htm">Cameras</a>: a camera is an object that allows<span> </span><em>seeing</em><span> </span>the simulation scene from various view points.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/lights.htm">Lights</a>: a light is an object that allows illuminating the simulation scene.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/paths.htm">Paths</a>: a path is an object that defines a path or trajectory in space. It can be used for various purposes, also as a customized joint or actuator.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/octrees.htm">OC trees</a>: an OC tree is a spacial partitioning data structure made up by voxels.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/pointClouds.htm">Point clouds</a>: a point cloud is an OC tree structure that contains points.</li>
+</ul>
+<ol>
+<li><strong>形狀：</strong>形狀是由三角形面組成的剛性網格。</li>
+<li><strong>軸節：</strong>軸節對像是關節或執行器。支持四種類型：旋轉接頭，棱柱接頭，螺釘和球形接頭。</li>
+<li><strong>圖形：</strong>圖形用於記錄和可視化模擬數據。</li>
+<li><strong>用來填充的無用物件：</strong><span>無用物件</span>是具有定向的點。<strong><span style="color: #ff0000;">無用物件是可以具有許多不同應用程序的多用途對象。</span></strong></li>
+<li><strong>鄰近傳感器：<span style="color: #ff0000;">鄰近傳感器以幾何精確的方式在其檢測範圍內檢測物體</span></strong>。 CoppeliaSim支持金字塔型，圓柱型，圓盤型，圓錐型和射線型接近傳感器。</li>
+<li><strong>視覺傳感器：<span style="color: #ff0000;">視覺傳感器是一種相機型傳感器，對光線，顏色和圖像有反應。</span></strong></li>
+<li><strong>力傳感器：<span style="color: #ff0000;">力傳感器是能夠測量施加到其上的力和扭矩的對象。</span></strong>如果給定的閾值被超出，它也具有打破的能力。</li>
+<li><strong>攝像機：</strong>攝像機是一個對象，可以從各個角度查看模擬場景。</li>
+<li><strong>燈光：</strong>燈光是一個可以照亮模擬場景的對象。</li>
+<li><strong>路徑：</strong>路徑是在空間中定義路徑或軌蹟的對象。它可以用於各種目的，也可以用作定制的接頭或執行器。</li>
+<li><strong>八元樹：</strong>八元樹是由體素組成的空間分區數據結構。</li>
+<li><strong>點雲：</strong>點雲是包含點的<span>八元</span>樹結構。</li>
+</ol>
+<p><br/><br/></p>
+<p>Some of above objects can have special properties allowing other objects or<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/calculationModules.htm">calculation modules</a><span> </span>to interact with them. Objects can be:</p>
+<p>以上某些對象可以具有特殊的屬性，從而允許其他對像或計算模塊與它們進行交互。對象可以是：</p>
+<ul>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/collidableObjects.htm">Collidable</a>: collidable objects can be tested for<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/collisionDetection.htm">collision</a><span> </span>against other collidable objects.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/measurableObjects.htm">Measurable</a>: measurable objects can have the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">minimum distance</a><span> </span>between them and other measurable objects calculated.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/detectableObjects.htm">Detectable</a>: detectable objects can be detected by<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">proximity sensors</a>.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/renderableObjects.htm">Renderable</a>: renderable objects can be<span> </span><em>seen</em><span> </span>or<span> </span><em>detected</em><span> </span>by<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">vision sensors</a>.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/viewableObjects.htm">Viewable</a>: viewable objects can be<span> </span><em>looked through</em>,<span> </span><em>looked at</em>, or their image content can be visualized in views. Refer to the<a href="https://www.coppeliarobotics.com/helpFiles/en/pagesAndViews.htm"><span> </span>pages and views-section</a><span> </span>for more information</li>
+<li><strong>可碰撞的：</strong>可以測試可碰撞的物體與其他可碰撞物體的碰撞。</li>
+<li><strong>可測量的：</strong>可測量的對象與所計算的其他可測量對象之間的距離最小。</li>
+<li><strong>可檢測的：</strong>可檢測的物體<strong><span style="color: #ff0000;">可以被接近傳感器檢測到。</span></strong></li>
+<li><strong>可渲染：<span style="color: #ff0000;">視覺傳感器可以看到或檢測可渲染對象</span></strong>。<span style="color: #000080;"><strong>(渲染的意思:在我們假象的三维空間中，但是我們要在二维的顯示器中看到他，我們就稱之為把三角形從三维空間渲染到二维空間中 。)</strong></span></li>
+<li><strong>可視對象：</strong>可以查看，查看可視對象，或者可以在視圖中可視化其圖像內容。請參閱頁面和視圖部分以獲取更多信息</li>
+</ul>
+<p><br/><br/></p>
+<p>Each object has a position and orientation within the simulation scene. We refer to an object's position and orientation as configuration of the object. Objects can be attached to other objects (or built on top of each other). If object A is built on top of object B, then object B is the parent and object A is the child. To create a parent-child relationships between object B and object A, select object A, then select object B (the selection order is important). Then select [Menu bar --&gt; Edit --&gt; Make last selected object parent]. Following figure illustrates this operation:</p>
+<p>每個對像在模擬場景中都有一個位置和方向。 我們將對象的位置和方向稱為對象的配置。<span style="color: #ff0000;"><strong> 可以將對象附加到其他對象（或建立在彼此之上）。 如果對象A建立在對象B的頂部，則對象B是父對象，而對象A是子對象。 要在對象B和對象A之間創建父子關係，請選擇對象A，然後選擇對象B（選擇順序很重要）。 然後選擇[菜單欄-&gt;編輯-&gt;將最後選擇的對象設為父對象]。</strong></span> 下圖說明了此操作：</p><h3>Simulation(模擬)</h3>
 <p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
 <p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
 <p style="text-align: center;"><img alt="" height="83" src="/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>

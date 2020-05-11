@@ -143,7 +143,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='紀錄.html'>紀錄</a><ul class='dropdown'><li><a href='w3.html'>w3</a><li><a href='w7.html'>w7</a></li></ul><li class='has-children'><a href='Assignment 1.html'>Assignment 1</a><ul class='dropdown'><li class='has-children'><a href='CoppeliaSim User Manual.html'>CoppeliaSim User Manual</a><ul class='dropdown'><li><a href='User interface(用戶界面).html'>User interface(用戶界面)</a><li><a href='Scenes and models(場景和模型).html'>Scenes and models(場景和模型)</a><li><a href='Environment(環境).html'>Environment(環境)</a><li><a href='Simulation(模擬).html'>Simulation(模擬)</a></li></li></ul></ul><li><a href='Assignment 2.html'>Assignment 2</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='紀錄.html'>紀錄</a><ul class='dropdown'><li><a href='w3.html'>w3</a><li><a href='w7.html'>w7</a></li></ul><li class='has-children'><a href='Assignment 1.html'>Assignment 1</a><ul class='dropdown'><li class='has-children'><a href='CoppeliaSim User Manual.html'>CoppeliaSim User Manual</a><ul class='dropdown'><li><a href='User interface(用戶界面).html'>User interface(用戶界面)</a><li><a href='Scenes and models(場景和模型).html'>Scenes and models(場景和模型)</a><li><a href='Environment(環境).html'>Environment(環境)</a><li><a href='Entities(實體).html'>Entities(實體)</a><li><a href='Simulation(模擬).html'>Simulation(模擬)</a></li></li></ul></ul><li><a href='Assignment 2.html'>Assignment 2</a></li>
                       </ul>
                 </nav>
               </div>
@@ -267,6 +267,23 @@ img.add_border {
 <p>The properties of a model can be individually adjusted in the model dialog. It can be opened with a double-click on a model icon in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a>:</p>
 <p>可以在模型對話框中單獨調整模型的屬性。 可以雙擊場景層次中的模型圖標來打開它：</p>
 <p><strong><img alt="" height="549" src="./../images/chrome_2020-05-07_21-36-53.(1)png.png" width="600"/></strong></p>
+<p>Some of above objects can have special properties allowing other objects or<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/calculationModules.htm">calculation modules</a><span> </span>to interact with them. Objects can be:</p>
+<p>以上某些對象可以具有特殊的屬性，從而允許其他對像或計算模塊與它們進行交互。對象可以是：</p>
+<ul>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/collidableObjects.htm">Collidable</a>: collidable objects can be tested for<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/collisionDetection.htm">collision</a><span> </span>against other collidable objects.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/measurableObjects.htm">Measurable</a>: measurable objects can have the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">minimum distance</a><span> </span>between them and other measurable objects calculated.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/detectableObjects.htm">Detectable</a>: detectable objects can be detected by<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">proximity sensors</a>.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/renderableObjects.htm">Renderable</a>: renderable objects can be<span> </span><em>seen</em><span> </span>or<span> </span><em>detected</em><span> </span>by<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">vision sensors</a>.</li>
+<li><a href="https://www.coppeliarobotics.com/helpFiles/en/viewableObjects.htm">Viewable</a>: viewable objects can be<span> </span><em>looked through</em>,<span> </span><em>looked at</em>, or their image content can be visualized in views. Refer to the<a href="https://www.coppeliarobotics.com/helpFiles/en/pagesAndViews.htm"><span> </span>pages and views-section</a><span> </span>for more information</li>
+</ul>
+<ol>
+<li><strong>可碰撞的：</strong>可以測試可碰撞的物體與其他可碰撞物體的碰撞。</li>
+<li><strong>可測量的：</strong>可測量的對象與所計算的其他可測量對象之間的距離最小。</li>
+<li><strong>可檢測的：</strong>可檢測的物體<strong><span style="color: #ff0000;">可以被接近傳感器檢測到。</span></strong></li>
+<li><strong>可渲染：<span style="color: #ff0000;">視覺傳感器可以看到或檢測可渲染對象</span></strong>。<span style="color: #000080;"><strong>(渲染的意思:在我們假象的三维空間中，但是我們要在二维的顯示器中看到他，我們就稱之為把三角形從三维空間渲染到二维空間中 。)</strong></span></li>
+<li><strong>可視對象：</strong>可以查看，查看可視對象，或者可以在視圖中可視化其圖像內容。請參閱頁面和視圖部分以獲取更多信息</li>
+</ol>
+<p><br/><br/></p>
 <ul>
 <li><strong>Select model thumbnail</strong><span>: when saving a model, a dialog pops open asking for a model thumbnail (that will be displayed in the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#ModelBrowser">model browser</a><span>). If however you wish to save a thumbnail of your model in a different configuration (e.g. you wish to save a model of a snake robot in straight configuration, but you want the thumbnail to visualize the snake robot in a bent configuration), then you can specify the thumbnail here.</span></li>
 </ul>
@@ -275,12 +292,10 @@ img.add_border {
 <li><strong>Override properties</strong><span>: here you can disable (override) specific properties for the whole model (i.e. for all objects in the model hierarchy tree). This is convenient to quickly disable a model that takes too much calculation time for instance. See also the sections on<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/collidableObjects.htm">collidable objects</a><span>,<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/measurableObjects.htm">measurable objects</a><span>,<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/renderableObjects.htm">renderable objects</a><span><span> </span>and<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/detectableObjects.htm">detectable objects</a><span>, and the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simSetModelProperty.htm">sim.setModelProperty API function</a><span>.</span></li>
 </ul>
 <p><span><strong>覆蓋屬性：<span style="color: #ff0000;">您可以在此處為整個模型（即模型層次結構樹中的所有對象）禁用（覆蓋）特定屬性。例如，這可以方便地快速禁用需要太多計算模型的時間。</span></strong>另請參見有關可碰撞對象，可測量對象，可呈現對象和可檢測對象的部分，以及sim.setModelProperty API函數。</span></p>
-<p><span></span></p>
 <ul>
 <li><strong>Model content acknowledgments/Info</strong>: information related to a model. It is always good practice to acknowledge the original author of a model, or imported mesh. When a model that contains acknowledgment information is opened, it will automatically display that information.</li>
 </ul>
-<p><strong>模型內容確認/信息：<span style="color: #ff0000;">與模型有關的信息。</span></strong> 確認模型的原始作者或導入的網格物體始終是一種好習慣。 當包含確認信息的模型打開時，它將自動顯示該信息。</p>
-<br />User interface(用戶界面) << <a href='User interface(用戶界面).html'>Previous</a> <a href='Environment(環境).html'>Next</a> >> Environment(環境)</div>
+<p><strong>模型內容確認/信息：<span style="color: #ff0000;">與模型有關的信息。</span></strong> 確認模型的原始作者或導入的網格物體始終是一種好習慣。 當包含確認信息的模型打開時，它將自動顯示該信息。</p><br />User interface(用戶界面) << <a href='User interface(用戶界面).html'>Previous</a> <a href='Environment(環境).html'>Next</a> >> Environment(環境)</div>
         
     <!-- footer -->
       <div class="container">
