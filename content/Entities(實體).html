@@ -211,8 +211,26 @@ img.add_border {
 <p>Each object has a position and orientation within the simulation scene. We refer to an object's position and orientation as configuration of the object. Objects can be attached to other objects (or built on top of each other). If object A is built on top of object B, then object B is the parent and object A is the child. To create a parent-child relationships between object B and object A, select object A, then select object B (the selection order is important). Then select [Menu bar --&gt; Edit --&gt; Make last selected object parent]. Following figure illustrates this operation:</p>
 <p>每個對像在模擬場景中都有一個位置和方向。 我們將對象的位置和方向稱為對象的配置。<span style="color: #ff0000;"><strong> 可以將對象附加到其他對象（或建立在彼此之上）。 如果對象A建立在對象B的頂部，則對象B是父對象，而對象A是子對象。 要在對象B和對象A之間創建父子關係，請選擇對象A，然後選擇對象B（選擇順序很重要）。 然後選擇[菜單欄-&gt;編輯-&gt;將最後選擇的對象設為父對象]。</strong></span> 下圖說明了此操作：</p>
 <p><img alt="" height="404" src="./../images/chrome_2020-05-11_21-56-48.png" width="560"/></p>
+<p>Alternatively, you can drag and drop an object onto another one in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a><span> </span>to obtain a similar result. Notice that object A's configuration was not changed (both objects kept their respective configuration). However, looking at the scene hierarchy, you can see that object A became child of object B. If you now move object B, object A will automatically follow, since object A is attached to object B. Object A can be detached by selecting it, then selecting [Menu bar --&gt; Edit --&gt; Make selected object(s) orphan]. Doing so will detach object A without changing its configuration. Alternatively, you can drag and drop an object onto the world icon to obtain a similar result.</p>
+<p><strong><span style="color: #ff0000;">或者，您可以將一個對象拖放到場景階層結構中的另一個對像上，以獲得相似的結果。(將對象A加入為對象B的子對象)。</span></strong>請注意，對象A的配置未更改（兩個對像都保留了各自的配置）。但是，查看場景階層結構，您可以看到對象A成為對象B的子對象。如果現在移動對象B，則對象A將自動跟隨，因為對象A已附加到對象B。可以通過選擇對象A來分離對象A。 <strong><span style="color: #ff0000;">然後選擇[菜單欄-&gt;編輯-&gt;使所選對象成為孤立對象]。這樣做將分離對象A而不會更改其配置。或者，您可以將一個對象拖放到上層圖標上以獲得類似的結果。</span></strong></p>
+<p><big><big><big><strong>Scene object properties(場景對象屬性)</strong><big><big><big></big></big></big></big></big></big></p>
+<p>The<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">scene object</a><span> </span>properties dialog is located at [Menu bar --&gt; Tools --&gt; Scene object properties]. You can also open the dialog with a double-click on an object icon in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a>, or with a click on its<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">toolbar</a><span> </span>button:</p>
+<p>場景對象屬性對話框位於<strong><span style="color: #ff0000;">[菜單欄-&gt;工具-&gt;場景對象屬性]</span></strong>。 您也可以通過<strong><span style="color: #ff0000;">雙擊場景階層結構中的對像圖標或單擊其工具欄按鈕來打開</span></strong>對話框：</p>
+<p>The scene object properties dialog displays properties related to objects (i.e.<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">scene objects</a>). The dialog is context sensitive and its content will mainly depend on the scene object selection state: only the properties of the last selected object will be displayed. Those properties are divided into 2 parts:</p>
 <p></p>
-<p></p><br />Environment(環境) << <a href='Environment(環境).html'>Previous</a> <a href='Simulation(模擬).html'>Next</a> >> Simulation(模擬)</div>
+<p><span style="color: #ff0000;"><strong>場景對象屬性對話框顯示與對象（即場景對象）相關的屬性。</strong></span> 該對話框是上下文相關的，其<strong><span style="color: #ff0000;">內容將主要取決於場景對象的選擇狀態：僅顯示最後選擇的對象的屬性。</span></strong> 這些屬性分為兩部分：</p>
+<p><br/><br/></p>
+<ul>
+<li><strong>Object-type specific properties</strong>: properties specific to the selected object type. See further below for details.</li>
+<li><strong><a href="https://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm">Object common properties</a></strong>: properties common to all object types.</li>
+</ul>
+<ol>
+<li><strong>特定於對像類型的屬性：<span style="color: #ff0000;">特定於所選對像</span></strong>類型的屬性。 詳情請參見下文。</li>
+<li><strong>對象通用屬性：<span style="color: #ff0000;">所有對像</span></strong>類型<strong><span style="color: #ff0000;">通用的屬性。</span></strong></li>
+</ol>
+<p><br/><br/></p>
+<p>2 buttons in the upper part of the dialog allow selecting the desired type of properties to display. If the object selection is empty, then all dialog items will be inactive.</p>
+<p><strong><span style="color: #ff0000;">對話框上部的2個按鈕允許選擇要顯示的所需屬性類型</span><span style="color: #ff0000;">。</span></strong> 如果對象選擇為空，則所有對話框項都將處於非活動狀態。</p><br />Environment(環境) << <a href='Environment(環境).html'>Previous</a> <a href='Simulation(模擬).html'>Next</a> >> Simulation(模擬)</div>
         
     <!-- footer -->
       <div class="container">
