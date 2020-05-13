@@ -382,10 +382,11 @@
 <p><big><big><big><strong>Scene object properties(場景對象屬性)</strong><big><big><big></big></big></big></big></big></big></p>
 <p>The<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">scene object</a><span> </span>properties dialog is located at [Menu bar --&gt; Tools --&gt; Scene object properties]. You can also open the dialog with a double-click on an object icon in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a>, or with a click on its<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">toolbar</a><span> </span>button:</p>
 <p>場景對象屬性對話框位於<strong><span style="color: #ff0000;">[菜單欄-&gt;工具-&gt;場景對象屬性]</span></strong>。 您也可以通過<strong><span style="color: #ff0000;">雙擊場景階層結構中的對像圖標或單擊其工具欄按鈕來打開</span></strong>對話框：</p>
+<p style="text-align: center;"><img alt="" height="187" src="/images/chrome_2020-05-12_21-46-02.(1)png.png" width="399"/></p>
 <p>The scene object properties dialog displays properties related to objects (i.e.<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">scene objects</a>). The dialog is context sensitive and its content will mainly depend on the scene object selection state: only the properties of the last selected object will be displayed. Those properties are divided into 2 parts:</p>
-<p></p>
 <p><span style="color: #ff0000;"><strong>場景對象屬性對話框顯示與對象（即場景對象）相關的屬性。</strong></span> 該對話框是上下文相關的，其<strong><span style="color: #ff0000;">內容將主要取決於場景對象的選擇狀態：僅顯示最後選擇的對象的屬性。</span></strong> 這些屬性分為兩部分：</p>
-<p><br/><br/></p>
+<p></p>
+<p></p>
 <ul>
 <li><strong>Object-type specific properties</strong>: properties specific to the selected object type. See further below for details.</li>
 <li><strong><a href="https://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm">Object common properties</a></strong>: properties common to all object types.</li>
@@ -397,7 +398,87 @@
 <p><br/><br/></p>
 <p>2 buttons in the upper part of the dialog allow selecting the desired type of properties to display. If the object selection is empty, then all dialog items will be inactive.</p>
 <p><strong><span style="color: #ff0000;">對話框上部的2個按鈕允許選擇要顯示的所需屬性類型</span><span style="color: #ff0000;">。</span></strong> 如果對象選擇為空，則所有對話框項都將處於非活動狀態。</p>
-<h3>Simulation(模擬)</h3>
+<p><img alt="" height="582" src="/images/chrome_2020-05-12_21-47-46.(1)png.png" width="603"/></p>
+<p><big><strong>Object common properties(場景對象通用屬性)</strong><big></big></big></p>
+<p>The object common properties dialog is part of the <a href="https://www.coppeliarobotics.com/helpFiles/en/sceneObjectPropertiesDialog.htm">scene object properties </a>dialog, which is located at [Menu bar --&gt; Tools --&gt; Scene object properties]. You can also open the dialog with a double-click on an object icon in the <a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a>, or with a click on its <a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">toolbar</a> button:</p>
+<p>對象公共屬性對話框是場景對象屬性對話框的一部分，位於<span style="color: #ff0000;"><strong>[菜單欄-&gt;工具-&gt;場景對象屬性]</strong></span>。 您也可以通過<strong><span style="color: #ff0000;">雙擊場景階層結構中的對像圖標或單擊其工具欄按鈕</span></strong>來打開對話框：<strong><span><br/></span></strong></p>
+<p style="text-align: center;"><img alt="" height="186" src="/images/chrome_2020-05-12_21-46-02.(1)png.png" width="397"/></p>
+<p>n the scene object properties dialog, click the<span> </span><strong>Common</strong><span> </span>button to display the object common properties dialog. The dialog displays the settings and parameters of the last selected<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">object</a>. If no object is selected, the dialog is inactive. If more than one object is selected, then some parameters can be copied from the last selected object to the other selected objects (<strong>Apply to selection</strong>-buttons):</p>
+<p><strong><span style="color: #ff0000;">在場景對象屬性對話框中，單擊“通用”按鈕以顯示對象通用屬性對話框。</span></strong> 該對話框顯示最後選擇的對象的設置和參數。 如果未選擇任何對象，則該對話框處於非活動狀態。 <strong><span style="color: #ff0000;">如果選擇了多個對象，則可以將某些參數從上一個選定對象複製到其他選定對象</span></strong>（適用於選擇按鈕）：</p>
+<p><img alt="" height="581" src="/images/chrome_2020-05-12_21-47-46.(1)png.png" width="602"/></p>
+<p></p>
+<ul>
+<li><strong>Selectable</strong>: indicates whether the object can be selected in the scene. Objects can always be selected in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a>. Refer also to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simSetObjectProperty.htm">sim.setObjectProperty</a><span> </span>function.</li>
+</ul>
+<p><strong>可選：<span style="color: #ff0000;">指示是否可以在場景中選擇對象。始終可以在場景階層中選擇對象。</span></strong>另請參閱sim.setObjectProperty函數。</p>
+<ul>
+<li><strong>Invisible during selection</strong>: when enabled, then the object will be invisible for the selection process (i.e. you will be able to select<span> </span><em>through</em><span> </span>the object).</li>
+</ul>
+<p><strong>選擇期間不可見：</strong>啟用該選項後，對象將在選擇過程中不可見（即，<strong><span style="color: #ff0000;">您將可以通過對象進行其他對象選擇</span></strong>）。</p>
+<ul>
+<li><strong>Ignored by depth pass</strong>: when enabled, then the object will be ignored during the depth rendering pass. The depth rendering pass is used to correctly position the red sphere for camera movements.</li>
+</ul>
+<p><strong>被深度傳遞忽略：</strong>啟用時，<strong><span style="color: #ff0000;">在深度渲染傳遞過程中將忽略該對象。深度渲染傳遞用於正確定位紅色球體以進行相機移動。</span></strong></p>
+<ul>
+<li><strong>Select base of model instead</strong>: if enabled, then selecting the object in the scene will select its first parented object marked as<span> </span><strong>object is model base</strong><span> </span>instead (see further down). This property is convenient when protecting a model from faulty manipulations, allowing it to be manipulated as a single entity together with other objects. Refer to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">section on models</a><span> </span>and also to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simSetObjectProperty.htm">sim.setObjectProperty</a><span> </span>function.</li>
+</ul>
+<p><strong>替代選擇模型基礎：<span style="color: #ff0000;">如果啟用，則在場景中選擇對象將選擇其第一個父對象，標記為“對像是模型基礎”</span></strong>（請參見下一節）。<strong><span style="color: #ff0000;">當保護模型免受錯誤操縱時，此屬性很方便，允許將其與其他對像一起作為單個實體進行操縱。</span></strong>請參考有關模型的部分以及sim.setObjectProperty函數。</p>
+<ul>
+<li><strong>Ignored by model bounding box</strong>: when selected, and the object is part of a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">model</a>, then the model bounding box (i.e. model selection bounding box) will not encompass that object. This is useful for invisible objects that might make the model bounding box appear too big. This property has no functional effect. Refer also to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simSetObjectProperty.htm">sim.setObjectProperty</a><span> </span>function.</li>
+</ul>
+<p><strong>被模型邊界框忽略：<span style="color: #ff0000;">選中該對象並且該對像是模型的一部分時，模型邊界框（即模型選擇邊界框）將不包含該對象。</span></strong>這對於可能會使模型邊界框顯得太大的不可見對像很有用。此屬性沒有功能作用。另請參閱sim.setObjectProperty函數。</p>
+<ul>
+<li><strong>Ignored for view-fitting</strong>: objects with this item selected will not be taken into account when fitting a scene to a view while no object is selected. Usually floors and similar will be tagged as such. Refer also to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm">view fitting toolbar button</a><span> </span>and to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simCameraFitToView.htm">sim.cameraFitToView api function</a>.</li>
+</ul>
+<p><strong>忽略視圖擬合：<span style="color: #ff0000;">在未選擇任何對象的情況下將場景擬合到視圖時，將不考慮選擇此項目的對象。</span></strong>通常地板和類似物會被這樣標記。另請參閱適合視圖的工具欄按鈕和sim.cameraFitToView api函數。</p>
+<ul>
+<li><strong>Cannot be deleted during simul.</strong>: when enabled, then the object will ignore a deletion operation when a simulation is running (deletion will however still work when triggered via code).</li>
+</ul>
+<p><strong>無法在模擬過程中刪除：<span style="color: #ff0000;">啟用後，對象將在模擬運行時忽略刪除操作</span></strong>（但是，通過代碼觸發後，刪除仍然可以進行）。</p>
+<ul>
+<li><strong>Cannot be deleted</strong>: when enabled, then the object will ignore a deletion operation (deletion will however still work when triggered via code).</li>
+</ul>
+<p><strong>無法刪除：<span style="color: #ff0000;">啟用後，該對象將忽略刪除操作</span></strong>（但是，通過代碼觸發後，刪除仍將起作用）。</p>
+<ul>
+<li><strong>Extension string</strong><span>:</span> a string that describes additional object properties, mainly used by extension plugins (see also the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simGetExtensionString.htm">sim.getExtensionString</a><span> </span>API function).</li>
+</ul>
+<p><strong>擴展字符串：<span style="color: #ff0000;">描述附加對象屬性的字符串，主要由擴展插件使用</span></strong>（另請參見sim.getExtensionString API函數）。</p>
+<ul>
+<li><strong>Camera visibility layers</strong>: each object in CoppeliaSim can be assigned to one or several visibility layers. If there is at least one visibility layer that matches the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm">layer selection dialog</a><span> </span>layers, then the object will be visible when seen from a camera. By default, a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">shape</a><span> </span>is assigned to the first layer, a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/joints.htm">joint</a><span> </span>to the second layer, a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/dummies.htm">dummy</a><span> </span>to the third layer, etc.</li>
+</ul>
+<p><strong>攝像機可見性層：<span style="color: #ff0000;">可以將CoppeliaSim中的每個對象分配給一個或多個可見性層。如果至少有一個與圖層選擇對話框圖層匹配的可見性圖層，則從攝像機看時該對象將可見。</span></strong>默認情況下，將形狀分配給第一層，將關節分配給第二層，將虛擬對象分配給第三層，等等。</p>
+<ul>
+<li><strong>Can be seen by</strong>: allows to specify a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/cameras.htm">camera</a><span> </span>or<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">vision sensor</a><span> </span>(or a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/collections.htm">collection</a><span> </span>containing cameras or vision sensors) that will be the only one able to see the object.</li>
+</ul>
+<p><strong>可以通過以下方式看到：<span style="color: #ff0000;">允許指定將是唯一能夠看到對象的攝像機或視覺傳感器</span></strong>（或包含攝像機或視覺傳感器的集合）。</p>
+<ul>
+<li><strong>Collidable</strong>: allows enabling or disabling<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/collisionDetection.htm">collision detection</a><span> </span>capability for the selected<a href="https://www.coppeliarobotics.com/helpFiles/en/collidableObjects.htm"><span> </span>collidable object</a>.</li>
+</ul>
+<p><strong>可碰撞：<span style="color: #ff0000;">允許為選定的可碰撞對象啟用或禁用碰撞檢測功能。</span></strong></p>
+<ul>
+<li><strong>Measurable</strong>: allows enabling or disabling<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">minimum distance calculation</a><span> </span>capability for the selected<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/measurableObjects.htm">measurable object</a>.</li>
+</ul>
+<p><strong>可測量的：<span style="color: #ff0000;">允許啟用或禁用所選可測量對象的最小距離計算功能。</span></strong></p>
+<ul>
+<li><strong>Detectable</strong>: allows enabling or disabling<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">proximity sensor</a><span> </span>detection capability for the selected<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/detectableObjects.htm">detectable object</a>. Clicking<span> </span><strong>details</strong><span> </span>allows you to edit the detectable details.</li>
+</ul>
+<p><strong>可檢測：<span style="color: #ff0000;">允許為選定的可檢測對象啟用或禁用接近傳感器檢測功能。</span></strong>單擊詳細信息可讓您編輯可檢測的詳細信息。</p>
+<ul>
+<li><strong>Renderable</strong>: allows enabling or disabling the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">vision sensor</a><span> </span>detection capability for the selected<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/renderableObjects.htm">renderable object</a>.</li>
+</ul>
+<p><strong>可渲染：<span style="color: #ff0000;">允許為選定的可渲染對象啟用或禁用視覺傳感器檢測功能。</span></strong></p>
+<ul>
+<li><strong>Object is model base</strong>: indicates whether the object should act as the base of a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">model</a>. An object flagged as<span> </span><em>base of model</em><span> </span>has special properties (e.g. saving or copying the object will also automatically save/copy all its children and children's children, etc.). Additionally, when such an object is selected, the selection bounding box is displayed as thick stippled lines, encompassing the whole model. Refer to<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">models</a>, and to the<span> </span><strong>select base of model instead</strong><span> </span>item above.</li>
+</ul>
+<p><strong>對像是模型的基礎：<span style="color: #ff0000;">指示對像是否應充當模型的基礎。標記為模型基礎的對象具有特殊屬性</span></strong>（例如，保存或複制該對像還將自動保存/複製其所有子對像以及子對象的子對象等）。另外，<strong><span style="color: #ff0000;">當選擇了此類對象時，選擇邊界框將顯示為點狀的粗線，包圍整個模型。</span></strong>請參考模型，並參考上面的模型選擇模型。</p>
+<ul>
+<li><strong>Edit model properties</strong>: allows opening the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/modelDialog.htm">model dialog</a>.</li>
+</ul>
+<p><strong>編輯模型屬性：<span style="color: #ff0000;">允許打開模型對話框。</span></strong></p>
+<ul>
+<li><strong>Object / model can transfer or accept DNA</strong><span>:<span> </span></span>when this feature is enabled for an object or a model, then it will share a same identifier with all of its copies. An Object or model can then transfer its DNA (i.e. copy an instance of itself) to all of its siblings (i.e. objects/models with the same identifier), via the transfer DNA<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">toolbar</a><span> </span>button. Imagine having 100 same robots in your scene that you want to modify in a similar way: simply modify one of them, select it, then click the transfer DNA toolbar button. This item should almost always be checked for a model base (see further up), to facilitate model re-instanciation.</li>
+</ul>
+<p>對象/模型可以轉移或接受DNA：當為對像或模型啟用此功能時，它將與所有副本共享相同的標識符。然後，對像或模型可以通過轉移DNA工具欄按鈕將其DNA（即復制其自身的實例）轉移到其所有同級兄弟（即具有相同標識符的對象/模型）。想像一下，您要以類似的方式修改場景中的100個相同的機器人：只需修改其中一個，選擇它，然後單擊Transfer DNA工具欄按鈕。幾乎應始終檢查該項目的模型基礎（請參閱後續部分），以促進模型的重新實例化。</p><h3>Simulation(模擬)</h3>
 <p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
 <p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
 <p style="text-align: center;"><img alt="" height="83" src="/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
