@@ -511,7 +511,50 @@
 <p></p>
 <p><strong>組裝時，進行特定的局部轉換。矩陣將被應用：<span style="color: #ff0000;">如果選中，則對像在組裝時不會停留在原位：特定的變換矩陣將用作其新的局部變換矩陣。</span></strong>默認情況下，該矩陣是單位矩陣，但是您可以通過單擊設置矩陣來指定特定矩陣。<span style="color: #ff0000;"><strong>此功能對於自動相對於其新主對象正確定位和定向對像很有用（例如，為了使抓取器自動正確放置在機器人的工具提示上）</strong></span></p>
 <p>The object selection order is important for assembly operations, i.e. first select the<span> </span><em>to-become-child-object</em>, then the<span> </span><em>to-become-parent-object</em>. If the selection order is wrong, or if the<span> </span><em>to-become-parent-object</em><span> </span>is not appropriate, then CoppeliaSim will try to guess what the real intention of the user was (e.g. by searching for an appropriate match in the<span> </span><em>to-become-parent-object</em>'s descendents), if there is no ambiguity.</p>
-<p><strong><span style="color: #ff0000;">對象選擇順序對於組裝操作很重要，即首先選擇要成為子對象的對象，然後選擇要成為母體的對象</span></strong>。 如果選擇順序有誤，或者如果成為母體的對像不合適，那麼CoppeliaSim將嘗試猜測用戶的真實意圖（例如，藉著尋找合適的匹配項在，成為母體對象的子對象的這件事上），如果沒有模糊的話。</p><h3>Simulation(模擬)</h3>
+<p><strong><span style="color: #ff0000;">對象選擇順序對於組裝操作很重要，即首先選擇要成為子對象的對象，然後選擇要成為母體的對象</span></strong>。 如果選擇順序有誤，或者如果成為母體的對像不合適，那麼CoppeliaSim將嘗試猜測用戶的真實意圖（例如，藉著尋找合適的匹配項在，成為母體對象的子對象的這件事上），如果沒有模糊的話。</p>
+<p><br/><br/></p>
+<p><br/><br/></p>
+<p><br/><br/></p>
+<p><big><span style="color: #000080;"><strong>Cameras(攝影機)</strong></span><big></big></big></p>
+<p><span>Cameras are </span><a href="https://www.coppeliarobotics.com/helpFiles/en/viewableObjects.htm">viewable objects</a><span>, which means that you can<span> </span></span><em>look through</em><span><span> </span>them and display a view of what they are<span> </span></span><em>looking at</em><span>. You can have as many cameras as needed in your<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a><span>, each one of them offering a different<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/pagesAndViews.htm">view</a><span><span> </span>of the scene. Following shows an example of a scene containing several cameras:</span></p>
+<p><span><span style="color: #ff0000;"><strong>相機是可見的對象，這意味著您可以瀏覽它們並顯示其所觀看內容的視圖。</strong></span> 您可以根據需要在場景中擁有任意數量的攝像機，每個攝像機都提供不同的場景視圖。 以下是一個包含多個攝像機的場景示例：<br/></span></p>
+<p></p>
+<p>Make sure not to mix-up cameras with<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">vision sensors</a>. Following are the main differences:</p>
+<p>確保不要將<strong><span style="color: #ff0000;">攝像機</span></strong>與<strong><span style="color: #ff0000;">視覺傳感器</span></strong>混淆。 以下是<strong><span style="color: #ff0000;">主要區別</span></strong>：</p>
+<p><br/><br/></p>
+<ul>
+<li>A camera has no specific resolution (i.e. it adjusts automatically to the view size). A vision sensor has a fixed resolution.</li>
+<li>A camera's image content is not directly available via the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/apisOverview.htm">API</a><span> </span>(but via a callback mechanism), and image processing not directly supported. A vision sensor's image content can be accessed via the API, and processed via the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/visionCallbackFunctions.htm">vision callback functions</a>.</li>
+<li>A camera generally requires less CPU time and operates faster than vision sensors.</li>
+<li>A camera can display all<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">object types</a>. A vision sensor can only display<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/renderableObjects.htm">renderable objects</a>.</li>
+</ul>
+<ol>
+<li>相機沒有特定的分辨率（即，它會自動調整為視圖尺寸）。 視覺傳感器具有固定的分辨率。</li>
+<li>相機的圖像內容不能通過API直接獲得（而是通過回調機制獲得），並且<strong><span style="color: #ff0000;">不直接支持圖像處理。</span> </strong>視覺傳感器的圖像內容可以通過API進行訪問，並通過視覺回調函數進行處理。</li>
+<li>攝像機通常比視覺傳感器需要更少的CPU時間並且運行得更快。</li>
+<li>攝像機可以顯示所有對像類型。 <strong><span style="color: #ff0000;">視覺傳感器只能顯示可渲染的對象。</span></strong></li>
+</ol>
+<p><br/><br/></p>
+<p>A camera can be added to the scene with [Menu bar --&gt; Add --&gt; Camera]. However adding a camera in this way will add the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">object</a><span> </span>in a default position and orientation. It is a better practice to add cameras by right-clicking on a specific view of a scene and selecting [Popup menu --&gt; Add --&gt; Camera]. This will add the object just in front of the current view. The added camera is automatically selected and you can then<span> </span><em>look through it</em><span> </span>with [Popup menu --&gt; View --&gt; Associate view with selected camera]. For this to work you will have to make sure the popup menu is activated on a view. When a view is created but not yet associated with a viewable object, the [Popup menu --&gt; Add --&gt; Camera] command will add a camera and directly associate it with the view (i.e.<span> </span><em>look through it</em>). A camera can be associated with any number of views.</p>
+<p>可以使用[菜單欄-&gt;添加-&gt;攝像機]將攝像機添加到場景中。 但是，以這種方式添加相機會將對象添加到默認位置和方向。 <strong><span style="color: #ff0000;">最好通過右鍵單擊場景的特定視圖並選擇[彈出菜單-&gt;添加-&gt;攝像機]來添加攝像機。 這會將對象添加到當前視圖的前面</span><span style="color: #ff0000;">。 添加的攝像機會自動選擇，然後您可以使用[彈出菜單-&gt;視圖-&gt;將視圖與所選攝像機關聯]進行瀏覽。</span></strong> 為此，您必須確保在視圖上激活了彈出菜單。 創建視圖但尚未與可見對象關聯時，[彈出菜單-&gt;添加-&gt;攝像機]命令將添加攝像機並將其直接與視圖關聯（即瀏覽）。 攝像機可以與任意數量的視圖關聯。</p>
+<p>Alternatively you can also associate a view with a camera by activating following popup in a view: [Popup menu --&gt; View --&gt; View selector..]. This will allow you to select the desired camera view from a preview window. When a camera is associated with a view, it can be manipulated with the mouse with following toolbar buttons:</p>
+<p>或者，<strong><span style="color: #ff0000;">您還可以通過激活視圖中的以下彈出窗口來將視圖與攝像機關聯：[彈出菜單-&gt;視圖-&gt;視圖選擇器..]。 這將允許您從預覽窗口中選擇所需的攝像機視圖。</span></strong> 將相機與視圖關聯時，可以使用以下工具欄按鈕用鼠標對其進行操作：</p>
+<p></p>
+<p><strong></strong></p>
+<ol>
+<li><strong>Camera angle button</strong>: allows adjusting the perspective projection angle of a camera view (when in perspective projection mode), or allows adjusting the view size of a camera view (when in orthogonal projection mode).<strong></strong></li>
+<li><strong>Fit-to-view button</strong>: adjusts the camera of the view that has the focus in order to nicely frame all selected objects, or the entire scene if no object is selected.</li>
+</ol>
+<ul>
+<li><strong>攝像機角度按鈕：</strong>允許調整攝像機視圖的透視投影角度（在透視投影模式下），或者<strong><span style="color: #ff0000;">允許調整攝像機視圖的視圖尺寸</span></strong>（在正交投影模式下）。</li>
+<li><strong>適合視圖的按鈕：</strong>調整具有焦點的視圖的攝像機，<strong><span style="color: #ff0000;">以很好地構圖所有選定的對象，或者如果沒有選擇任何對象，則對整個場景進行構圖。</span></strong></li>
+</ul>
+<p>When the camera shift button is activated, it is very easy to navigate in the scene to any desired position and orientation using: (1) the left mouse button for shifting perpendicular to the view direction, (2) the mouse wheel for shifting along the view direction, and (3) the right mouse button for rotating about the clicked point:</p>
+<p>激活相機移位按鈕後，使用以下方法很容易在場景中導航到任何所需的位置和方向：<strong><span style="color: #ff0000;">（1）鼠標左鍵用於垂直於視圖方向的移動；（2）鼠標滾輪用於沿視圖的移動 查看方向，以及（3）鼠標右鍵圍繞點擊點旋轉：</span></strong></p>
+<p></p>
+<p><span>Cameras can automatically track objects (i.e. follow them as they move) by selecting the object to track, then selecting in the appropriate view [Popup menu --&gt; View --&gt; Track selected object]. A tracking camera will keep its position, but automatically adjust its viewing direction in order to always keep the object to track in its view field. This is different from having a camera attached to that object through a parent-child relationship.</span></p>
+<p><span><strong><span style="color: #ff0000;">相機可以通過選擇要跟踪的對象，然後在適當的視圖中選擇[彈出菜單-&gt;視圖-&gt;跟踪所選對象]，自動跟踪對象（即，跟隨它們移動）。</span> </strong>跟踪攝像機將保持其位置，但會自動調整其查看方向，以始終使對像在其視野中進行跟踪。 這與通過父子關係將攝像機連接到該對像不同。</span></p>
+<p></p><h3>Simulation(模擬)</h3>
 <p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
 <p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
 <p style="text-align: center;"><img alt="" height="83" src="/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
