@@ -349,10 +349,11 @@ img.add_border {
 <p><br/><br/></p>
 <p><br/><br/></p>
 <p><br/><br/></p>
-<p><big><span style="color: #000080;"><strong>Cameras(攝影機)</strong></span><big></big></big></p>
+<p><big><span style="color: #000080;"><strong>Cameras(攝影機)</strong></span></big></p>
+<p><img alt="" height="42" src="./../images/chrome_2020-05-15_19-49-09.png" width="36"/></p>
 <p><span>Cameras are </span><a href="https://www.coppeliarobotics.com/helpFiles/en/viewableObjects.htm">viewable objects</a><span>, which means that you can<span> </span></span><em>look through</em><span><span> </span>them and display a view of what they are<span> </span></span><em>looking at</em><span>. You can have as many cameras as needed in your<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a><span>, each one of them offering a different<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/pagesAndViews.htm">view</a><span><span> </span>of the scene. Following shows an example of a scene containing several cameras:</span></p>
 <p><span><span style="color: #ff0000;"><strong>相機是可見的對象，這意味著您可以瀏覽它們並顯示其所觀看內容的視圖。</strong></span> 您可以根據需要在場景中擁有任意數量的攝像機，每個攝像機都提供不同的場景視圖。 以下是一個包含多個攝像機的場景示例：<br/></span></p>
-<p></p>
+<p><img alt="" height="372" src="./../images/chrome_2020-05-15_19-48-21.png" width="600"/></p>
 <p>Make sure not to mix-up cameras with<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">vision sensors</a>. Following are the main differences:</p>
 <p>確保不要將<strong><span style="color: #ff0000;">攝像機</span></strong>與<strong><span style="color: #ff0000;">視覺傳感器</span></strong>混淆。 以下是<strong><span style="color: #ff0000;">主要區別</span></strong>：</p>
 <p><br/><br/></p>
@@ -374,7 +375,7 @@ img.add_border {
 <p>Alternatively you can also associate a view with a camera by activating following popup in a view: [Popup menu --&gt; View --&gt; View selector..]. This will allow you to select the desired camera view from a preview window. When a camera is associated with a view, it can be manipulated with the mouse with following toolbar buttons:</p>
 <p>或者，<strong><span style="color: #ff0000;">您還可以通過激活視圖中的以下彈出窗口來將視圖與攝像機關聯：[彈出菜單-&gt;視圖-&gt;視圖選擇器..]。 這將允許您從預覽窗口中選擇所需的攝像機視圖。</span></strong> 將相機與視圖關聯時，可以使用以下工具欄按鈕用鼠標對其進行操作：</p>
 <p></p>
-<p><strong></strong></p>
+<p style="text-align: center;"><strong><img alt="" height="244" src="./../images/chrome_2020-05-18_20-18-30.(1)png.png" width="602"/></strong></p>
 <ol>
 <li><strong>Camera angle button</strong>: allows adjusting the perspective projection angle of a camera view (when in perspective projection mode), or allows adjusting the view size of a camera view (when in orthogonal projection mode).<strong></strong></li>
 <li><strong>Fit-to-view button</strong>: adjusts the camera of the view that has the focus in order to nicely frame all selected objects, or the entire scene if no object is selected.</li>
@@ -385,9 +386,43 @@ img.add_border {
 </ul>
 <p>When the camera shift button is activated, it is very easy to navigate in the scene to any desired position and orientation using: (1) the left mouse button for shifting perpendicular to the view direction, (2) the mouse wheel for shifting along the view direction, and (3) the right mouse button for rotating about the clicked point:</p>
 <p>激活相機移位按鈕後，使用以下方法很容易在場景中導航到任何所需的位置和方向：<strong><span style="color: #ff0000;">（1）鼠標左鍵用於垂直於視圖方向的移動；（2）鼠標滾輪用於沿視圖的移動 查看方向，以及（3）鼠標右鍵圍繞點擊點旋轉：</span></strong></p>
-<p></p>
+<p style="text-align: center;"><img alt="" height="240" src="./../images/chrome_2020-05-18_20-26-55.(1)png.png" width="620"/></p>
 <p><span>Cameras can automatically track objects (i.e. follow them as they move) by selecting the object to track, then selecting in the appropriate view [Popup menu --&gt; View --&gt; Track selected object]. A tracking camera will keep its position, but automatically adjust its viewing direction in order to always keep the object to track in its view field. This is different from having a camera attached to that object through a parent-child relationship.</span></p>
 <p><span><strong><span style="color: #ff0000;">相機可以通過選擇要跟踪的對象，然後在適當的視圖中選擇[彈出菜單-&gt;視圖-&gt;跟踪所選對象]，自動跟踪對象（即，跟隨它們移動）。</span> </strong>跟踪攝像機將保持其位置，但會自動調整其查看方向，以始終使對像在其視野中進行跟踪。 這與通過父子關係將攝像機連接到該對像不同。</span></p>
+<p><big><span style="color: #000080;"><strong>Camera properties(攝影機屬性)</strong></span></big></p>
+<p>The camera properties are part of the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/sceneObjectPropertiesDialog.htm">scene object properties<span> </span></a>dialog, which is located at [Menu bar --&gt; Tools --&gt; Scene object properties]. You can also open the dialog with a double-click on an object icon in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a>, or with a click on its<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">toolbar</a><span> </span>button:</p>
+<p>攝像機屬性是場景對象屬性對話框的一部分，該對話框位於<span style="color: #ff0000;"><strong>[菜單欄-&gt;工具-&gt;場景對象屬性]</strong></span>。 您<strong><span style="color: #ff0000;">也可以通過雙擊場景層次結構中的對像圖標</span></strong>或單擊其工具欄按鈕來打開對話框：</p>
+<p style="text-align: center;"><img alt="" height="162" src="./../images/chrome_2020-05-18_21-05-47.(1)png.png" width="357"/></p>
+<p>In the scene object properties dialog, click the<span> </span><strong>Camera</strong><span> </span>button to display the camera dialog (the<span> </span><strong>Camera</strong><span> </span>button only appears if the last selection is a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/cameras.htm">camera</a><a href="https://www.coppeliarobotics.com/helpFiles/en/paths.htm"></a>). The dialog displays the settings and parameters of the last selected camera. If more than one camera is selected, then some parameters can be copied from the last selected camera to the other selected cameras (<strong>Apply to selection</strong>-buttons):</p>
+<p>在場景對象屬性對話框中，單擊“攝影機”按鈕以顯示攝影機對話框（“攝影機”按鈕僅在最後選擇的是攝影機時出現）。<strong><span style="color: #ff0000;"> 該對話框顯示最後選擇的攝像機的設置和參數。 如果選擇了多個攝像機，則可以將某些參數從最後選擇的攝像機複製到其他選定的攝像機</span></strong>（適用於選擇按鈕）：</p>
+<p style="text-align: center;"><img alt="" height="551" src="./../images/chrome_2020-05-18_21-07-12.(1)png.png" width="620"/></p>
+<p></p>
+<ul>
+<li><strong>Perspective angle</strong>: the perspective projection angle (or<span> </span><em>opening</em><span> </span>angle) of a camera. The effect of this parameter can only be seen if the associated<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/pagesAndViews.htm">view</a><span> </span>is in perspective projection mode.</li>
+</ul>
+<p><strong>透視角：<span style="color: #ff0000;">攝像機的透視投影角</span></strong>（或打開角度）。僅當關聯的視圖處於透視投影模式時，才能看到此參數的效果。</p>
+<ul>
+<li><strong>Orthographic size</strong>: the orthographic projection size (or view size) of a camera. The effect of this parameter can only be seen if the associated view is in orthographic projection mode.</li>
+</ul>
+<p><strong>正射影像尺寸：<span style="color: #ff0000;">相機的正射投影尺寸（或視圖尺寸）</span></strong>。僅當關聯視圖處於正交投影模式時，才能看到此參數的效果。</p>
+<ul>
+<li><strong>Near / far clipping plane</strong>: distance from the camera origin point from which the camera starts / stops<span> </span><em>seeing</em>. If close / far objects should not be displayed, increase / reduce this value. These parameters are directly linked with the rendering precision, especially when an associated view is in perspective projection mode, then you should always be careful not to have a too big gap between the far and near clipping planes, otherwise you might experience some visual artifacts known as<span> </span><em>z-fighting</em><span> </span>(when surfaces or pixels farther away appear to overlap surfaces/pixels closer to the camera).</li>
+</ul>
+<ul>
+<li><strong>Render mode</strong>: the render mode of the camera.</li>
+<li><strong>Tracked object</strong>: object to be tracked by the camera. Tracking an object will not influence the camera's position, only its orientation will be automatically adjusted in order to<span> </span><em>follow</em><span> </span>the tracked object.</li>
+<li><strong>Show fog if enabled</strong>: if disabled, then this camera won't see any fog if fog is enabled. Also refer to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/environmentPropertiesDialog.htm">environment dialog</a>.</li>
+<li><strong>Keep head always up</strong>: if enabled, the camera will always try to<em><span> </span>keep its head up</em>, i.e. keep the camera's y-axis in a vertical plane.</li>
+<li><strong>Use local lights</strong>: if enabled, then only local lights parented with this camera (i.e. built on top of this camera) will be activated when displaying this camera's image content.<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/lights.htm">Lights</a><span> </span>can be made local in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/lightPropertiesDialog.htm">light properties</a>.</li>
+<li><strong>Allow picking</strong>: allows you to enable/disable object picking (i.e. click to select an object)</li>
+<li><strong>Use parent as camera manipulation proxy</strong>: if enabled, then the camera manipulation toolbar buttons will not affect the camera's position directly, but instead will affect the camera's parent object. This option is useful if you wish to have several cameras linked to each other (e.g. the default scene in CoppeliaSim has 3 cameras arranged orthogonally to each other. If one is moved, the two others will follow)</li>
+<li><strong>Along own X- / Y- / Z-axis</strong>: allows specifying which camera translation movements are allowed.</li>
+<li><strong>Full rotation</strong>: if selected, then the camera is not limited in angular movements.</li>
+<li><strong>Tilting</strong>: if selected, then the camera can be tilted with the corresponding toolbar button.</li>
+<li><strong>Object size</strong>: size of the camera. This parameter has only a visual effect and no functional meaning.</li>
+<li><strong>Adjust color A / B</strong>: allows adjusting a camera's casing colors.</li>
+</ul>
+<p></p>
 <p></p><br />Environment(環境) << <a href='Environment(環境).html'>Previous</a> <a href='Simulation(模擬).html'>Next</a> >> Simulation(模擬)</div>
         
     <!-- footer -->
