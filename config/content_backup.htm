@@ -566,25 +566,98 @@
 <ul>
 <li><strong>Perspective angle</strong>: the perspective projection angle (or<span> </span><em>opening</em><span> </span>angle) of a camera. The effect of this parameter can only be seen if the associated<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/pagesAndViews.htm">view</a><span> </span>is in perspective projection mode.</li>
 </ul>
-<p></p>
+<p><strong>透視角：<span style="color: #ff0000;">攝像機的透視投影角</span></strong>（或打開角度）。僅當關聯的視圖處於透視投影模式時，才能看到此參數的效果。</p>
 <ul>
 <li><strong>Orthographic size</strong>: the orthographic projection size (or view size) of a camera. The effect of this parameter can only be seen if the associated view is in orthographic projection mode.</li>
+</ul>
+<p><strong>正射影像尺寸：<span style="color: #ff0000;">相機的正射投影尺寸（或視圖尺寸）</span></strong>。僅當關聯視圖處於正交投影模式時，才能看到此參數的效果。</p>
+<ul>
 <li><strong>Near / far clipping plane</strong>: distance from the camera origin point from which the camera starts / stops<span> </span><em>seeing</em>. If close / far objects should not be displayed, increase / reduce this value. These parameters are directly linked with the rendering precision, especially when an associated view is in perspective projection mode, then you should always be careful not to have a too big gap between the far and near clipping planes, otherwise you might experience some visual artifacts known as<span> </span><em>z-fighting</em><span> </span>(when surfaces or pixels farther away appear to overlap surfaces/pixels closer to the camera).</li>
+</ul>
+<p><strong>遠/近剪切平面：<span style="color: #ff0000;">距攝像機開始/停止觀察的攝像機原點的距離。</span><span style="color: #ff0000;">如果不應顯示近/遠對象，請增大/減小此值。</span></strong>這些參數與渲染精度直接相關，尤其是當關聯的視圖處於透視投影模式時，那麼應始終注意，遠裁剪面和近裁剪面之間的距離不要太大，否則可能會遇到一些已知的視覺偽像z爭鬥（當較遠的表面或像素看起來與更靠近相機的表面/像素重疊時）。</p>
+<ul>
 <li><strong>Render mode</strong>: the render mode of the camera.</li>
+</ul>
+<p><strong>渲染模式：</strong>攝像機的渲染模式。</p>
+<ul>
 <li><strong>Tracked object</strong>: object to be tracked by the camera. Tracking an object will not influence the camera's position, only its orientation will be automatically adjusted in order to<span> </span><em>follow</em><span> </span>the tracked object.</li>
+</ul>
+<p><strong>跟踪對象：<span style="color: #ff0000;">攝像機跟踪的對象。</span></strong>跟踪對像不會影響相機的位置，僅會自動調整其方向以跟隨跟踪的對象。</p>
+<ul>
 <li><strong>Show fog if enabled</strong>: if disabled, then this camera won't see any fog if fog is enabled. Also refer to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/environmentPropertiesDialog.htm">environment dialog</a>.</li>
+</ul>
+<p><strong>如果啟用，則顯示霧：<span style="color: #ff0000;">如果禁用，則啟用霧後，本相機將看不到任何霧</span>。</strong>另請參閱環境對話框。</p>
+<ul>
 <li><strong>Keep head always up</strong>: if enabled, the camera will always try to<em><span> </span>keep its head up</em>, i.e. keep the camera's y-axis in a vertical plane.</li>
+</ul>
+<p><strong>始終保持頭部抬起：<span style="color: #ff0000;">啟用該選項後，相機將始終保持抬頭</span></strong>，即，將相機的y軸保持在垂直平面上。</p>
+<ul>
 <li><strong>Use local lights</strong>: if enabled, then only local lights parented with this camera (i.e. built on top of this camera) will be activated when displaying this camera's image content.<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/lights.htm">Lights</a><span> </span>can be made local in the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/lightPropertiesDialog.htm">light properties</a>.</li>
+</ul>
+<p><strong>使用局部照明：<span style="color: #ff0000;">如果啟用，則在顯示此照相機的圖像內容時，只會激活與此照相機為主（即內置在此照相機頂部）的局部照明。</span></strong>可以在光源屬性中使光源局部化。</p>
+<ul>
 <li><strong>Allow picking</strong>: allows you to enable/disable object picking (i.e. click to select an object)</li>
+</ul>
+<p><strong>允許拾取：</strong>允許您啟用/禁用對象拾取（即單擊以選擇一個對象）</p>
+<ul>
 <li><strong>Use parent as camera manipulation proxy</strong>: if enabled, then the camera manipulation toolbar buttons will not affect the camera's position directly, but instead will affect the camera's parent object. This option is useful if you wish to have several cameras linked to each other (e.g. the default scene in CoppeliaSim has 3 cameras arranged orthogonally to each other. If one is moved, the two others will follow)</li>
+</ul>
+<p><strong>運用母體關係當作攝像機的操作代理：<span style="color: #ff0000;">如果啟用，則攝像機操作工具欄按鈕將不會直接影響攝像機的位置，而是會間接影響攝像機的母體關係對象。</span></strong>如果您希望將多個攝像機彼此鏈接（例如，CoppeliaSim中的默認場景具有3個彼此正交排列的攝像機，則此選項很有用。<strong><span style="color: #ff0000;">如果移動一個攝像機，則另外兩個攝像機將跟隨</span></strong>）</p>
+<ul>
 <li><strong>Along own X- / Y- / Z-axis</strong>: allows specifying which camera translation movements are allowed.</li>
+</ul>
+<p><strong>沿自己的X / Y / Z軸：<span style="color: #ff0000;">允許指定允許攝像機的平移運動。</span></strong></p>
+<ul>
 <li><strong>Full rotation</strong>: if selected, then the camera is not limited in angular movements.</li>
+</ul>
+<p><strong>全旋轉：</strong>如果選擇此項，則<strong><span style="color: #ff0000;">攝像機不受角度運動的限制。</span></strong></p>
+<ul>
 <li><strong>Tilting</strong>: if selected, then the camera can be tilted with the corresponding toolbar button.</li>
+</ul>
+<p><strong>傾斜：</strong>如果選中，則可以使用相應的工具欄按鈕傾斜相機。</p>
+<ul>
 <li><strong>Object size</strong>: size of the camera. This parameter has only a visual effect and no functional meaning.</li>
+</ul>
+<p><strong>對象尺寸：</strong>相機的尺寸。該參數僅具有視覺效果，沒有功能意義。</p>
+<ul>
 <li><strong>Adjust color A / B</strong>: allows adjusting a camera's casing colors.</li>
 </ul>
-<p></p>
-<p></p><h3>Simulation(模擬)</h3>
+<p><strong>調整顏色A / B：</strong>可以調整相機的外殼顏色。</p>
+<p><br/><br/></p>
+<p><br/><br/></p>
+<p><br/><br/></p>
+<p><big><span style="color: #000080;"><strong>Shapes(形狀)</strong></span></big></p>
+<p><span>Shapes are rigid mesh </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">objects</a><span><span> </span>that are composed of triangular faces. They can be<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/importExport.htm#Import">imported</a><span>,<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/importExport.htm#Export">exported</a><span><span> </span>and<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapeEditModes.htm">edited</a><span>. They come in four different sub-types:</span></p>
+<p><span><strong><span style="color: #ff0000;">形狀是由三角形面組成的剛性網格物體。 可以導入，導出和編輯。</span></strong> 它們分為四種不同的子類型：</span></p>
+<ul>
+<li><span><img src="https://www.coppeliarobotics.com/helpFiles/en/images/shapes2.jpg"/><span><span> </span></span><strong>Simple random shape</strong><span>: can represent any mesh. It has one color and one set of visual attributes. Not optimised nor recommended for<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/dynamicsModule.htm">dynamics collision response calculation</a><span><span> </span>(since very slow and unstable).</span></span></li>
+</ul>
+<p><span><span><strong>簡單的隨機形狀：<span style="color: #ff0000;">可以代表任何網格。 它具有一種顏色和一組視覺屬性。</span></strong> 未優化，也<strong><span style="color: #ff0000;">不建議用於動態碰撞響應計算（因為非常緩慢且不穩定）。</span></strong></span></span></p>
+<ul>
+<li><img src="https://www.coppeliarobotics.com/helpFiles/en/images/shapes3.jpg"/><span><span> </span></span><strong>Compound random shape</strong><span>: can represent any mesh. It has several colors and sets of visual attributes. Not optimised nor recommended for dynamics collision response calculation (since very slow and unstable).</span></li>
+</ul>
+<p><span><strong>複合隨機形狀：</strong>可以代表任何網格。 <span style="color: #ff0000;"><strong>它具有幾種顏色和一組視覺屬性。</strong> </span>未優化，也不建議用於動態碰撞響應計算（因為非常緩慢且不穩定）。</span></p>
+<ul>
+<li><span><img src="https://www.coppeliarobotics.com/helpFiles/en/images/shapes8.jpg"/><span><span> </span></span><strong>Simple convex shape</strong><span>: represents a convex mesh with one color and one set of visual attributes. Optimized for dynamics collision response calculation (but pure shapes are recommended).</span></span></li>
+</ul>
+<p><strong>簡單凸形：<span style="color: #ff0000;">表示具有一種顏色和一組視覺屬性的凸網格。 針對動力學碰撞響應計算進行了優化（但建議使用純形狀）。</span></strong></p>
+<ul>
+<li><img src="https://www.coppeliarobotics.com/helpFiles/en/images/shapes9.jpg"/><span><span> </span></span><strong>Compound convex shape</strong><span>: represents a group of convex meshes with several colors and sets of visual attributes. Optimized for dynamics collision response calculation (but pure compound shapes are recommended).</span></li>
+</ul>
+<p><span><strong>複合凸形狀：</strong>表示一組具有<span style="color: #ff0000;"><strong>多種顏色和一組視覺屬性</strong></span>的凸網格。 針對動力學碰撞響應計算進行了優化（但建議使用純複合形狀）。</span></p>
+<ul>
+<li><img src="https://www.coppeliarobotics.com/helpFiles/en/images/shapes4.jpg"/><span><span> </span></span><strong>Pure simple shape</strong><span>: represents a primitive shape (cuboid, cylinder or sphere (with additional variations depending on the used physics engine). A pure simple shape (or pure compound shape) is best suited for dynamics collision response calculation, since it will perform very fast and is stable. See the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/dynamicsModule.htm">dynamics module</a><span><span> </span>section for more information.</span></li>
+</ul>
+<p><span><strong>純簡單形狀：<span style="color: #ff0000;">表示原始形狀</span></strong>（長方體，圓柱體或球體（根據所使用的物理引擎的不同，可能會有其他變化）。<strong><span style="color: #ff0000;">純簡單形狀（或純複合形狀）最適合於動力學碰撞響應計算，因為它的執行性能非常好 快速且穩定</span></strong>，請參閱動力學模塊部分以獲取更多信息。</span></p>
+<ul>
+<li><span><img src="https://www.coppeliarobotics.com/helpFiles/en/images/shapes5.jpg"/><span><span> </span></span><strong>Pure compound shape</strong><span>: represents a group of primitive shapes (cuboid, cylinder or sphere). A pure compound shape (or pure simple shape) is best suited for dynamics collision response calculation, since it will perform very fast and is stable. See the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/dynamicsModule.htm">dynamics module</a><span><span> </span>section for more information.</span></span></li>
+</ul>
+<p><span><span><strong>純複合形狀：</strong>代表一組原始形狀（長方體，圓柱體或球體）。 純複合形狀（或純簡單形狀）最適合動力學碰撞響應計算，因為它執行起來非常快且穩定。 有關更多信息，請參見動力學模塊部分。</span></span></p>
+<ul>
+<li><span><span><img src="https://www.coppeliarobotics.com/helpFiles/en/images/shapes6.jpg"/><span><span> </span></span><strong>Heightfield shape</strong><span>: can represent a terrain as a regular grid, where only the heights change. Heightfields can also be considered as pure simple shapes, and are optimized for dynamics collision response calculation.</span></span></span></li>
+</ul>
+<p><span><span><span><strong>高度場形狀：<span style="color: #ff0000;">可以將地形表示為規則的網格，僅高度會發生變化。</span></strong> 高度場也可以視為純簡單形狀，並針對動力學碰撞響應計算進行了優化</span></span></span></p>
+<p><span>By default, all imported shapes are simple shapes. Two or more simple shapes or compound shapes can however be grouped ([Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Group selected shapes]) or ungrouped ([Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Ungroup selected shapes]). Simple shapes can also be merged ([Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Merge selected shapes] in which case the visual properties become same for all composing elements. A shape can also be divided ([Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Divide selected shapes]), depending on its configuration: the division algorithm will extract each distinct element of a shape. Two elements are distinct if they don't share any common edge. Refer also to the </span><a href="https://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm">model tutorial</a><span>. which illustrates how to correctly import and prepare shapes for a simulation model.</span></p><h3>Simulation(模擬)</h3>
 <p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
 <p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
 <p style="text-align: center;"><img alt="" height="83" src="/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
@@ -716,7 +789,7 @@
 <p>實際上有很多塑料成型工藝，鑄造工藝也可以說相同。 有很多鑄造技術。 鑄造技術通常因以下因素而異：</p>
 <p>• Metal cast<br/>• Size range of part normally cast<br/>• Tolerances expected to be held by process<br/>• Cost of tooling<br/>• Part price<br/>• Surface finish expectation<br/>• Minimum draft recommended<br/>• Normal minimum section thickness<br/>• Ordering quantity<br/>• Normal lead time<br/>• Die casting<br/>• Permanent mold<br/>• Investment (lost wax)<br/>• Plaster mold<br/>• Ceramic mold<br/>• Graphite mold<br/>• Resin shell mold<br/>• Sand casting</p>
 <p></p>
-<p>•<strong><span style="color: #ff6600;">金屬鑄件</span></strong><br/>•<strong><span style="color: #ff6600;">正常鑄造零件的尺寸範圍</span></strong><br/>•<strong><span style="color: #ff6600;">公差應按工序確定</span></strong><br/>•<strong><span style="color: #ff6600;">工具成本</span></strong><br/>•<strong><span style="color: #ff6600;">單價</span></strong><br/>•<strong><span style="color: #ff6600;">表面光潔度期望</span></strong><br/>•<strong><span style="color: #ff6600;">建議的最低吃水深度</span></strong><br/>•<strong><span style="color: #ff6600;">正常最小截面厚度</span></strong><br/>•<strong><span style="color: #ff6600;">訂購數量</span></strong><br/>•<strong><span style="color: #ff6600;">正常的交貨時間</span></strong><br/>•<strong><span style="color: #ff6600;">壓鑄</span></strong><br/>•<strong><span style="color: #ff6600;">永久模具</span></strong><br/>•<strong><span style="color: #ff6600;">投資（失蠟</span><span style="color: #ff6600;">）</span></strong><br/>•<strong><span style="color: #ff6600;">石膏模具</span></strong><br/>•<strong><span style="color: #ff6600;">陶瓷模具</span></strong><br/>•<strong><span style="color: #ff6600;">石墨模具</span></strong><br/>•<strong><span style="color: #ff6600;">樹脂殼模具</span></strong><br/>•<strong><span style="color: #ff6600;">砂模鑄造</span></strong></p>
+<p>•<strong><span style="color: #ff6600;">金屬鑄件</span></strong><br/>•<strong><span style="color: #ff6600;">正常鑄造零件的尺寸範圍</span></strong><br/>•<strong><span style="color: #ff6600;">公差應按工序確定</span></strong><br/>•<strong><span style="color: #ff6600;">工具成本</span></strong><br>•<strong><span style="color: #ff6600;">單價</span></strong><br/>•<strong><span style="color: #ff6600;">表面光潔度期望</span></strong><br/>•<strong><span style="color: #ff6600;">建議的最低吃水深度</span></strong><br/>•<strong><span style="color: #ff6600;">正常最小截面厚度</span></strong><br/>•<strong><span style="color: #ff6600;">訂購數量</span></strong><br/>•<strong><span style="color: #ff6600;">正常的交貨時間</span></strong><br/>•<strong><span style="color: #ff6600;">壓鑄</span></strong><br/>•<strong><span style="color: #ff6600;">永久模具</span></strong><br/>•<strong><span style="color: #ff6600;">投資（失蠟</span><span style="color: #ff6600;">）</span></strong><br/>•<strong><span style="color: #ff6600;">石膏模具</span></strong><br/>•<strong><span style="color: #ff6600;">陶瓷模具</span></strong><br/>•<strong><span style="color: #ff6600;">石墨模具</span></strong><br/>•<strong><span style="color: #ff6600;">樹脂殼模具</span></strong><br/>•<strong><span style="color: #ff6600;">砂模鑄造</span></strong></br></p>
 <p><strong><span style="color: #ff6600;"><span style="color: #ff0000;">4.8 Dimensioning/Tolerancing  (</span></span><span style="color: #ff6600;"><span style="color: #ff0000;">尺寸/公差)</span></span></strong></p>
 <p><span style="color: #000080;"><strong>4.8.1 Choice of “Nominal Dimension”  (“公稱尺寸”的選擇)</strong></span></p>
 <p>If this is not done correctly, the parts are in a rather constant state of “not fitting” and “out of tolerance,” and assembly line stop-page will occur. assembly and serviceability, as properly dimensioned and toleranced parts will lead to very smooth manufacturing assembly of those parts.Some comments about the English system of units vs. metric system of units are also appropriate (see separate discussion). I even want to start this discussion with how I actually started design “parts” (which were actually tooling fixtures and jigs to perform machining or welding of parts).</p>
