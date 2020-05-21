@@ -28,11 +28,11 @@
 <p><span style="color: #ff0000;"><strong><big><big><big><big></big></big></big></big></strong></span></p><h2>CoppeliaSim User Manual</h2>
 <p><span style="color: #ff0000;"><strong><big><big><big><big>目錄</big></big></big></big></strong></span></p>
 <ul>
-<li><big><big><strong><a href="https://s40723144.github.io/cd2020/content/User%20interface(%E7%94%A8%E6%88%B6%E7%95%8C%E9%9D%A2).html">User interface(用戶界面)</a></strong></big></big></li>
-<li><big><big><strong><a href="https://s40723144.github.io/cd2020/content/Scenes%20and%20models(%E5%A0%B4%E6%99%AF%E5%92%8C%E6%A8%A1%E5%9E%8B).html">Scenes and models(場景和模型)</a></strong></big></big></li>
-<li><big><big><strong><a href="https://s40723144.github.io/cd2020/content/Environment(%E7%92%B0%E5%A2%83).html">Environment(環境)</a></strong></big></big></li>
-<li><big><big><strong><a href="https://s40723144.github.io/cd2020/content/Entities(%E5%AF%A6%E9%AB%94).html">Entities(實體)</a></strong></big></big></li>
-<li><big><big><strong><a href="https://s40723144.github.io/cd2020/content/Simulation(%E6%A8%A1%E6%93%AC).html">Simulation(模擬)</a></strong></big></big></li>
+<li><big><big><a href="https://s40723144.github.io/cd2020/content/User%20interface(%E7%94%A8%E6%88%B6%E7%95%8C%E9%9D%A2).html">User interface(用戶界面)</a></big></big></li>
+<li><big><big><a href="https://s40723144.github.io/cd2020/content/Scenes%20and%20models(%E5%A0%B4%E6%99%AF%E5%92%8C%E6%A8%A1%E5%9E%8B).html">Scenes and models(場景和模型)</a></big></big></li>
+<li><big><big><a href="https://s40723144.github.io/cd2020/content/Environment(%E7%92%B0%E5%A2%83).html">Environment(環境)</a></big></big></li>
+<li><big><big><a href="https://s40723144.github.io/cd2020/content/Entities(%E5%AF%A6%E9%AB%94).html">Entities(實體)</a></big></big></li>
+<li><big><big><a href="https://s40723144.github.io/cd2020/content/Simulation(%E6%A8%A1%E6%93%AC).html">Simulation(模擬)</a></big></big></li>
 </ul>
 <p><strong></strong></p><h3>User interface(用戶界面)</h3>
 <p><strong>The CoppeliaSim application is composed by several elements. Its main elements are:</strong></p>
@@ -668,7 +668,85 @@
 <p><span><span><span><strong>高度場形狀：<span style="color: #ff0000;">可以將地形表示為規則的網格，僅高度會發生變化。</span></strong> 高度場也可以視為純簡單形狀，並針對動力學碰撞響應計算進行了優化</span></span></span></p>
 <p><br/><br/></p>
 <p><span>By default, all imported shapes are simple shapes. Two or more simple shapes or compound shapes can however be grouped ([Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Group selected shapes]) or ungrouped ([Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Ungroup selected shapes]). Simple shapes can also be merged ([Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Merge selected shapes] in which case the visual properties become same for all composing elements. A shape can also be divided ([Menu bar --&gt; Edit --&gt; Grouping/Merging --&gt; Divide selected shapes]), depending on its configuration: the division algorithm will extract each distinct element of a shape. Two elements are distinct if they don't share any common edge. Refer also to the </span><a href="https://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm">model tutorial</a><span>. which illustrates how to correctly import and prepare shapes for a simulation model.</span></p>
-<h3>Simulation(模擬)</h3>
+<p><span>默認情況下，所有導入的形狀均為簡單形狀。 但是，可以將兩個或更多個簡單形狀或複合形狀分組（<span style="color: #ff0000;"><strong>[菜單欄-&gt;編輯-&gt;分組/合併-&gt;分組選定的形狀]</strong></span>）或取消分組（[<strong><span style="color: #ff0000;">菜單欄-&gt;編輯-&gt;分組/合併 -&gt;取消組合所選形狀]</span></strong>）。 <strong><span style="color: #000080;">(同一類型拆、組)</span></strong></span></p>
+<p><span>也可以合併簡單的形狀（<span style="color: #ff0000;"><strong>[菜單欄-&gt;編輯-&gt;分組/合併-&gt;合併選定的形狀]</strong></span>，在這種情況下，所有組成元素的視覺屬性都相同。形狀也可以劃分（<strong><span style="color: #ff0000;">[菜單欄 -&gt;編輯-&gt;分組/合併-&gt;分割選定的形狀]</span></strong>）<strong><span style="color: #000080;">(直接組成隨機形狀)</span></strong>，具體取決於其配置：分割算法將提取形狀的每個不同元素，如果兩個元素不共享任何公共邊，則它們是不同的。 另請參閱模型教程，該教程說明瞭如何為仿真模型正確導入和準備形狀。</span></p>
+<p>Pure shapes are mainly functional shapes. They are most of the time only used by the physics engine that performs on them much better and faster than on non-pure shapes (e.g. random or convex meshes). For that reason, pure shapes are often hidden in an invisible layer (e.g. layer 9). Refer to the<a href="https://www.coppeliarobotics.com/helpFiles/en/layerSelectionDialog.htm"><span> </span>layer selection dialog</a><span> </span>and the section on<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm">how to design dynamic simulations</a><span> </span>for more information.</p>
+<p><strong><span style="color: #ff0000;">純形狀主要是功能形狀。 大多數情況下，它們僅由物理引擎使用，它們對它們的性能要比對非純形狀（例如，隨機或凸形網格）好得多且更快。</span></strong> 因此，純形狀通常會隱藏在不可見的圖層（例如圖層9）中。 有關更多信息，請參考層選擇對話框和有關如何設計動態仿真的部分。</p>
+<p style="text-align: center;"><img alt="" height="620" src="/images/chrome_2020-05-21_20-39-09.(1)png.png" width="631"/></p>
+<p><span>Pure simple shapes can also be grouped, the resulting compound shape will however only be pure if all of its composing elements are also pure. Merging pure simple shapes will result in a non-pure simple shape.</span></p>
+<p><span><strong><span style="color: #ff0000;">也可以對純簡單形狀進行分組，但是只有在其所有組成元素也都是純淨的情況下，生成的複合形狀才是純淨的。</span></strong> 合併純簡單形狀將導致非純簡單形狀。<br/></span></p>
+<p><span>Shapes are <a href="https://www.coppeliarobotics.com/helpFiles/en/collidableObjects.htm">collidable</a><span>,<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/measurableObjects.htm">measurable</a><span>,<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/detectableObjects.htm">detectable</a><span><span> </span>and<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/renderableObjects.htm">renderable</a><span><span> </span>objects. This means that shapes:</span></span></p>
+<p><span><span><strong><span style="color: #ff0000;">形狀是可碰撞，可測量，可檢測和可渲染的對象。</span></strong> 這意味著形狀：</span></span></p>
+<p><br/><br/></p>
+<ul>
+<li>can be used in<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/collisionDetection.htm">collision detections</a><span> </span>against other collidable objects.</li>
+<li>can be used in<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/distanceCalculation.htm">minimum distance calculations</a><span> </span>with other measurable objects.</li>
+<li>can be detected by<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/proximitySensors.htm">proximity sensors</a>.</li>
+<li>can be detected by<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/visionSensors.htm">vision sensors</a>.</li>
+</ul>
+<ol>
+<li>可用於對其他可碰撞物體的碰撞檢測。</li>
+<li>可與其他可測量對像一起用於最小距離計算。</li>
+<li>可以被接近傳感器檢測到。</li>
+<li>可以被視覺傳感器檢測到。</li>
+</ol>
+<p><br/><span>The collidable, measurable, detectable and renderable properties of a shape can be altered in the </span><a href="https://www.coppeliarobotics.com/helpFiles/en/commonPropertiesDialog.htm">object common properties</a><span>. Additionally, those properties can be overridden if the shape is part of a<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/models.htm">model</a><span><span> </span>which overrides them. Refer to the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/modelDialog.htm">model dialog</a><span><span> </span>for more information.</span></p>
+<p>形狀的可碰撞，可測量，可檢測和可渲染的屬性可以在對象的公共屬性中進行更改。 此外，<span style="color: #ff0000;"><strong>如果形狀是覆蓋它們的模型的一部分，則可以覆蓋這些屬性。</strong> </span>有關更多信息，請參考模型對話框。</p>
+<p><big><span style="color: #000080;"><strong>Shape properties(形狀屬性)</strong></span></big></p>
+<p><span>The shape properties are part of the </span><a href="https://www.coppeliarobotics.com/helpFiles/en/sceneObjectPropertiesDialog.htm">scene object properties<span> </span></a><span>dialog, which is located at [Menu bar --&gt; Tools --&gt; Scene object properties]. You can also open the dialog with a double-click on an object icon in the<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#SceneHierarchy">scene hierarchy</a><span>, or with a click on its<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/userInterface.htm#toolbars">toolbar</a><span><span> </span>button:</span></p>
+<p><span>形狀屬性是場景對象屬性對話框的一部分，該對話框位於<strong><span style="color: #ff0000;">[菜單欄-&gt;工具-&gt;場景對象屬性]</span></strong>。 您也可以<strong><span style="color: #ff0000;">通過雙擊場景層次結構中的對像圖標或單擊其工具欄按鈕</span></strong>來打開對話框：</span></p>
+<p style="text-align: center;"><span></span></p>
+<p><span>The dialog displays the settings and parameters of the last selected shape. If more than one shape is selected, then some parameters can be copied from the last selected shape to the other selected shapes (</span><strong>Apply to selection</strong><span>-buttons):</span></p>
+<p>該對話框顯示最後選擇的形狀的設置和參數。 如果選擇了多個形狀，則可以將某些參數從最後選擇的形狀複製到其他選擇的形狀（適用於選擇按鈕）：</p>
+<p style="text-align: center;"></p>
+<p></p>
+<ul>
+<li><strong>Adjust color</strong>: allows editing the colors of the shape.</li>
+</ul>
+<p><strong>調整顏色：</strong>允許編輯形狀的顏色。</p>
+<ul>
+<li><strong>Shading angle</strong>: the shading angle is the angle from which individual faces are distinguished. This only affects the visual appearance of a shape. A small angle makes a shape appear sharp, with many edges, a large angle makes a shape appear smooth and with less edges.</li>
+</ul>
+<p><strong>陰影角：<span style="color: #ff0000;">陰影角是區分各個面的角度。這僅影響形狀的視覺外觀。小角度使形狀看起來很銳利</span></strong>，有很多邊緣，大角度使形狀看起來很光滑且沒有邊緣。</p>
+<ul>
+<li><strong>Show edges</strong>: displays edges in black. Displayed edges will depend on the specified<span> </span><strong>angle</strong>. If<span> </span><strong>Hidden border</strong><span> </span>is checked, then edges that do not share more than one triangle will be hidden.</li>
+</ul>
+<p><strong>顯示邊緣：<span style="color: #ff0000;">以黑色顯示邊緣。顯示的邊緣將取決於指定的角度</span>。</strong>如果選中了“隱藏邊框”，則不共享一個以上三角形的邊而將被隱藏。。</p>
+<ul>
+<li><strong>Backface culling</strong>: each triangle composing a shape has an inside and an outside face. When Backface culling is enabled, then inside faces won't be displayed. This is a useful parameter for closed shapes and for shapes that are transparent.</li>
+</ul>
+<p><strong>背面剔除：</strong>組成形狀的每個三角形都有一個內表面和一個外表面。<strong><span style="color: #ff0000;">啟用“背面剔除”後，將不會顯示內部面。這對於閉合形狀和透明形狀是有用的參數。</span></strong></p>
+<ul>
+<li><strong>Invert faces</strong>: this flips all triangles. Inside faces become outside faces and vice-versa. Convex shapes will become non-convex, except for pure shapes.</li>
+</ul>
+<p><strong>反轉面：<span style="color: #ff0000;">反轉所有三角形。內表面變為外表面</span></strong>，反之亦然。除純形狀外，凸形狀將變為非凸形狀。<span style="color: #000080;"><strong>(先用反轉面反轉內外兩面這時候外表面就變成內表面，再用背面剔除就可以看到內部構造)</strong></span></p>
+<ul>
+<li><strong>Wireframe</strong>: if selected, then the shape will always appear as wireframe when seen through a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/cameras.htm">camera</a>.</li>
+</ul>
+<p><strong>線框：<span style="color: #ff0000;">如果選中</span></strong>，則通過相機查看時，<strong><span style="color: #ff0000;">形狀將始終顯示為線框。</span></strong></p>
+<ul>
+<li><strong>Adjust texture</strong>: opens the<a href="https://www.coppeliarobotics.com/helpFiles/en/textureDialog.htm"><span> </span>texture dialog</a><span> </span>for the selected shape. When a shape is associated with a texture, it will be displayed in a textured way.</li>
+</ul>
+<p><strong>調整紋理：</strong>打開所選形狀的紋理對話框。<span style="color: #ff0000;"><strong>當形狀與紋理關聯時，它將以紋理方式顯示。</strong></span></p>
+<ul>
+<li><strong>Quick textures (selection)</strong>: applies a cubic mapped texture to all selected shapes. This is specially useful with seamless textures used as "dirt", in order to make objects look more realistic.</li>
+</ul>
+<p><strong>快速紋理（選擇）：</strong>將立方貼圖紋理應用於所有選定的形狀。這對於用作“污垢”的無縫紋理特別有用，以使對像看起來更逼真。</p>
+<ul>
+<li><strong>Clear textures (selection)</strong>: removes the texture from all selected shapes.</li>
+</ul>
+<p><strong>清除紋理（選擇）：</strong>從所有選定的形狀中刪除紋理。</p>
+<ul>
+<li><strong>View/modify geometry</strong>: opens the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/geometryDialog.htm">shape geometry dialog</a><span> </span>for the selected shape. It allows to adjust various parameters of the mesh.</li>
+</ul>
+<p><strong>查看/修改幾何：</strong>打開所選形狀的<span style="color: #ff0000;"><strong>形狀幾何對話框。它允許調整網格的各種參數。</strong></span></p>
+<ul>
+<li><strong>Show dynamic properties dialog</strong>: toggles the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapeDynamicsProperties.htm">shape dynamics properties</a><span> </span>dialog. The shape dynamics dialog allows to adjust a shape's dynamics properties.</li>
+</ul>
+<p><strong>顯示動態屬性對話框：</strong>切換形狀動力學屬性對話框。<span style="color: #ff0000;"><strong>形狀動力學對話框允許調整形狀的動力學屬性。</strong></span></p>
+<p><br/><br/></p>
+<p><span>Some of above's parameters are only available for simple shapes. When a compound shape is selected, then you can edit its visual attributes by switching to the shape edit mode for compound shapes. You can of course also ungroup it in order to individually edit its components.</span></p>
+<p><strong><span style="color: #ff0000;">以上某些參數僅適用於簡單形狀。 選擇複合形狀後，您可以通過切換到復合形狀的形狀編輯模式來編輯其視覺屬性。</span></strong> 當然，您也可以取消分組，以便分別編輯其組件。</p><h3>Simulation(模擬)</h3>
 <p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
 <p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
 <p style="text-align: center;"><img alt="" height="83" src="/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
