@@ -746,7 +746,71 @@
 <p><strong>顯示動態屬性對話框：</strong>切換形狀動力學屬性對話框。<span style="color: #ff0000;"><strong>形狀動力學對話框允許調整形狀的動力學屬性。</strong></span></p>
 <p><br/><br/></p>
 <p><span>Some of above's parameters are only available for simple shapes. When a compound shape is selected, then you can edit its visual attributes by switching to the shape edit mode for compound shapes. You can of course also ungroup it in order to individually edit its components.</span></p>
-<p><strong><span style="color: #ff0000;">以上某些參數僅適用於簡單形狀。 選擇複合形狀後，您可以通過切換到復合形狀的形狀編輯模式來編輯其視覺屬性。</span></strong> 當然，您也可以取消分組，以便分別編輯其組件。</p><h3>Simulation(模擬)</h3>
+<p><strong><span style="color: #ff0000;">以上某些參數僅適用於簡單形狀。 選擇複合形狀後，您可以通過切換到復合形狀的形狀編輯模式來編輯其視覺屬性。</span></strong> 當然，您也可以取消分組，以便分別編輯其組件。</p>
+<p><big><span style="color: #000080;"><strong>Shape dynamics properties(形狀動力屬性)</strong></span></big></p>
+<p><span>The shape dynamics dialog is part of the </span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapeProperties.htm">shape properties</a><span>. The dialog displays the dynamics settings and parameters of the last selected<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapes.htm">shape</a><span>. If no object is selected, the dialog is inactive. If more than one shape is selected, then some parameters can be copied from the last selected shape to the other selected shapes (</span><strong>Apply to selection</strong><span>-buttons):</span></p>
+<p><span>形狀動力學對話框是形狀屬性的一部分。 <strong><span style="color: #ff0000;">該對話框顯示最後選擇的形狀的動力學設置和參數。 </span></strong>如果未選擇任何對象，則該對話框處於非活動狀態。 如果選擇了多個形狀，則可以將某些參數從最後選擇的形狀複製到其他選擇的形狀（適用於選擇按鈕）：</span></p>
+<p style="text-align: center;"><span><img alt="" height="603" src="/images/chrome_2020-05-22_20-55-16.(1)png.png" width="620"/></span></p>
+<p style="text-align: left;"><span></span></p>
+<ul>
+<li><strong>Body is respondable</strong>: if enabled, then the shape will produce a collision reaction with other respondable shapes, however only if the respective respondable masks overlap (see the item below). See also the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm">designing dynamic simulation</a><span> </span>section for more details.</li>
+</ul>
+<p><strong>主體是可響應的：<span style="color: #ff0000;">如果啟用，則該形狀將與其他可響應形狀產生碰撞反應，但是僅當相應的可響應<span>掩碼</span>重疊</span><span style="color: #000080;">(同時取消才不會產生碰撞)</span><span style="color: #ff0000;">時</span></strong>（請參閱以下項目）。有關更多詳細信息，另請參見設計動態仿真部分。</p>
+<ul>
+<li><strong>Respondable mask</strong>: indicates when a collision response is generated (above respondable item needs however to be enabled). The mask is composed by two 8-bit values, local and global. If two colliding shapes share any of their parents (direct or indirect), then the local masks are used, otherwise the global masks are used. If two shapes'<span> </span><em>AND</em>-combined masks (local or global) is different from zero, then a collision response will be generated.</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>響應式掩碼</strong><span> </span>：指示何時生成碰撞響應（但是需要啟用以上響應項）。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">該掩碼由局部和全局兩個8位值組成。</span><span><span> </span></span><strong><span style="color: #ff0000;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">如果兩個碰撞形狀共享其任何母體（直接</span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">或間接），則使用局部掩碼，否則使用全局掩碼。</span> <span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">如果兩個形狀的<em>AND</em>組合掩碼（局部或全局）不為零，則將生成碰撞響應。</span></span></strong></p>
+<ul>
+<li><strong>Edit material</strong>: allows you to edit<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapeDynamicEngineProperties.htm">material properties</a><span> </span>for all dynamics engines, such as friction, restitution, etc.</li>
+</ul>
+<p><strong>編輯材料</strong><span><span> </span>：<strong><span style="color: #ff0000;">允許您編輯所有動力學引擎</span></strong>的材料屬性</span><span><span> </span>，例如<strong><span style="color: #ff0000;">摩擦</span></strong>，復原等。</span></p>
+<ul>
+<li><strong>Body is dynamic</strong>: when enabled, then the shape's position and orientation will be influenced in a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/dynamicsModule.htm">dynamics simulation</a>. See the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm">designing dynamic simulation</a><span> </span>section for more details.</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>身體是動態的</strong><span> </span>：<strong><span style="color: #ff0000;">啟用後，形狀的位置和方向將在動力學模擬中受到影響。</span></strong></span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">有關更多詳細信息，請參見設計動態仿真部分。</span></p>
+<ul>
+<li><strong>Start in sleep mode</strong>: a respondable shape that is dynamically simulated can start in sleep mode, in which case it doesn't react to constraints (e.g. gravity) until it first collides with another respondable shape.</li>
+</ul>
+<p><strong>從睡眠模式開始</strong><span><span> </span>：動態模擬的可響應形狀可以在睡眠模式下開始，在這種情況下，它在首先與另一個可響應形狀發生碰撞之前不會對約束（例如重力）做出反應。</span></p>
+<ul>
+<li><strong>Set to dynamic if gets parent</strong>: when enabled and the shape is attached to another object, then the shape will be automatically made dynamic. This is useful for model bases that should be static when on their own, but dynamic when combined with another model/object (e.g. a robotic manipulator that operates on its own usually has its base static, but when attached to a vehicle, then the base should become dynamic).</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>如果成為母體，則設置為動態 ：</strong>啟用該選項並將形狀附加到另一個對象時，該形狀將自動變為動態。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong><span style="color: #ff0000;">這對於單獨使用模型基礎時應該是靜態的，但是當與另一個模型/對象結合時是動態的（例如，自己操作的機器人操縱器通常具有其基礎是靜態的，但是當附加到車輛上時，則該基礎是動態的）</span></strong>應該變得充滿活力）。</span></p>
+<ul>
+<li><strong>Compute mass &amp; inertia properties for the selected shapes</strong>: by clicking this button, you can automatically compute the mass and inertia properties of the selected convex shapes, based on a material uniform density.</li>
+</ul>
+<p><strong>計算選定形狀的質量和慣性屬性</strong><span><span> </span>：<strong><span style="color: #ff0000;">單擊此按鈕，可以基於材料均勻密度自動計算選定凸形狀的質量和慣性屬性。</span></strong></span></p>
+<ul>
+<li><strong>Mass</strong>: the mass of the shape. Selected shapes can have their masses easily increased or decreased by a factor 2 with the<span> </span><strong>M=M*2 (for selection)</strong><span> </span>and the<span> </span><strong>M=M/2 (for selection)</strong><span> </span>buttons. This is convenient to quickly find stable simulation parameters by trial-and-error.</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>質量</strong><span> </span>：形狀的質量。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">使用<span style="color: #ff0000;"><strong>M = M * 2（用於選擇）</strong></span>和<span style="color: #ff0000;"><strong>M = M / 2（用於選擇）</strong></span>按鈕，可以輕鬆地將選定的形狀的質量增加或減少2倍。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">通過試驗和錯誤快速方便地找到穩定的仿真參數。</span></p>
+<ul>
+<li><strong>Principal moments of inertia / mass</strong>: the mass-less (i.e. divided by the mass of the shape) principal moments of inertia. Selected shapes can have their mass-less inertia values easily increased or decreased by a factor 2 with the<strong><span> </span>I=I*2 (for selection)</strong><span> </span>and the<span> </span><strong>I=I/2 (for selection)</strong><span> </span>buttons. This is convenient to quickly find stable simulation parameters by trial-and-error.</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>主慣性矩/質量</strong><span> </span>：無質量（即除以形狀的質量）主慣性矩。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">使用<span style="color: #ff0000;"><strong>I = I * 2（用於選擇）</strong></span>和<span style="color: #ff0000;"><strong>I = I / 2（用於選擇）</strong></span>按鈕，可以輕鬆地將選定的形狀的無質量慣性值增加或減小2倍。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">通過試驗和錯誤快速方便地找到穩定的仿真參數。</span></p>
+<ul>
+<li><strong>Pos./orient. of inertia frame &amp; COM relative to shape frame</strong>: the configuration of the inertia frame and center of mass expressed relative to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/shapeReferenceFrames.htm">shape's reference frame</a>.</li>
+</ul>
+<p><strong><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">位置/東方</span> </strong><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>慣性系和COM相對於形狀系的坐標：</strong>慣性系的配置和質心相對於形狀的參考系的表示。</span></p>
+<ul>
+<li><strong>Set inertia matrix &amp; COM relative to absolute frame:</strong> opens the inertia matrix dialog, allowing to specify inertia properties relative to the absolute reference <strong>frame:</strong></li>
+</ul>
+<p><strong>設置相對於絕對坐標系的慣性矩陣和COM</strong><span><strong> ：</strong>打開慣性矩陣對話框，允許指定相對於絕對參考系的慣性屬性：</span></p>
+<p style="text-align: center;"><span><img alt="" height="434" src="/images/chrome_2020-05-23_15-41-52.(1)png.png" width="620"/></span></p>
+<p style="text-align: left;"><span></span></p>
+<ul>
+<li class="tabTab"><strong>Inertia matrix divided by the mass</strong>: the inertia matrix or tensor. Values are mass-less (i.e. divided by the mass of the shape). The matrix must be expressed relative to the center of mass of the shape (i.e the matrix is symmetric).</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>慣性矩陣除以質量</strong><span> </span>：<strong><span style="color: #ff0000;">慣性矩陣或張量。</span></strong></span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">值無質量（即除以形狀質量）。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">矩陣必須相對於形狀的質心表示（即矩陣是對稱的）。</span></p>
+<ul>
+<li class="tabTab"><strong>Position of the center of mass</strong>: the position of the center of mass.</li>
+</ul>
+<p><strong>重心</strong><span><strong>位置：</strong>重心位置</span></p>
+<ul>
+<li class="tabTab"><strong>Apply to selected shapes</strong>: when checked, then all selected shapes will have the same inertia properties relative to the absolute reference frame (i.e. all center of masses and inertia matrices will be coincident).</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>應用於選定的形狀</strong><span> </span>：選中後，所有選定的形狀相對於絕對參考係將具有相同的慣性屬性（即，所有質心和慣性矩陣都將重合）。</span><span></span></p>
+<p></p><h3>Simulation(模擬)</h3>
 <p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
 <p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
 <p style="text-align: center;"><img alt="" height="83" src="/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
