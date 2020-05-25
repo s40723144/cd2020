@@ -642,23 +642,22 @@ img.add_border {
 <p><span style="color: #000080;"><strong></strong></span></p>
 <p>A joint is an<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">object</a><span> </span>that has at least one intrinsic Degree of Freedom (DoF). Joints are used to build mechanisms and to move objects as can be seen in following figures:</p>
 <p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">軸節是具有<strong><span style="color: #ff0000;">至少一個固有自由度</span></strong>（DoF）的對象。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">關節用於<strong><span style="color: #ff0000;">建立機制和移動對象</span></strong>，如下圖所示：</span></p>
-<p style="text-align: center;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"></span></p>
+<p style="text-align: center;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><img alt="" height="239" src="./../images/chrome_2020-05-23_16-25-05.(1)png.png" width="600"/></span></p>
 <p>Joints are added to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a><span> </span>with [menu bar --&gt; Add --&gt; Joint]. Refer to the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm#joints">joint section in the model creation tutorial</a>. Some joint data can be recorded by graph objects. Refer to<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/graphs.htm">graphs</a><span> </span>and<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/dataStreamTypes.htm">graph data streams</a><span> </span>for more information about how to record joint data.</p>
 <p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">使用<strong><span style="color: #ff0000;">[菜單欄-&gt;添加-&gt;關節]</span></strong>將關節添加到場景。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">請參閱模型創建教程中的聯合部分。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">某些聯合數據可以由圖形對象記錄。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">有關如何記錄聯合數據的更多信息，請參考圖形和圖形數據流。</span><span></span></p>
 <p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"></span></p>
 <p><big><span style="color: #000080;"><strong>Joint types and operation(軸節類型和操作)</strong></span></big></p>
 <p><span>Compared to another </span><a href="https://www.coppeliarobotics.com/helpFiles/en/objects.htm">object</a><span>, a<span> </span></span><a href="https://www.coppeliarobotics.com/helpFiles/en/joints.htm">joint</a><span><span> </span>has two reference frames (visible only if the joint is selected). The first one is the regular reference frame that is fixed and that other objects also have. The second reference frame is not fixed, and will move relative to the first reference frame depending on the joint position (or joint value) that defines its configuration.</span></p>
 <p><span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">與另一個對象相比， <strong><span style="color: #ff0000;">軸節具有兩個參考系</span></strong>（僅在選擇軸節時可見）。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">第<strong><span style="color: #ff0000;">一個是固定的常規參照系，其他對像也具有。</span></strong></span><strong><span style="color: #ff0000;"> <span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">第二參考框架不是固定的，並且將根據定義其配置的關節位置（或關節值）相對於第一參考框架移動。</span></span></strong></span></p>
-<p style="text-align: left;"><span style="background-color: #808080; color: #ffffff;"><big>Joint types</big></span></p>
+<p style="text-align: left;"><strong><span style="background-color: #808080; color: #ffffff;"><big>Joint types</big></span></strong></p>
 <p style="text-align: left;"><span style="color: #ffffff;"><strong><span style="background-color: #808080;"><big>軸節類型</big></span></strong></span></p>
 <p>4 types of joints are supported:</p>
 <p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">支持4種類型的關節：</span></p>
-<p style="text-align: center;"></p>
-<p style="text-align: left;"></p>
+<p style="text-align: center;"><img alt="" height="323" src="./../images/chrome_2020-05-23_19-35-17.(1)png.png" width="532"/></p>
 <ul>
 <li><strong>Revolute joints</strong>: revolute joints have one DoF and are used to describe rotational movements (with 1 DoF) between objects. Their configuration is defined by one value that represents the amount of rotation about their first reference frame's z-axis. They can be used as passive joints, or as active joints (motors).</li>
 </ul>
-<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>旋轉軸節</strong><span> </span>：<strong><span style="color: #ff0000;">旋轉軸節具有一個自由度</span></strong>，用於描述對象之間的旋轉運動（具有1個自由度）。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">它們的配置由一個值定義，<strong><span style="color: #ff0000;">該值代表圍繞其第一參考框架的z軸旋轉的量。</span></strong></span><strong><span style="color: #ff0000;"> <span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">它們可以用作被動軸節，也可以用作主動軸節（電動機）。</span></span></strong></p>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>旋轉軸節</strong><span> </span>：<strong><span style="color: #ff0000;">旋轉軸節具有一個自由度</span></strong>，用於描述對象之間的旋轉運動（具有1個自由度）。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">它們的配置由一個值定義，<strong><span style="color: #ff0000;">該值代表圍繞其第一參考框架的z軸旋轉的量。</span></strong></span><strong><span style="color: #ff0000;"> <span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">它們可以用作被動軸節，也可以用作<span style="background-color: #ffff00;">主動軸節（電動機）</span>。</span></span></strong></p>
 <ul>
 <li><strong>Prismatic joints</strong>: prismatic joints have one DoF and are used to describe translational movements between objects. Their configuration is defined by one value that represents the amount of translation along their first reference frame's z-axis. They can be used as passive joints, or as active joints (motors).</li>
 </ul>
@@ -670,8 +669,74 @@ img.add_border {
 <ul>
 <li><strong>Spherical joints</strong>: spherical joints have three DoF and are used to describe rotational movements (with 3 DoF) between objects. Their configuration is defined by three values that represent the amount of rotation around their first reference frame's x-, y- and z-axis. The three values that define a spherical joint's configuration are specified as<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/eulerAngles.htm">Euler angles</a>. In some situations, a spherical joint can be thought of as 3 concurrent and orthogonal to each other joints, that are parented in a hierarchy-chain. The analogy is however only valid while all revolute joints keep an orientation distinct from any of the two others: indeed, should two joints come close to coincide, a singular situation might appear and the mechanism might lose one DoF. This does never happen with spherical joints that are internally handled to avoid this kind of situation. Spherical joints are always passive joints, and cannot act as motors.</li>
 </ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>球形關節</strong><span> </span>：<strong><span style="color: #ff0000;">球形關節具有三個自由度，用於描述對象之間的旋轉運動（具有3個自由度）</span><span style="color: #ff0000;">。</span></strong></span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">它們的配置由三個值定義，這些值代表圍繞其第一個參考系的x軸，y軸和z軸的旋轉量。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">定義球形接頭配置的三個值指定為Euler Angles<span> </span>。</span><span><span> </span></span><strong><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)" style="color: #ff0000;">在某些情況下，球形關節可以看作是3個並發且彼此垂直的關節，它們是層次結構鏈中的母體。</span></strong><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">但是，該類比僅在所有旋轉關節保持不同於其他兩個關節的方向時才有效：實際上，如果兩個關節接近並重，則可能出現單一情況，並且該機制可能會失去一個自由度。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">對於內部避免這種情況的球形接頭，這種情況永遠不會發生。</span><span><span> </span></span><strong><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)" style="color: #ff0000;"><span style="background-color: #ffff00;">球形接頭始終是被動接頭</span>，不能充當馬達。</span></strong></p>
+<p style="text-align: center;"><img alt="" height="466" src="./../images/chrome_2020-05-25_20-06-12.(1)png.png" width="628"/></p>
+<p>A joint is used to allow for a relative movement between its parent and its children. When a parent-child relationship is built between a joint and an object, the object is attached to the joint's second reference frame, thus, a change of the joint's configuration (intrinsic position) will directly be reflected onto its children. New joints can be added to a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/scenes.htm">scene</a><span> </span>with [Menu bar --&gt; Add --&gt; Joints].</p>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">關節用於允許其母體和子對象之間的相對運動。</span><span><span> </span></span><span style="color: #ff0000;"><strong><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">當在關節和對象之間建立父子關係時，該對象將附著到關節的第二參考框架，因此，關節構型的改變（固有位置）將直接反映到其子對像上。</span></strong></span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">可以使用[菜單欄-&gt;添加-&gt;關節]將新關節添加到場景中。</span><span></span></p>
+<p><span> </span></p>
+<p style="text-align: left;"><span style="color: #ffffff;"><strong><span style="background-color: #808080;"><big> Joint modes</big></span></strong></span></p>
+<p style="text-align: left;"><span style="color: #ffffff;"><strong><span style="background-color: #808080;"><big> 軸節模式</big></span></strong></span></p>
+<p><span>A joint can be in one of following modes:</span></p>
+<p><span>軸節可以採用以下方式之一：</span></p>
+<p><span></span></p>
+<ul>
+<li><strong>Passive mode</strong>: in this mode the joint is not directly controlled and will act as a fixed link. The user can however change the joint's position with appropriate<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/apisOverview.htm">API</a><span> </span>function calls (e.g.<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simSetJointPosition.htm">sim.setJointPositon</a><span> </span>or<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/regularApi/simSetSphericalJointMatrix.htm">sim.setSphericalJointMatrix</a>).</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>被動模式</strong><span> </span>：<strong><span style="color: #ff0000;">在此模式下，軸節不受直接控制，將充當固定鏈接。</span></strong></span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">但是，用戶可以使用適當的API函數調用（例如sim.setJointPositon或sim.setSphericalJointMatrix<span> </span>）來更改關節的位置。</span></p>
+<ul>
+<li><strong>Inverse kinematics mode</strong>: in this mode, the joint acts as a passive joint, but is used (adjusted) during<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/inverseKinematicsModule.htm">inverse kinematics calculations</a>.</li>
+</ul>
+<p><strong>逆運動學模式</strong><span><span> </span>：<strong><span style="color: #ff0000;">在此模式下，軸節充當被動關節</span></strong>，但在逆運動學計算</span><span>期間使用（調整）。</span></p>
+<ul>
+<li><strong>Dependent mode</strong>: in this mode, the joint position is directly linked (dependent) to another joint position through a linear equation.</li>
+</ul>
+<p><strong>從屬模式</strong><span><span> </span>：在<strong><span style="color: #ff0000;">此模式下，關節位置通過線性方程式直接鏈接（依賴）到另一個關節位置。</span></strong></span></p>
+<ul>
+<li><strong>Motion mode</strong>:<span> </span><span>this mode is deprecated</span><span> </span>and should not be used anymore. A similar and more flexible behaviour can be obtained with the<span> </span><strong>passive mode</strong><span> </span>and a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/childScripts.htm">child script</a><span> </span>appropriately updating the joint.</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>動作模式</strong><span> </span>：不建議使用<span>此模式</span>。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">使用<strong>被動模式</strong>和適當更新關節的子腳本可以獲得類似和更靈活的行為。</span></p>
+<ul>
+<li><strong>Torque or force mode</strong>: in this mode, the joint is simulated by the<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/dynamicsModule.htm">dynamics module</a>, if and only if it is dynamically enabled (refer to the section on<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm">designing dynamic simulations</a><span> </span>for more information). When dynamically enabled, a joint can be free or controlled in Force/torque, in velocity or in position. Screws cannot be operated in torque or force mode (however it is possible to obtain a similar behaviour by linking a revolute and prismatic joint programmatically), and spherical joints can only be free in torque or force mode.</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>扭矩或力模式</strong><span> </span>：<strong><span style="color: #ff0000;">在此模式下，當且僅當動態啟用關節時，才通過動力學模塊對關節進行模擬</span></strong>（有關更多信息，請參考設計動態仿真的部分）。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">動態啟用後，關節可以自由受力/扭矩，速度或位置或受其控制。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">螺釘不能在扭矩或力模式下操作（但是，可以通過編程方式連接旋轉接頭和棱柱形接頭來獲得類似的行為），球形接頭只能在扭矩或力模式下自由操作。</span></p>
 <p></p>
-<p></p><br />Environment(環境) << <a href='Environment(環境).html'>Previous</a> <a href='Simulation(模擬).html'>Next</a> >> Simulation(模擬)</div>
+<p>-----------------------------------<br/><br/></p>
+<ul>
+<li class="tabTab">When the joint motor is disabled, the joint is free and only constrained by its limits.</li>
+</ul>
+<p><span>禁用軸節發動機時，軸節是自由的，並且僅受其限制。</span></p>
+<ul>
+<li class="tabTab">When the joint motor is enabled and the control loop is disabled, then the joint will try to reach the desired target velocity given the maximum torque/force it is capable to deliver. When that maximum torque/force is very high, the target velocity is instantaneously reached and the joint operates in velocity control, otherwise it operates at the specified torque/force until the desired target velocity is reached (torque/force control).</li>
+</ul>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">啟用關節電動機並禁用控制迴路後，如果關節能夠傳遞最大扭矩/力，則關節將嘗試達到所需的目標速度。</span><span><span> </span></span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">當<strong><span style="color: #ff0000;">最大扭矩/力非常高時，即刻達到目標速度，並且關節以速度控制方式運行，否則關節將以指定的扭矩/力進行操作，直到達到所需的目標速度（扭矩/力控制）。</span></strong></span></p>
+<ul>
+<li class="tabTab">When the joint motor is enabled and the control loop is enabled, then the user has 3 control modes available:</li>
+</ul>
+<p><span><strong><span style="color: #ff0000;">啟用軸節發動機並啟用控制迴路後</span></strong>，用戶可以使用3種控制模式：</span></p>
+<p><br/><br/></p>
+<ul style="list-style-type: circle;">
+<li><em>Custom control</em>: a<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/jointCallbackFunctions.htm">joint callback function</a><span> </span>will be in charge of controlling the dynamic behaviour of the joint, allowing you to control the joint with any imaginable algorithm.</li>
+</ul>
+<p><strong>自定義控件</strong><span><strong> ：</strong><span> <strong><span style="color: #ff0000;">關節回調函數</span></strong></span></span><span><strong><span style="color: #ff0000;">將負責控制軸節的動態行為</span></strong>，使您<span style="color: #ff0000;"><strong>可以使用任何可想像的算法來控制關節。</strong></span></span></p>
+<ul style="list-style-type: circle;">
+<li><em>Position control (PID)</em>: the joint will be controlled in position via a PID controller that will adjust the joint velocity in following way (the<span> </span><em>Δt</em><span> </span>divider is to keep the controller independent of the selected controller time step):</li>
+</ul>
+<p></p>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>位置控制（PID） ：</strong>將<strong><span style="color: #ff0000;">通過PID控制器控制關節的位置</span></strong>，該PID控制器將以以下方式<strong><span style="color: #ff0000;">調整軸節速度</span></strong>（<span> </span><em>Δt</em>分頻器將使控制器獨立於所選控制器時間步長）：</span></p>
+<p></p>
+<p style="text-align: center;"><img caption="false" height="120" src="./../images/chrome_2020-05-25_21-14-17.png" width="500"/></p>
+<ul style="list-style-type: circle;">
+<li style="text-align: left;"><em>Spring-damper mode</em><span>: the joint will act like a spring-damper system via a force/torque modulation:</span></li>
+</ul>
+<p style="text-align: left;"><span><strong>彈簧-阻尼器模式</strong><span><strong> ：<span style="color: #ff0000;">通過力/扭矩調製</span></strong>，軸節將像彈簧-阻尼器系統一樣工作：</span></span></p>
+<p style="text-align: center;"><span><span><img alt="" height="142" src="./../images/chrome_2020-05-25_21-14-28.png" width="469"/></span></span></p>
+<p>When the joint is in passive mode, inverse kinematics mode or dependent mode, it can optionally also be operated in a hybrid fashion:</p>
+<p>hybrid operation allows the joint to operate in a regular way, but additionally, just before<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/dynamicsModule.htm">dynamics calculations</a>, the current joint position will be copied to the target joint position, and then, during dynamics calculations, the joint will be handled as a motor in position control (if and only if it is dynamically enabled (refer to the section on<span> </span><a href="https://www.coppeliarobotics.com/helpFiles/en/designingDynamicSimulations.htm">designing dynamic simulations</a><span> </span>for more information)). This feature allows for instance to control the leg of a humanoid robot by simply specifying the desired foot position (as an inverse kinematics task); the corresponding calculated joint positions will then be applied as position control values for the leg dynamic motion.</p>
+<p><strong><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)" style="color: #ff0000;">當關節處於被動模式，逆運動學模式或從屬模式時，還可以選擇以混合方式進行操作：</span></strong></p>
+<p><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">混合操作允許關節以常規方式進行操作，但此外，在進行動力學計算之前，當前關節位置將被複製到目標關節位置，然後在動力學計算期間，將關節作為位置控制中的電動機處理（如果且僅當它被動態啟用時（有關更多信息，請參閱設計動態模擬的部分）） 。</span><span><span> </span></span><strong><span style="color: #ff0000;"><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">例如，該功能允許通過簡單地指定所需的腳部位置（作為反向運動學任務）來控制人形機器人的腿部；</span> <span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">然後，將計算出的相應關節位置用作腿部動態運動的位置控制值。</span></span></strong><span></span></p>
+<p style="text-align: left;"><span><span></span></span></p>
+<p style="text-align: left;"><span style="color: #ffffff;"><strong><span style="background-color: #808080;"><big> Joint <span>controllers</span></big></span></strong></span></p>
+<p style="text-align: left;"><span style="color: #ffffff;"><strong><span style="background-color: #808080;"><big> 軸節控制器</big></span></strong></span></p><br />Environment(環境) << <a href='Environment(環境).html'>Previous</a> <a href='Simulation(模擬).html'>Next</a> >> Simulation(模擬)</div>
         
     <!-- footer -->
       <div class="container">
