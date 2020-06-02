@@ -24,8 +24,11 @@
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/XQURK8okQnc" width="560"></iframe></p>
 <h2>w11</h2>
 <p><big><big><big><strong>學習如何使用CoppeliaSim Camera的部分</strong><big></big></big></big></big></p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/4_flVamJiAU" width="560"></iframe></p><h1>Assignment 1</h1>
-<p><span style="color: #ff0000;"><strong><big><big><big><big></big></big></big></big></strong></span></p><h2>CoppeliaSim User Manual</h2>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/4_flVamJiAU" width="560"></iframe></p>
+<h2>w12.13</h2>
+<h1>Assignment 1</h1>
+<p><span style="color: #ff0000;"><strong><big><big><big><big></big></big></big></big></strong></span></p>
+<h2>CoppeliaSim User Manual</h2>
 <p><span style="color: #ff0000;"><strong><big><big><big><big>目錄</big></big></big></big></strong></span></p>
 <ul>
 <li><big><big><a href="https://s40723144.github.io/cd2020/content/User%20interface(%E7%94%A8%E6%88%B6%E7%95%8C%E9%9D%A2).html">User interface(用戶界面)</a></big></big></li>
@@ -34,7 +37,8 @@
 <li><big><big><a href="https://s40723144.github.io/cd2020/content/Entities(%E5%AF%A6%E9%AB%94).html">Entities(實體)</a></big></big></li>
 <li><big><big><a href="https://s40723144.github.io/cd2020/content/Simulation(%E6%A8%A1%E6%93%AC).html">Simulation(模擬)</a></big></big></li>
 </ul>
-<p><strong></strong></p><h3>User interface(用戶界面)</h3>
+<p><strong></strong></p>
+<h3>User interface(用戶界面)</h3>
 <p><strong>The CoppeliaSim application is composed by several elements. Its main elements are:</strong></p>
 <p><strong>CoppeliaSim應用程序由幾個元素組成。 它的主要元素是：<br/></strong></p>
 <p><br/><br/></p>
@@ -932,10 +936,11 @@
 <p><span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><strong>如果關節未處於力/轉矩模式</strong> ：如果關節未處於力/轉矩模式，則<strong><span style="color: #ff0000;">可以通過sim.setJointPosition API函數</span></strong>（或類似方法，例如B0-的simxSetJointPosition ）<strong><span style="color: #ff0000;">直接（並立即）設置其位置。</span></strong>基於基礎的遠程API，或針對舊版遠程API的simxSetJointPosition ）。 <strong><span style="color: #ff0000;">您可以通過子腳本 ， 插件 ， ROS節點， BlueZero節點或遠程API客戶端來執行此操作。</span></strong> 如果<strong><span style="color: #ff0000;">從子腳本執行此操作，則應在非線程子腳本的驅動部分內部執行，或者從在主腳本的感知階段之前執行的線程子腳本 （默認）執行。</span></strong> 但是，在後一種情況下，請確保將線程化的子腳本與模擬循環同步以進行精確控制。</span></span></p>
 <p><span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)">In following <a href="https://www.coppeliarobotics.com/helpFiles/en/childScripts.htm#threaded">threaded child script</a><span><span> </span>example, the joint is controlled<span> </span></span><em><strong>loosely</strong></em><span><span> </span>in position, and there is no synchronization with the simulation loop:</span></span></span></p>
 <p><span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span>在下面的線程子腳本示例中，關節的位置鬆散地受到控制，並且與仿真循環沒有同步：</span></span></span></p>
-<p><span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span></span></span></span></p>
+<p><span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span><img caption="false" height="148" src="/images/chrome_2020-05-27_10-26-44.(1)png.png" width="800"/></span></span></span></p>
 <p><span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span>In following <a href="https://www.coppeliarobotics.com/helpFiles/en/childScripts.htm#threaded">threaded child script</a><span><span> </span>example, the joint is controlled<span> </span></span><strong>precisely</strong><span><span> </span>in position in each simulation step, i.e. the thread is synchronized with the simulation loop:</span></span></span></span></p>
 <p><span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span><span>在下面的線程子腳本示例中，在每個模擬步驟中精確控制關節的位置，即，線程與模擬循環同步：在下面的線程子腳本示例中，在每個模擬步驟中精確控制關節的位置，即，線程與模擬循環同步：</span></span></span></span></p>
-<p><span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span><span></span></span></span></span></p><h3>Simulation(模擬)</h3>
+<p><span><span class="notranslate" onmouseout="_tipoff()" onmouseover="_tipon(this)"><span><span><img alt="" height="193" src="/images/chrome_2020-05-27_10-35-27.(1)png.png" width="800"/></span></span></span></span></p>
+<h3>Simulation(模擬)</h3>
 <p>A simulation in CoppeliaSim can be started, paused and stopped with [Menu bar --&gt; Simulation --&gt; Start/Pause/Stop simulation] or through the related toolbar buttons:</p>
 <p>可以使用<span style="background-color: #ffff00;">[菜單欄-&gt;模擬-&gt;開始/暫停/停止模擬]</span>或通過相關的工具欄按鈕來啟動，暫停和停止CoppeliaSim中的模擬：</p>
 <p style="text-align: center;"><img alt="" height="83" src="/images/chrome_2020-04-08_09-53-33.png" width="228"/></p>
