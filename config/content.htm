@@ -27,8 +27,34 @@
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/4_flVamJiAU" width="560"></iframe></p>
 <h2>w12.13</h2>
 <p><span style="color: #ff0000;"><strong><big><big>虛擬主機virtualBox的配置</big></big></strong></span></p>
-<p>先匯入<span style="color: #333399;"><strong>UbuntuUbuntu</strong></span>再做<span style="color: #333399;"><strong>ipv4</strong></span>、<strong><span style="color: #333399;">ipv6</span></strong>的<strong><span style="color: #333399;">guest</span></strong>和<strong><span style="color: #333399;">host ID</span></strong>的配置接著再以<span style="color: #333399;"><strong>putty</strong></span>和虛擬主機做連結。</p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/shDHrYzFP-w" width="560"></iframe></p><h1>Assignment 1</h1>
+<p>先匯入<span style="color: #333399;"><strong>Ubuntu</strong></span>再做<span style="color: #333399;"><strong>ipv4</strong></span>、<strong><span style="color: #333399;">ipv6</span></strong>的<strong><span style="color: #333399;">guest</span></strong>和<strong><span style="color: #333399;">host ID</span></strong>的配置接著再以<span style="color: #333399;"><strong>putty</strong></span>和虛擬主機做連結。</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/shDHrYzFP-w" width="560"></iframe></p>
+<h2>w14</h2>
+<p><strong><span style="color: #ff0000;"><big><big><big>虛擬主機網路和近端連線配(ipv4)</big></big></big></span></strong></p>
+<p>先進入etc的netplan</p>
+<pre class="brush:py;auto-links:false;toolbar:false;tab-size:5" contenteditable="false">cd /etc/netplan</pre>
+<p>然後設置00-installer-config.yaml資料夾的文字檔(sudo vi是編輯文字檔)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo  vi 00-installer-config.yaml</pre>
+<p>設置(i)如下圖:</p>
+<p></p>
+<p>接著esc再按:wq儲存</p>
+<p>然後就可以下載ifconfig 缺少的net-tools的模組</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install net-tools</pre>
+<p>接著就可以執行ifconfig來查詢虛擬主機的IP(guest IP)，因為我們目前使用的是IPV4所以只需要查IPV4的就好如圖(10.0.2.15):</p>
+<p></p>
+<p>接著就可以去(檔案&gt;喜好設定&gt;網路)新增或設置虛擬主機的guest和host IP如圖:</p>
+<p></p>
+<p>guest IP就是我們剛剛查到的(10.0.2.15)，而客體連接阜是我們要連的近端8443。host IP則用電腦的小黑窗(cmd)，到c槽使用ipconfig尋找手機連線wifi的ipv4如下圖，最後的主體連接阜則是我們給它的名字:</p>
+<p></p>
+<p>接著配置完網路則到home/kmol2020/tmp/cd2020pj1做wsgi.py的配置。首先wsgi.py會需要一個叫做oauth_gm.-txt的文件檔(設置在tmp裡)，所以你需配置給它而內容可以是簡單的123如圖:</p>
+<p></p>
+<p></p>
+<p>接著在cd2020pj1對wsgi.py做更改為guest IP(要讓虛擬主機能連上近端就必須使用虛擬主機的IP)操作如下圖:</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo vi wsgi.py</pre>
+<p></p>
+<p>然後就可以輸入python3 wsgi.py的指令連上近端如下圖:</p>
+<p></p>
+<p>接著到google打host ID和阜號連上近端就完成了如下圖:</p><h1>Assignment 1</h1>
 <p><span style="color: #ff0000;"><strong><big><big><big><big></big></big></big></big></strong></span></p>
 <h2>CoppeliaSim User Manual</h2>
 <p><span style="color: #ff0000;"><strong><big><big><big><big>目錄</big></big></big></big></strong></span></p>
