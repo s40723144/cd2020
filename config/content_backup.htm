@@ -101,9 +101,57 @@
 <p>                 <strong><span style="color: #ff0000;"> 內部輪胎皮                                    輪胎外徑和厚度</span></strong></p>
 <p><span style="color: #333399;"><strong><img caption="false" height="300" src="/images/S__43900932.jpg" width="225"/> <img alt="" height="300" src="/images/S__43900933.jpg" width="225"/></strong></span></p>
 <p><span style="color: #ff0000;"><strong>                   內徑(橢圓)</strong></span></p>
+<p><span style="color: #ff0000;"><strong><img alt="" height="300" src="/images/S__43900930.jpg" width="225"/></strong></span></p>
 <p><big><span style="color: #333399;"><strong>示範影片:</strong></span></big></p>
 <p><span style="color: #333399;"><strong></strong></span></p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Ljl5T50bvL8" width="560"></iframe></p><h1>Assignment 1</h1>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Ljl5T50bvL8" width="560"></iframe></p>
+<h2>w17</h2>
+<p><span style="color: #ff0000;"><strong><big>編輯新皮膚</big></strong></span></p>
+<p>將老師的車子套用我們的皮膚上去包括車體、輪胎、輪鼓和避震器</p>
+<p><img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-23-00.png" width="200"/>  <img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-22-42.png" width="200"/> <img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-22-49.png" width="200"/>  <img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-22-35.png" width="200"/></p>
+<p>以下是兩張圖得比較</p>
+<p>原圖<span>:</span></p>
+<p><span><img alt="" height="378" src="/images/coppeliaSim_2020-06-27_22-06-30.png" width="800"/></span></p>
+<p>套用後的圖<span>:</span></p>
+<p><span><img alt="" height="378" src="/images/coppeliaSim_2020-06-27_22-06-06.png" width="800"/></span></p>
+<p></p>
+<p><span style="color: #ff0000;"><strong><big>Remote API</big></strong></span></p>
+<p>先安裝老師給的資料夾(CoppeliaSim的部分)</p>
+<p><span style="color: #ff0000;"><strong><img caption="false" height="50" src="/images/chrome_2020-06-28_12-51-05.png" width="500"/></strong></span></p>
+<p>下載完後如下圖，而我們需要的部分則是car_model.py的遠端端口控制(.py檔)和sdc.ttt的場景檔內部有老師的小車。</p>
+<p><img alt="" height="200" src="/images/Inkedexplorer_2020-06-28_12-51-26_LI.jpg" width="500"/></p>
+<p>接著執行c<span>ar_model.py的遠端端口控制&gt;&gt;(可用編輯器go或使用以下指令 ):</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python car_model.py</pre>
+<p><img caption="false" height="144" src="/images/cmd_2020-06-26_19-34-34.png" width="600"/></p>
+<p>會發現有缺少模組所以必須使用pip install將缺少的模組灌起來</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install</pre>
+<p>但安裝時意外發現pip版本過舊(numpy是有安裝成功的)</p>
+<p><img alt="" height="228" src="/images/cmd_2020-06-26_19-34-39.png" width="650"/></p>
+<p>所以必須將pip做更新的動作重裝(get-pip.py)</p>
+<p><img alt="" height="195" src="/images/explorer_2020-06-28_13-20-51.png" width="600"/></p>
+<p>接著去執行它做重裝的動作</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python get-pip.py</pre>
+<p><img caption="false" height="168" src="/images/cmd_2020-06-26_19-35-29.png" width="600"/></p>
+<p>接著繼續裝缺少的模組cv2，但會發現無法安裝這個模組</p>
+<p><img alt="" height="95" src="/images/cmd_2020-06-26_19-35-52.png" width="600"/></p>
+<p>我根據下面錯誤的訊息(No matching distribution found for cv2)去網路找文章找到解決的方法</p>
+<p><img alt="" height="268" src="/images/chrome_2020-06-27_21-28-44.png" width="600"/></p>
+<p>根據他的說法可以安裝opencv-python這個模組就會有相應的cv2出現</p>
+<p><img alt="" height="185" src="/images/cmd_2020-06-26_19-36-00.png" width="600"/></p>
+<p><img alt="" height="338" src="/images/InkedSciTE_2020-06-28_13-31-44_LI.jpg" width="600"/></p>
+<p>根據上述文章的敘述會發現其實跟老師要我們安裝的模組相同</p>
+<p><img alt="" height="408" src="/images/Inkedchrome_2020-06-28_13-34-56_LI.jpg" width="600"/></p>
+<p>接著安裝最後的模組imutils</p>
+<p><img alt="" height="265" src="/images/cmd_2020-06-26_19-36-50.png" width="650"/></p>
+<p>然後將<span>car_model.py的第108行改成如下:</span></p>
+<p><span><img alt="" height="24" src="/images/SciTE_2020-06-28_13-40-55.png" width="420"/></span></p>
+<p><span>接著點開CoppeliaSim的模擬和遠端car_model.py&gt;&gt;go就完成了</span></p>
+<p><img caption="false" height="600" src="/images/coppeliaSim_2020-06-28_13-43-57.png" width="800"/></p>
+<p>然後要注意車子之所以會看到外部影線是因為我們給的senser的線程子城式19999對應到外部<span>car_model.py &gt;&gt;clientID19999才能做連接</span></p>
+<p><span></span></p>
+<p>以下是測試影片:</p>
+<p></p>
+<p>以下是操作影片:</p><h1>Assignment 1</h1>
 <p><span style="color: #ff0000;"><strong><big><big><big><big></big></big></big></big></strong></span></p>
 <h2>CoppeliaSim User Manual</h2>
 <p><span style="color: #ff0000;"><strong><big><big><big><big>目錄</big></big></big></big></strong></span></p>
