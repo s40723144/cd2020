@@ -341,7 +341,7 @@ vertical: body pane on the botton</t>
 
 首先設定內部和外部IP
 
-&lt;img src="Y:\tmp\cd2020\images/VirtualBoxVM_2020-06-03_21-51-42.png" width="750" &gt;&lt;/iframe&gt;
+&lt;img src="./../images/VirtualBoxVM_2020-06-03_21-51-42.png" width="750" &gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20200630001031.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -375,7 +375,7 @@ vertical: body pane on the botton</t>
 接著用ifconfig查詢IPV4 guest IP
 再將ID輸入
 
-&lt;img src="Y:\tmp\cd2020\images/VirtualBoxVM_2020-06-03_21-47-47.png" width="450" &gt;&lt;/iframe&gt;
+&lt;img src="./../images/VirtualBoxVM_2020-06-03_21-47-47.png" width="450" &gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20200630004427.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -409,7 +409,7 @@ vertical: body pane on the botton</t>
 
 去wsgi.py更改為guest IP才能在虛擬主機內部開啟近端
 
-&lt;img src="Y:\tmp\cd2020\images/VirtualBoxVM_2020-06-03_22-10-25.png" width="450" &gt;&lt;/iframe&gt;
+&lt;img src="./../images/VirtualBoxVM_2020-06-03_22-10-25.png" width="450" &gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20200630005959.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -427,8 +427,9 @@ vertical: body pane on the botton</t>
 最後外部輸入https:// host IP : 連接阜
 內部輸入https:// guest IP : 連接阜(內部proxey要關掉) 就連接成功了
 
-&lt;img src="Y:\tmp\cd2020\images/chrome_2020-06-03_22-14-33.png" width="450" &gt;&lt;/iframe&gt;
-</t>
+&lt;img src="./../images/chrome_2020-06-03_22-14-33.png" width="450" &gt;&lt;/iframe&gt;
+
+&lt;img src="./../images/VirtualBoxVM_2020-06-30_11-02-35.png" width="450" &gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200630011150.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
@@ -447,8 +448,7 @@ vertical: body pane on the botton</t>
 python3 wsgi.py
 ```
 
-&lt;img src="Y:\tmp\cd2020\images/VirtualBoxVM_2020-06-03_22-10-25.png" width="450" &gt;&lt;/iframe&gt;
-</t>
+&lt;img src="./../images/VirtualBoxVM_2020-06-03_22-10-25.png" width="450" &gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200630102659.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
