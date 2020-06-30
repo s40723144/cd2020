@@ -392,7 +392,7 @@ vertical: body pane on the botton</t>
 
 再用電腦內部cmd在c槽用ipconfig查詢host IP再輸入在設定上
 
-&lt;img src="Y:\tmp\cd2020\images/cmd_2020-06-03_21-58-27.png" width="750" &gt;&lt;/iframe&gt;
+&lt;img src="./../images/cmd_2020-06-03_21-58-27.png" width="750" &gt;&lt;/iframe&gt;
 </t>
 <t tx="leo.20200630004813.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
@@ -429,7 +429,7 @@ vertical: body pane on the botton</t>
 
 &lt;img src="./../images/chrome_2020-06-03_22-14-33.png" width="450" &gt;&lt;/iframe&gt;
 
-&lt;img src="./../images/VirtualBoxVM_2020-06-30_11-02-35.png" width="450" &gt;&lt;/iframe&gt;</t>
+&lt;img src="./../images/VirtualBoxVM_2020-06-30_11-08-44.png" width="700" &gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200630011150.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
