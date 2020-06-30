@@ -448,7 +448,7 @@ vertical: body pane on the botton</t>
 python3 wsgi.py
 ```
 
-&lt;img src="./../images/VirtualBoxVM_2020-06-03_22-10-25.png" width="450" &gt;&lt;/iframe&gt;</t>
+&lt;img src="./../images/explorer_2020-06-03_22-14-18.png" width="450" &gt;&lt;/iframe&gt;</t>
 <t tx="leo.20200630102659.1">&lt;section data-markdown&gt;
     &lt;script type="text/template"&gt;
 &lt;!-- 請注意, @others 不可以內縮 --&gt;
