@@ -152,6 +152,11 @@
 <v t="leo.20200630224622.2"><vh>LaTeX 格式方程式</vh></v>
 </v>
 </v>
+<v t="leo.20200701031522.1"><vh>期末影片</vh>
+<v t="leo.20200701031522.2"><vh>1</vh>
+<v t="leo.20200701031522.3"><vh>引用程式碼</vh></v>
+</v>
+</v>
 </v>
 </v>
 </v>
@@ -171,6 +176,8 @@
 * [CoppeliaSim設置和基本操作](https://s40723144.github.io/cd2020/reveal/index.html#/3)
 
 * [Remote API](https://s40723144.github.io/cd2020/reveal/index.html#/4)
+
+* [期末影片](https://s40723144.github.io/cd2020/reveal/index.html#/5)
 </t>
 <t tx="leo.20180902120523.2"></t>
 <t tx="leo.20180902120523.3">@language xml
@@ -1061,5 +1068,24 @@ pip install
 ```
 
 </t>
+<t tx="leo.20200701031522.1">&lt;section&gt;
+@others
+&lt;/section&gt;
+
+</t>
+<t tx="leo.20200701031522.2">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200701031522.3"># 期末影片
+
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/2okKYFJ_goQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
 </tnodes>
 </leo_file>
