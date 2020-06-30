@@ -156,13 +156,31 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w8 << <a href='w8.html'>Previous</a> <a href='w11.html'>Next</a> >> w11<br /><h1>w9.10</h1>
-<p><big><big><big><strong>學習如何使用CoppeliaSim</strong><big></big><big></big><big></big></big></big></big></p>
+    <div id="tipue_search_content">CoppeliaSim << <a href='CoppeliaSim.html'>Previous</a> <a href='操作說明(成功!).html'>Next</a> >> 操作說明(成功!)<br /><h1>第一階段失敗品</h1>
+<p><span style="color: #ff0000;"><strong><big><big>小車模擬</big></big></strong></span></p>
 <p></p>
-<p>了解CoppeliaSim主要由模型和場景組成，而場景又細分成環境、腳本等等，同樣模型主要是實體的運用等等。除了這些還有作一些簡單的操作</p>
-<p></p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/XQURK8okQnc" width="560"></iframe></p>
-<br />w8 << <a href='w8.html'>Previous</a> <a href='w11.html'>Next</a> >> w11</div>
+<p><span style="color: #ff0000;"><strong></strong></span>首先要先把存取好的stl.檔匯入(File&gt;inport&gt;Mesh)</p>
+<p><img alt="" height="394" src="./../images/coppeliaSim_2020-06-10_21-39-13.png" width="332"/>    <img alt="" height="263" src="./../images/coppeliaSim_2020-06-10_21-40-14.png" width="237"/></p>
+<p>接著創建四顆輪胎(右鍵&gt;add&gt;Primitive shape&gt;Cylinder)然後給定直徑和深度</p>
+<p><img alt="" height="382" src="./../images/coppeliaSim_2020-06-10_21-51-44.png" width="450"/> <img alt="" height="332" src="./../images/coppeliaSim_2020-06-10_21-41-56.png" width="508"/></p>
+<p>然後增加軸節(右鍵&gt;add&gt;Joint&gt;Revolute(旋轉軸節))</p>
+<p><img alt="" height="356" src="./../images/coppeliaSim_2020-06-10_21-43-21.png" width="450"/></p>
+<p>接著選取每個軸節動力屬性的motor enabled(動機開啟)這樣軸節才會轉動</p>
+<p><img alt="" height="390" src="./../images/coppeliaSim_2020-06-10_21-52-30.png" width="600"/></p>
+<p>再來是物體動力屬性選取Body is respondable(<strong>物體可響應</strong>)這樣才會產生碰撞反應，還有選取<span>Body is </span>dynamic(<strong>物體動力</strong>)，這樣物體才會受轉速和重力影響</p>
+<p><img alt="" height="352" src="./../images/coppeliaSim_2020-06-10_21-54-09.png" width="600"/></p>
+<p>接著新增腳本(右鍵&gt;add&gt;Associated chiid script&gt;Non threaded)匯入</p>
+<p><img alt="" height="446" src="./../images/coppeliaSim_2020-06-10_21-55-15.png" width="500"/></p>
+<p>接著給前輪左右輪(驅動)相對應腳本的名字left,right motor</p>
+<p><img alt="" height="53" src="./../images/coppeliaSim_2020-06-10_21-54-50.png" width="164"/></p>
+<p>這樣就完成了</p>
+<p>下圖為廠景框中的物體配置:</p>
+<p><img alt="" height="166" src="./../images/coppeliaSim_2020-06-10_21-55-03.png" width="172"/></p>
+<p>可是小車卻只有在原地轉動</p>
+<p>日後會再做修正再上傳</p>
+<p>以下是影片:</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/oCvYgbb_pB0" width="560"></iframe></p>
+<br />CoppeliaSim << <a href='CoppeliaSim.html'>Previous</a> <a href='操作說明(成功!).html'>Next</a> >> 操作說明(成功!)</div>
         
     <!-- footer -->
       <div class="container">

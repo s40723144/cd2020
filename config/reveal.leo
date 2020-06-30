@@ -37,7 +37,10 @@
 <v t="leo.20200630230735.1"><vh>5</vh>
 <v t="leo.20200630230735.2"><vh>LaTeX 格式方程式</vh></v>
 </v>
-<v t="leo.20200630231240.1"><vh>6</vh>
+<v t="leo.20200701013716.1"><vh>6</vh>
+<v t="leo.20200701013716.2"><vh>LaTeX 格式方程式</vh></v>
+</v>
+<v t="leo.20200630231240.1"><vh>7</vh>
 <v t="leo.20200630231240.2"><vh>LaTeX 格式方程式</vh></v>
 </v>
 </v>
@@ -1039,5 +1042,24 @@ python get-pip.py
 <t tx="leo.20200630231240.2">## 以下是操作影片
 
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/kORRlAtLRRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;</t>
+<t tx="leo.20200701013716.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+&lt;!-- 請注意, @others 不可以內縮 --&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+
+						
+</t>
+<t tx="leo.20200701013716.2">## 操作(5)
+
+這樣就能用pip install能安裝缺少的模組了
+```
+pip install
+```
+
+</t>
 </tnodes>
 </leo_file>

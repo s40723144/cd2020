@@ -1,13 +1,28 @@
 <h1>About</h1>
 <p><span>Repository</span><span>：<a href="https://github.com/s40723144/cd2020">https://github.com/s40723144/cd2020</a></span></p>
 <p><span>Website：<a href="https://s40723144.github.io/cd2020/content/index.html">https://s40723144.github.io/cd2020/content/index.html</a></span></p>
+<p><span>Reveal:<a href="https://s40723144.github.io/cd2020/reveal/index.html#/">https://s40723144.github.io/cd2020/reveal/index.html#/</a></span></p>
+<p></p>
 <p><span>Group Repository：</span><a href="https://github.com/s40723150/cd2020ag2">https://github.com/s40723150/cd2020ag2</a></p>
-<p><a href="https://github.com/mdecourse/cmsimde"></a><span>Group Presentation：</span><a href="https://s40723150.github.io/cd2020ag2/reveal">https://s40723150.github.io/cd2020ag2/reveal</a></p>
 <p><span>Group Website：</span><a href="https://s40723150.github.io/cd2020ag2/" rel="nofollow">https://s40723150.github.io/cd2020ag2</a></p>
-<h1>每周紀錄</h1>
+<p><span>Group Reveal：</span><a href="https://s40723150.github.io/cd2020ag2/reveal">https://s40723150.github.io/cd2020ag2/reveal</a></p><h1>每周紀錄</h1>
 <h3>w3</h3>
-<p>可攜系統更新python3.8.2</p>
-<p><br/><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/kORRlAtLRRI" width="560"></iframe></p>
+<p><span style="color: #ff0000;"><strong><big><big>可攜系統更新python3.8.2</big></big></strong></span></p>
+<p>首先我們先執行安裝包下載的動作</p>
+<p><img alt="" height="349" src="/images/python_setup_successful.png" width="575"/></p>
+<p><span>接著將資料拉入y槽</span></p>
+<p><span><img alt="" height="507" src="/images/2020-06-30_22-58-36.png" width="700"/></span></p>
+<p><span>接著到以下網址將pip安裝包另存新檔至y槽data我們才能裝缺少的模組</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">https://bootstrap.pypa.io/get-pip.py
+</pre>
+<p><img alt="" height="372" src="/images/chrome_2020-06-30_23-04-57.png" width="700"/></p>
+<p><span>接著在y槽對(get-pip.py)執行，就會開始安裝pip</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python get-pip.py</pre>
+<p><img alt="" height="136" src="/images/explorer_2020-06-28_13-20-51.png" width="700"/></p>
+<p><span>這樣就能用pip install能安裝缺少的模組了</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install</pre>
+<p>以下是操作影片</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/kORRlAtLRRI" width="560"></iframe></p>
 <h2>w7</h2>
 <p>直播測試</p>
 <p>利用obs串流yt拍直播影片</p>
@@ -31,7 +46,11 @@
 <p>先匯入<span style="color: #333399;"><strong>Ubuntu</strong></span>再做<span style="color: #333399;"><strong>ipv4</strong></span>、<strong><span style="color: #333399;">ipv6</span></strong>的<strong><span style="color: #333399;">guest</span></strong>和<strong><span style="color: #333399;">host ID</span></strong>的配置接著再以<span style="color: #333399;"><strong>putty</strong></span>和虛擬主機做連結。</p>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/shDHrYzFP-w" width="560"></iframe></p>
 <h2>w14</h2>
-<p><strong><span style="color: #ff0000;"><big><big><big>虛擬主機網路和近端連線配(ipv4)</big></big></big></span></strong></p>
+<ul>
+<li><big><big><a href="https://s40723144.github.io/cd2020/content/虛擬主機網路和近端連線配(ipv4).html">虛擬主機網路和近端連線配(ipv4)</a></big></big></li>
+<li><big><big><a href="https://s40723144.github.io/cd2020/content/虛擬主機網路和近端連線配(ipv6).html">虛擬主機網路和近端連線配(ipv6)</a></big></big></li>
+</ul>
+<h3>虛擬主機網路和近端連線配(ipv4)</h3>
 <p>先進入etc的netplan</p>
 <pre class="brush:py;auto-links:false;toolbar:false;tab-size:5" contenteditable="false">cd /etc/netplan</pre>
 <p>然後設置00-installer-config.yaml資料夾的文字檔(sudo vi是編輯文字檔)</p>
@@ -62,6 +81,35 @@
 <p><img alt="" height="240" src="/images/chrome_2020-06-03_22-14-33.png" width="600"/></p>
 <p>以下是示範影片:</p>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/KZ3Zg1IaYno" width="560"></iframe></p>
+<p></p>
+<h3>虛擬主機網路和近端連線配(ipv6)</h3>
+<p><span>查詢guest IP</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">ifconfig</pre>
+<p><img alt="" height="247" src="/images/explorer_2020-06-30_20-42-29.png" width="600"/></p>
+<p><span>輸入host IP(老師給的特殊IP)/guest IP</span></p>
+<p><span><img alt="" height="417" src="/images/explorer_2020-06-30_20-37-41.png" width="600"/></span></p>
+<p><span>修改proxy.conf.d的文字內容</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd etc/apt/apt.conf.d</pre>
+<p><span><img alt="" height="19" src="/images/VirtualBoxVM_2020-06-30_15-05-44.png" width="531"/></span></p>
+<p><span>修改成電腦的proxy</span></p>
+<p><span><img caption="false" height="150" src="/images/VirtualBoxVM_2020-06-30_15-02-29.png" width="500"/></span></p>
+<p><span>更改完後</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt update</pre>
+<p><span>修改wsgi IP(在虛擬主機開啟所以是guest IP)</span></p>
+<p><span><img caption="false" height="358" src="/images/VirtualBoxVM_2020-06-30_15-00-27.png" width="750"/></span></p>
+<p><span>接著開啟近端</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python3 wsgi.py</pre>
+<p><img alt="" height="193" src="/images/VirtualBoxVM_2020-06-30_14-54-52.png" width="700"/></p>
+<p><span>複製網址貼上內部網頁內部就成功連上了</span></p>
+<p><span><img caption="false" height="188" src="/images/VirtualBoxVM_2020-06-30_14-57-09.png" width="600"/></span></p>
+<p><span>到外部變更介面卡更改IPV6位址和相關設定</span></p>
+<p><span><img alt="" height="493" src="/images/dllhost_2020-06-30_15-04-00.png" width="600"/></span></p>
+<p><span>接著到外部google輸入</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">https://[IP]:阜號</pre>
+<p><span>就連接成功了</span></p>
+<p><span><img alt="" height="138" src="/images/chrome_2020-06-30_15-04-49.png" width="700"/></span></p>
+<p><span>下面是說明影片:</span></p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/e58oXe4nJR4" width="560"></iframe></p>
 <h2>w15</h2>
 <p><span style="color: #ff0000;"><strong><big><big>小車模擬</big></big></strong></span></p>
 <p></p>
@@ -92,7 +140,7 @@
 <p>小車必須貼齊本體才不會與本體產生干擾</p>
 <p><img alt="" height="197" src="/images/coppeliaSim_2020-06-16_23-18-10.png" width="162"/></p>
 <p><big><span style="color: #333399;"><strong>問題二:</strong></span></big></p>
-<p>軸向方向必須相同x close y(逆時針)</p>
+<p>軸向方向必須相同x close y(<span>右邊順時針/左邊逆時針</span>)</p>
 <p><img alt="" height="304" src="/images/coppeliaSim_2020-06-16_23-18-43.png" width="500"/></p>
 <p><big><span style="color: #333399;"><strong>問題三:</strong></span></big></p>
 <p>必須開啟joint dynamic的迴路程式才能作動</p>
@@ -104,8 +152,7 @@
 <p><span style="color: #ff0000;"><strong><img alt="" height="300" src="/images/S__43900930.jpg" width="225"/></strong></span></p>
 <p><big><span style="color: #333399;"><strong>示範影片:</strong></span></big></p>
 <p><span style="color: #333399;"><strong></strong></span></p>
-<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Ljl5T50bvL8" width="560"></iframe></p>
-<h2>w17</h2>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Ljl5T50bvL8" width="560"></iframe></p><h2>w17</h2>
 <p><span style="color: #ff0000;"><strong><big>編輯新皮膚</big></strong></span></p>
 <p>將老師的車子套用我們的皮膚上去包括車體、輪胎、輪鼓和避震器</p>
 <p><img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-23-00.png" width="200"/>  <img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-22-42.png" width="200"/> <img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-22-49.png" width="200"/>  <img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-22-35.png" width="200"/></p>
@@ -147,11 +194,16 @@
 <p><span><img alt="" height="24" src="/images/SciTE_2020-06-28_13-40-55.png" width="420"/></span></p>
 <p><span>接著點開CoppeliaSim的模擬和遠端car_model.py&gt;&gt;go就完成了</span></p>
 <p><img caption="false" height="600" src="/images/coppeliaSim_2020-06-28_13-43-57.png" width="800"/></p>
-<p>然後要注意車子之所以會看到外部影線是因為我們給的senser的線程子城式19999對應到外部<span>car_model.py &gt;&gt;clientID19999才能做連接</span></p>
+<p>然後要注意車子之所以會看到外部影線是因為我們給的camera的線程子城式19999對應到外部<span>car_model.py &gt;&gt;clientID19999才能做連接</span></p>
+<p><span><img alt="" height="33" src="/images/coppeliaSim_2020-06-28_13-51-01.png" width="170"/></span></p>
+<p><span><img alt="" height="58" src="/images/coppeliaSim_2020-06-28_13-51-08.png" width="469"/></span></p>
+<p><span><img alt="" height="55" src="/images/SciTE_2020-06-28_13-51-44.png" width="692"/></span></p>
 <p><span></span></p>
 <p>以下是測試影片:</p>
-<p></p>
-<p>以下是操作影片:</p><h1>Assignment 1</h1>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/bWH-1ZxI_r0" width="560"></iframe></p>
+<p>以下是操作影片:</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/e-oaoZXuMxw" width="560"></iframe></p>
+<h1>Assignment 1</h1>
 <p><span style="color: #ff0000;"><strong><big><big><big><big></big></big></big></big></strong></span></p>
 <h2>CoppeliaSim User Manual</h2>
 <p><span style="color: #ff0000;"><strong><big><big><big><big>目錄</big></big></big></big></strong></span></p>
@@ -1228,3 +1280,179 @@
 <p style="text-align: left;"><strong><span style="color: #000080;">4.8.7 Inspection Dimensions (Critical Dimensions) (檢驗尺寸（關鍵尺寸）)</span></strong></p>
 <p>Parts can have hundreds of dimensions. To fully specify every feature on some parts takes a fair amount of time. Historically, every feature on a drawing was dimen-sioned to enable that feature to be inspected and found either in compliance with the specification (drawing) or non-compliant. With the advent of 3D CAD systems for<br/>designing and creating drawing documentation, it is completely possible to transfer all of the part information digitally, without any dimensions being specified actually on the drawing, and have that part manufactured at the “nominal specified dimen-sion.” That is, features that are 3.000 inches apart are “drawn” exactly 3.000 inches<br/>apart, and that number is an integral part of a file that the part manufacturer gets.Anyone who brings up that part file on their CAD system can query that file and see those features need to be 3.000 inches apart (with a stated tolerance as a part of the CAD file). In fact, inspection departments, if they had access to the CAD file, could inspect the part</p>
 <p>零件可以具有數百個尺寸。要完全指定某些零件上的每個功能需要花費大量時間。從歷史上看，對圖紙上的每個特徵都進行了尺寸標註，以便可以檢查和發現該特徵是否符合規範（圖紙）或不符合規範。隨著3D CAD系統的出現<br/>設計和創建工程圖文檔時，完全有可能以數字方式傳輸所有零件信息，而無需在工程圖上實際指定任何尺寸，而使零件以“標稱指定尺寸”進行製造。也就是說，相隔3.000英寸的要素將精確地“繪製” 3.000英寸<br/>零件號是零件製造商獲取的文件的組成部分。在其CAD系統上顯示該零件文件的任何人都可以查詢該文件，並看到這些特徵需要相距3.000英寸（以規定的公差作為單位）。 CAD文件的一部分）。實際上，檢查部門如果可以訪問CAD文件，則可以檢查零件</p>
+<h1>Project</h1>
+<h2>可攜系統更新python3.8.2</h2>
+<p>首先我們先執行安裝包下載的動作</p>
+<p><img alt="" height="349" src="/images/python_setup_successful.png" width="575"/></p>
+<p><span>接著將資料拉入y槽</span></p>
+<p><span><img alt="" height="507" src="/images/2020-06-30_22-58-36.png" width="700"/></span></p>
+<p><span>接著到以下網址將pip安裝包另存新檔至y槽data我們才能裝缺少的模組</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">https://bootstrap.pypa.io/get-pip.py
+</pre>
+<p><img alt="" height="372" src="/images/chrome_2020-06-30_23-04-57.png" width="700"/></p>
+<p><span>接著在y槽對(get-pip.py)執行，就會開始安裝pip</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python get-pip.py</pre>
+<p><img alt="" height="136" src="/images/explorer_2020-06-28_13-20-51.png" width="700"/></p>
+<p><span>這樣就能用pip install能安裝缺少的模組了</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install</pre>
+<p>以下是操作影片</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/kORRlAtLRRI" width="560"></iframe></p>
+<h2>虛擬主機virtualbox的配置</h2>
+<ul>
+<li><big><big><a href="https://s40723144.github.io/cd2020/content/虛擬主機網路和近端連線配(ipv4).html">虛擬主機網路和近端連線配(ipv4)</a></big></big></li>
+<li><big><big><a href="https://s40723144.github.io/cd2020/content/虛擬主機網路和近端連線配(ipv6).html">虛擬主機網路和近端連線配(ipv6)</a></big></big></li>
+</ul>
+<h3>虛擬主機網路和近端連線配(ipv4)</h3>
+<p>先進入etc的netplan</p>
+<pre class="brush:py;auto-links:false;toolbar:false;tab-size:5" contenteditable="false">cd /etc/netplan</pre>
+<p>然後設置00-installer-config.yaml資料夾的文字檔(sudo vi是編輯文字檔)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo  vi 00-installer-config.yaml</pre>
+<p>設置(i)如下圖:</p>
+<p><img alt="" height="559" src="/images/VirtualBoxVM_2020-06-03_21-39-27.png" width="600"/></p>
+<p>接著esc再按:wq儲存</p>
+<p>然後就可以下載ifconfig 缺少的net-tools的模組</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt install net-tools</pre>
+<p>接著就可以執行ifconfig來查詢虛擬主機的IP(guest IP)，因為我們目前使用的是IPV4所以只需要查IPV4的就好如圖(10.0.2.15):</p>
+<p><img caption="false" height="559" src="/images/VirtualBoxVM_2020-06-03_21-47-47.png" width="600"/></p>
+<p>接著就可以去(檔案&gt;喜好設定&gt;網路)新增或設置虛擬主機的guest和host IP如圖:</p>
+<p><img alt="" height="368" src="/images/VirtualBoxVM_2020-06-03_21-51-42.png" width="600"/></p>
+<p>guest IP就是我們剛剛查到的(10.0.2.15)，而客體連接阜是我們要連的近端8443。host IP則用電腦的小黑窗(cmd)，到c槽使用ipconfig尋找手機連線wifi的ipv4如下圖，最後的主體連接阜則是我們給它的名字:</p>
+<p><img alt="" height="368" src="/images/VirtualBoxVM_2020-06-03_21-51-42.png" width="600"/></p>
+<p><img caption="false" height="152" src="/images/cmd_2020-06-03_21-58-27.png" width="600"/></p>
+<p>然後進入Ubuntu的設定把網路設定成和配置的相同和允許所有人使用，如下圖:</p>
+<p></p>
+<p>接著配置完網路則到home/kmol2020/tmp/cd2020pj1做wsgi.py的配置。首先wsgi.py會需要一個叫做oauth_gm.-txt的文件檔(設置在tmp裡)，所以你需配置給它而內容可以是簡單的123如圖:</p>
+<p><img alt="" height="559" src="/images/VirtualBoxVM_2020-06-03_22-02-27.png" width="600"/></p>
+<p><img alt="" height="559" src="/images/VirtualBoxVM_2020-06-03_22-04-48.png" width="600"/></p>
+<p>接著在cd2020pj1對wsgi.py做更改為guest IP(要讓虛擬主機能連上近端就必須使用虛擬主機的IP)操作如下圖:</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo vi wsgi.py</pre>
+<p><img caption="false" height="466" src="/images/VirtualBoxVM_2020-06-03_22-10-25.png" width="500"/></p>
+<p>然後就可以輸入python3 wsgi.py的指令連上近端如下圖:</p>
+<p><img alt="" height="246" src="/images/explorer_2020-06-03_22-14-18.png" width="600"/></p>
+<p>接著到google打host ID(http://.....)和阜號連上近端就完成了如下圖:</p>
+<p><img alt="" height="240" src="/images/chrome_2020-06-03_22-14-33.png" width="600"/></p>
+<p>以下是示範影片:</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/KZ3Zg1IaYno" width="560"></iframe></p>
+<p></p>
+<h3>虛擬主機網路和近端連線配(ipv6)</h3>
+<p><span>查詢guest IP</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">ifconfig</pre>
+<p><img alt="" height="247" src="/images/explorer_2020-06-30_20-42-29.png" width="600"/></p>
+<p><span>輸入host IP(老師給的特殊IP)/guest IP</span></p>
+<p><span><img alt="" height="417" src="/images/explorer_2020-06-30_20-37-41.png" width="600"/></span></p>
+<p><span>修改proxy.conf.d的文字內容</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">cd etc/apt/apt.conf.d</pre>
+<p><span><img alt="" height="19" src="/images/VirtualBoxVM_2020-06-30_15-05-44.png" width="531"/></span></p>
+<p><span>修改成電腦的proxy</span></p>
+<p><span><img caption="false" height="150" src="/images/VirtualBoxVM_2020-06-30_15-02-29.png" width="500"/></span></p>
+<p><span>更改完後</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">sudo apt update</pre>
+<p><span>修改wsgi IP(在虛擬主機開啟所以是guest IP)</span></p>
+<p><span><img caption="false" height="358" src="/images/VirtualBoxVM_2020-06-30_15-00-27.png" width="750"/></span></p>
+<p><span>接著開啟近端</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python3 wsgi.py</pre>
+<p><img alt="" height="193" src="/images/VirtualBoxVM_2020-06-30_14-54-52.png" width="700"/></p>
+<p><span>複製網址貼上內部網頁內部就成功連上了</span></p>
+<p><span><img caption="false" height="188" src="/images/VirtualBoxVM_2020-06-30_14-57-09.png" width="600"/></span></p>
+<p><span>到外部變更介面卡更改IPV6位址和相關設定</span></p>
+<p><span><img alt="" height="493" src="/images/dllhost_2020-06-30_15-04-00.png" width="600"/></span></p>
+<p><span>接著到外部google輸入</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">https://[IP]:阜號</pre>
+<p><span>就連接成功了</span></p>
+<p><span><img alt="" height="138" src="/images/chrome_2020-06-30_15-04-49.png" width="700"/></span></p>
+<p><span>下面是說明影片:</span></p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/e58oXe4nJR4" width="560"></iframe></p>
+<h2>CoppeliaSim</h2>
+<h3>第一階段失敗品</h3>
+<p><span style="color: #ff0000;"><strong><big><big>小車模擬</big></big></strong></span></p>
+<p></p>
+<p><span style="color: #ff0000;"><strong></strong></span>首先要先把存取好的stl.檔匯入(File&gt;inport&gt;Mesh)</p>
+<p><img alt="" height="394" src="/images/coppeliaSim_2020-06-10_21-39-13.png" width="332"/>    <img alt="" height="263" src="/images/coppeliaSim_2020-06-10_21-40-14.png" width="237"/></p>
+<p>接著創建四顆輪胎(右鍵&gt;add&gt;Primitive shape&gt;Cylinder)然後給定直徑和深度</p>
+<p><img alt="" height="382" src="/images/coppeliaSim_2020-06-10_21-51-44.png" width="450"/> <img alt="" height="332" src="/images/coppeliaSim_2020-06-10_21-41-56.png" width="508"/></p>
+<p>然後增加軸節(右鍵&gt;add&gt;Joint&gt;Revolute(旋轉軸節))</p>
+<p><img alt="" height="356" src="/images/coppeliaSim_2020-06-10_21-43-21.png" width="450"/></p>
+<p>接著選取每個軸節動力屬性的motor enabled(動機開啟)這樣軸節才會轉動</p>
+<p><img alt="" height="390" src="/images/coppeliaSim_2020-06-10_21-52-30.png" width="600"/></p>
+<p>再來是物體動力屬性選取Body is respondable(<strong>物體可響應</strong>)這樣才會產生碰撞反應，還有選取<span>Body is </span>dynamic(<strong>物體動力</strong>)，這樣物體才會受轉速和重力影響</p>
+<p><img alt="" height="352" src="/images/coppeliaSim_2020-06-10_21-54-09.png" width="600"/></p>
+<p>接著新增腳本(右鍵&gt;add&gt;Associated chiid script&gt;Non threaded)匯入</p>
+<p><img alt="" height="446" src="/images/coppeliaSim_2020-06-10_21-55-15.png" width="500"/></p>
+<p>接著給前輪左右輪(驅動)相對應腳本的名字left,right motor</p>
+<p><img alt="" height="53" src="/images/coppeliaSim_2020-06-10_21-54-50.png" width="164"/></p>
+<p>這樣就完成了</p>
+<p>下圖為廠景框中的物體配置:</p>
+<p><img alt="" height="166" src="/images/coppeliaSim_2020-06-10_21-55-03.png" width="172"/></p>
+<p>可是小車卻只有在原地轉動</p>
+<p>日後會再做修正再上傳</p>
+<p>以下是影片:</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/oCvYgbb_pB0" width="560"></iframe></p>
+<h3>操作說明(成功!)</h3>
+<p><big><big><big><span style="color: #ff0000;"><strong>小車模擬(2)</strong></span><big></big><big></big><big></big></big></big></big></p>
+<p><big><span style="color: #333399;"><strong>問題一:</strong></span></big></p>
+<p>小車必須貼齊本體才不會與本體產生干擾</p>
+<p><img alt="" height="197" src="/images/coppeliaSim_2020-06-16_23-18-10.png" width="162"/></p>
+<p><big><span style="color: #333399;"><strong>問題二:</strong></span></big></p>
+<p>軸向方向必須相同x close y(<span>右邊順時針/左邊逆時針</span>)</p>
+<p><img alt="" height="304" src="/images/coppeliaSim_2020-06-16_23-18-43.png" width="500"/></p>
+<p><big><span style="color: #333399;"><strong>問題三:</strong></span></big></p>
+<p>必須開啟joint dynamic的迴路程式才能作動</p>
+<p><img alt="" height="63" src="/images/coppeliaSim_2020-06-16_23-19-28.png" width="244"/></p>
+<p><big><span style="color: #333399;"><strong>內部輪胎尺寸:</strong></span></big></p>
+<p>                 <strong><span style="color: #ff0000;"> 內部輪胎皮                                    輪胎外徑和厚度</span></strong></p>
+<p><span style="color: #333399;"><strong><img caption="false" height="300" src="/images/S__43900932.jpg" width="225"/> <img alt="" height="300" src="/images/S__43900933.jpg" width="225"/></strong></span></p>
+<p><span style="color: #ff0000;"><strong>                   內徑(橢圓)</strong></span></p>
+<p><span style="color: #ff0000;"><strong><img alt="" height="300" src="/images/S__43900930.jpg" width="225"/></strong></span></p>
+<p><big><span style="color: #333399;"><strong>示範影片:</strong></span></big></p>
+<p><span style="color: #333399;"><strong></strong></span></p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/Ljl5T50bvL8" width="560"></iframe></p><h2>Remote API</h2>
+<p><span style="color: #ff0000;"><strong><big>編輯新皮膚</big></strong></span></p>
+<p>將老師的車子套用我們的皮膚上去包括車體、輪胎、輪鼓和避震器</p>
+<p><img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-23-00.png" width="200"/>  <img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-22-42.png" width="200"/> <img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-22-49.png" width="200"/>  <img alt="" height="200" src="/images/coppeliaSim_2020-06-27_21-22-35.png" width="200"/></p>
+<p>以下是兩張圖得比較</p>
+<p>原圖<span>:</span></p>
+<p><span><img alt="" height="378" src="/images/coppeliaSim_2020-06-27_22-06-30.png" width="800"/></span></p>
+<p>套用後的圖<span>:</span></p>
+<p><span><img alt="" height="378" src="/images/coppeliaSim_2020-06-27_22-06-06.png" width="800"/></span></p>
+<p></p>
+<p><span style="color: #ff0000;"><strong><big>Remote API</big></strong></span></p>
+<p>先安裝老師給的資料夾(CoppeliaSim的部分)</p>
+<p><span style="color: #ff0000;"><strong><img caption="false" height="50" src="/images/chrome_2020-06-28_12-51-05.png" width="500"/></strong></span></p>
+<p>下載完後如下圖，而我們需要的部分則是car_model.py的遠端端口控制(.py檔)和sdc.ttt的場景檔內部有老師的小車。</p>
+<p><img alt="" height="200" src="/images/Inkedexplorer_2020-06-28_12-51-26_LI.jpg" width="500"/></p>
+<p>接著執行c<span>ar_model.py的遠端端口控制&gt;&gt;(可用編輯器go或使用以下指令 ):</span></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python car_model.py</pre>
+<p><img caption="false" height="144" src="/images/cmd_2020-06-26_19-34-34.png" width="600"/></p>
+<p>會發現有缺少模組所以必須使用pip install將缺少的模組灌起來</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">pip install</pre>
+<p>但安裝時意外發現pip版本過舊(numpy是有安裝成功的)</p>
+<p><img alt="" height="228" src="/images/cmd_2020-06-26_19-34-39.png" width="650"/></p>
+<p>所以必須將pip做更新的動作重裝(get-pip.py)</p>
+<p><img alt="" height="195" src="/images/explorer_2020-06-28_13-20-51.png" width="600"/></p>
+<p>接著去執行它做重裝的動作</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">python get-pip.py</pre>
+<p><img caption="false" height="168" src="/images/cmd_2020-06-26_19-35-29.png" width="600"/></p>
+<p>接著繼續裝缺少的模組cv2，但會發現無法安裝這個模組</p>
+<p><img alt="" height="95" src="/images/cmd_2020-06-26_19-35-52.png" width="600"/></p>
+<p>我根據下面錯誤的訊息(No matching distribution found for cv2)去網路找文章找到解決的方法</p>
+<p><img alt="" height="268" src="/images/chrome_2020-06-27_21-28-44.png" width="600"/></p>
+<p>根據他的說法可以安裝opencv-python這個模組就會有相應的cv2出現</p>
+<p><img alt="" height="185" src="/images/cmd_2020-06-26_19-36-00.png" width="600"/></p>
+<p><img alt="" height="338" src="/images/InkedSciTE_2020-06-28_13-31-44_LI.jpg" width="600"/></p>
+<p>根據上述文章的敘述會發現其實跟老師要我們安裝的模組相同</p>
+<p><img alt="" height="408" src="/images/Inkedchrome_2020-06-28_13-34-56_LI.jpg" width="600"/></p>
+<p>接著安裝最後的模組imutils</p>
+<p><img alt="" height="265" src="/images/cmd_2020-06-26_19-36-50.png" width="650"/></p>
+<p>然後將<span>car_model.py的第108行改成如下:</span></p>
+<p><span><img alt="" height="24" src="/images/SciTE_2020-06-28_13-40-55.png" width="420"/></span></p>
+<p><span>接著點開CoppeliaSim的模擬和遠端car_model.py&gt;&gt;go就完成了</span></p>
+<p><img caption="false" height="600" src="/images/coppeliaSim_2020-06-28_13-43-57.png" width="800"/></p>
+<p>然後要注意車子之所以會看到外部影線是因為我們給的camera的線程子城式19999對應到外部<span>car_model.py &gt;&gt;clientID19999才能做連接</span></p>
+<p><span><img alt="" height="33" src="/images/coppeliaSim_2020-06-28_13-51-01.png" width="170"/></span></p>
+<p><span><img alt="" height="58" src="/images/coppeliaSim_2020-06-28_13-51-08.png" width="469"/></span></p>
+<p><span><img alt="" height="55" src="/images/SciTE_2020-06-28_13-51-44.png" width="692"/></span></p>
+<p><span></span></p>
+<p>以下是測試影片:</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/bWH-1ZxI_r0" width="560"></iframe></p>
+<p>以下是操作影片:</p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/e-oaoZXuMxw" width="560"></iframe></p>
